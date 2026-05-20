@@ -277,8 +277,9 @@ def fetch_items():
                     suffix = title.rsplit(" - ", 1)[-1].strip()
                     if "." in suffix or any(d in suffix.lower() for d in PUBLISHER_MAP):
                         clean_title = title.rsplit(" - ", 1)[0].strip()
-                countries  = extract_countries(combined)
-                is_treaty  = detect_treaty(combined)
+                countries   = extract_countries(combined)
+                is_treaty   = detect_treaty(combined)
+                is_finnish  = detect_finnish_relevance(combined)
                 items.append({
                     "id":        item_id(link),
                     "title":     clean_title,
@@ -287,8 +288,9 @@ def fetch_items():
                     "source":    publisher,
                     "pub":       pub_str,
                     "open":      feed_cfg["open"],
-                    "countries": countries,
-                    "is_treaty": is_treaty,
+                    "countries":  countries,
+                    "is_treaty":  is_treaty,
+                    "is_finnish": is_finnish,
                 })
             log.info(f"  -> {len(items)-before} relevant items")
         except Exception as e:
@@ -488,6 +490,17 @@ def build_country_counts(items):
             counts[cf] += 1
     return dict(sorted(counts.items(), key=lambda x:-x[1])[:10])
  
+ 
+def detect_finnish_relevance(text):
+    """Flag items with direct Finnish relevance."""
+    signals = [
+        "finland", "finnish", "suomi", "suomen", "verohallinto",
+        "kho", "finnish tax", "nordic", "scandinav",
+        "helsinki", "finnish authorities", "vero",
+    ]
+    lower = text.lower()
+    return any(s in lower for s in signals)
+ 
 def get_treaty_alerts(items):
     """Return items flagged as treaty news."""
     return [it for it in items if it.get("is_treaty")]
@@ -499,7 +512,7 @@ def check_accessibility(items):
     return items
  
 # ── Render ────────────────────────────────────────────────────────────────────
-def render_report(items, signal, archive, sparklines, country_counts, treaty_alerts):
+def render_report(items, signal, archive, sparklines, country_counts):
     items.sort(key=lambda x: (-x.get("importance",0), x.get("source","")))
     main_items = [it for it in items if it.get("importance",1) >= 2][:MAX_ITEMS]
     by_lens = defaultdict(list)
@@ -533,7 +546,6 @@ def render_report(items, signal, archive, sparklines, country_counts, treaty_ale
         day_labels            = day_labels,
         sparklines            = sparklines,
         country_counts        = country_counts,
-        treaty_alerts         = treaty_alerts,
     )
  
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -548,8 +560,7 @@ def main():
     archive       = save_archive(enriched, archive)
     sparklines    = build_sparklines(archive)
     country_counts = build_country_counts(enriched)
-    treaty_alerts  = get_treaty_alerts(enriched)
-    html = render_report(enriched, signal, archive, sparklines, country_counts, treaty_alerts)
+    html = render_report(enriched, signal, archive, sparklines, country_counts)
     out  = REPO_ROOT/"int_tax_report.html"
     out.write_text(html, encoding="utf-8")
     log.info(f"Report written: {len(html):,} bytes")

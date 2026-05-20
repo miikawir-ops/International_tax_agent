@@ -7,10 +7,10 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 :root {
-  --bg:#0d1117;
-  --bg2:#161b22;
-  --bg3:#21262d;
-  --bg4:#2d333b;
+  --bg:#0d1230;
+  --bg2:#13163a;
+  --bg3:#1c1f4a;
+  --bg4:#252858;
   --border:rgba(139,148,158,0.15);
   --border2:rgba(139,148,158,0.3);
   --accent:#7cb9e8;        /* cool steel blue — Seine at dawn */
@@ -28,7 +28,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
+body{background:linear-gradient(180deg,#0d1117 0%,#0d1230 30%,#12103a 60%,#1a0d2e 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
 
 /* ── Animations ── */
 @keyframes candle-flicker{
@@ -50,30 +50,67 @@ body{background:var(--bg);color:var(--cream);font-family:var(--font-body);font-s
   animation:candle-flicker 3s ease-in-out 0.5s forwards;
 }
 
+
+/* ── Eiffel Tower sparkle effect ── */
+@keyframes sparkle{
+  0%,100%{opacity:0;transform:scale(0)}
+  50%{opacity:1;transform:scale(1)}
+}
+@keyframes lamp-glow{
+  0%,100%{opacity:0.6;filter:blur(2px)}
+  50%{opacity:1;filter:blur(3px)}
+  75%{opacity:0.8;filter:blur(2px)}
+}
+@keyframes float-spark{
+  0%{transform:translateY(0) translateX(0);opacity:1}
+  100%{transform:translateY(-40px) translateX(var(--dx,10px));opacity:0}
+}
+.sparkle-container{
+  position:absolute;inset:0;pointer-events:none;z-index:3;overflow:hidden;
+}
+.spark{
+  position:absolute;
+  width:2px;height:2px;
+  border-radius:50%;
+  background:#fff;
+  animation:sparkle var(--dur,1.5s) ease-in-out var(--delay,0s) infinite;
+}
+.spark.gold{background:#ffe066;}
+.spark.blue{background:#b8d4ff;}
+.street-lamp-glow{
+  position:absolute;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,220,100,0.6),transparent 70%);
+  animation:lamp-glow 3s ease-in-out infinite;
+  pointer-events:none;z-index:3;
+}
+
 /* ── Hero background — Café Ellu Paris painting ── */
 .hero-bg{
   position:relative;
   background-image:url('hero.jpg');
   background-size:cover;
-  background-position:center 40%;
+  background-position:center 35%;
   overflow:hidden;
-  padding-bottom:2rem;
+  min-height:420px;
 }
 .hero-bg::before{
   content:'';
   position:absolute;inset:0;
+  /* Dark on LEFT (café side), lighter on RIGHT (Eiffel side) */
   background:linear-gradient(
-    135deg,
-    rgba(10,8,6,0.75) 0%,
-    rgba(15,12,8,0.65) 40%,
-    rgba(10,8,6,0.55) 100%
+    105deg,
+    rgba(8,6,20,0.88) 0%,
+    rgba(10,8,25,0.75) 35%,
+    rgba(12,10,30,0.45) 65%,
+    rgba(8,6,20,0.25) 100%
   );
   z-index:1;
 }
 .hero-bg::after{
   content:'';
-  position:absolute;bottom:0;left:0;right:0;height:80px;
-  background:linear-gradient(to bottom,transparent,var(--bg));
+  position:absolute;bottom:0;left:0;right:0;height:100px;
+  background:linear-gradient(to bottom,transparent,#0d1230);
   pointer-events:none;z-index:2;
 }
 
@@ -114,7 +151,7 @@ body::before{
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero inside background ── */
-.hero-inner{position:relative;z-index:3;padding:4rem 2rem 3rem;max-width:1100px;margin:0 auto;}
+.hero-inner{position:relative;z-index:3;padding:3.5rem 2rem 3.5rem;max-width:580px;margin:0;}
 .hero-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);
   letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.8;}
 .hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);
@@ -269,6 +306,7 @@ body::before{
 .badge-imp-1{background:var(--bg);color:var(--cream3);}
 .badge-court{background:var(--bordeaux-dim);color:#e8657a;font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
 .badge-treaty{background:var(--accent-dim);color:var(--accent);font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
+.badge-finnish{background:rgba(0,56,168,0.15);color:#6baed6;font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;border:1px solid rgba(0,56,168,0.3);}
 
 .card-title{font-size:13.5px;font-weight:600;color:var(--cream);line-height:1.45;}
 .card-title a{color:inherit;text-decoration:none;transition:color .15s;}
@@ -357,9 +395,15 @@ footer a:hover{color:var(--accent);}
 
 <!-- Hero with Café Ellu Paris painting background -->
 <div class="hero-bg">
+  <!-- Eiffel Tower sparkle overlay -->
+  <div class="sparkle-container" id="sparkleContainer"></div>
+  <!-- Street lamp glows -->
+  <div class="street-lamp-glow" style="width:60px;height:60px;left:47%;top:52%;--dur:2.8s"></div>
+  <div class="street-lamp-glow" style="width:50px;height:50px;left:53%;top:55%;--dur:3.2s;animation-delay:.8s"></div>
+  <div class="street-lamp-glow" style="width:40px;height:40px;left:60%;top:50%;--dur:2.5s;animation-delay:1.4s"></div>
   <div class="hero-inner">
     <p class="hero-label">Paris · Global international tax intelligence</p>
-    <h1>What moved in <em>international taxation</em><br>and international tax law today</h1>
+    <h1>What moved in<br><em>international taxation</em><br>today</h1>
     <p class="hero-sub">Daily intelligence on <strong>Pillar Two / GloBE</strong>, <strong>CJEU decisions</strong> and <strong>tax treaties</strong> — filtered and classified by AI. All items relate to international taxation.</p>
   </div>
 </div>
@@ -403,26 +447,7 @@ footer a:hover{color:var(--accent);}
   </div>
 </div>
 
-<!-- Treaty alerts -->
-{% if treaty_alerts %}
-<div class="treaty-section">
-  <div class="treaty-header">
-    <span style="font-size:16px">📜</span>
-    <span class="treaty-label">Treaty Alert — New or renegotiated tax treaties today</span>
-  </div>
-  <div class="treaty-list">
-    {% for item in treaty_alerts %}
-    <div class="treaty-item">
-      <span class="treaty-source">{{ item.source }}</span>
-      <span class="treaty-title">
-        {% if item.accessible %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
-        {% else %}{{ item.title }}{% endif %}
-      </span>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
+<!-- Treaty alerts removed — treaties appear in main feed -->
 
 <!-- Country tracker -->
 {% if country_counts %}
@@ -489,6 +514,7 @@ footer a:hover{color:var(--accent);}
           <div class="card-meta">
             <span class="badge badge-source">{{ item.source }}</span>
             <span class="badge badge-imp-{{ item.importance }}">{{ importance_labels.get(item.importance,'Update') }}</span>
+            {% if item.get('is_finnish') %}<span class="badge badge-finnish">🇫🇮 FI</span>{% endif %}
             {% if is_court %}<span class="badge badge-court">⚖ Court</span>{% endif %}
             {% if is_treaty_item %}<span class="badge badge-treaty">📜 Treaty</span>{% endif %}
           </div>
@@ -547,7 +573,7 @@ footer a:hover{color:var(--accent);}
 {% endif %}
 
 <footer>
-  <span><span class="footer-cafe">Café Ellu</span> · International Tax Special Agent · Paris desk · Built in Espoo, Finland</span>
+  <span>International Tax Special Agent · Paris desk · Built in Espoo, Finland</span>
   <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
     <a href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent</a>
     <a href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain Agent</a>
@@ -584,6 +610,66 @@ function highlightKeywords(el){
   });
 }
 document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKeywords);
+
+// ── Eiffel Tower sparkle effect ──────────────────────────────────────────────
+// Recreates the iconic nightly sparkle of the Eiffel Tower
+// Sparks are concentrated in the right 40% of the hero (where the tower is)
+(function(){
+  const container = document.getElementById('sparkleContainer');
+  if(!container) return;
+  const heroH = 420;
+  // Tower position: roughly right 55-75% horizontally, top 5-80% vertically
+  const SPARKS = 180;
+  const sparks = [];
+  for(let i=0;i<SPARKS;i++){
+    const el = document.createElement('div');
+    el.className = 'spark ' + (['','','','gold','blue'][Math.floor(Math.random()*5)]);
+    // Concentrate sparks on tower area
+    const xBase = 55 + Math.random()*20; // 55-75% of width
+    const yBase = 5  + Math.random()*75; // 5-80% of height
+    const dur   = 0.8 + Math.random()*2.2;
+    const delay = Math.random()*3;
+    const size  = 1 + Math.random()*2;
+    el.style.cssText = `
+      left:${xBase}%;
+      top:${yBase}px;
+      width:${size}px;
+      height:${size}px;
+      --dur:${dur}s;
+      --delay:${delay}s;
+      --dx:${(Math.random()-0.5)*20}px;
+    `;
+    container.appendChild(el);
+    sparks.push({el, xBase, yBase, dur, delay});
+  }
+
+  // Every 5 seconds — burst mode (like the real tower at top of hour)
+  function burst(){
+    const extra = [];
+    for(let i=0;i<80;i++){
+      const el = document.createElement('div');
+      el.className = 'spark gold';
+      const x = 52 + Math.random()*24;
+      const y = 3  + Math.random()*80;
+      el.style.cssText = `
+        left:${x}%;top:${y}px;
+        width:${1+Math.random()*2.5}px;
+        height:${1+Math.random()*2.5}px;
+        --dur:${0.3+Math.random()*0.8}s;
+        --delay:${Math.random()*0.4}s;
+        animation:float-spark ${0.6+Math.random()*1}s ease-out forwards;
+        --dx:${(Math.random()-0.5)*30}px;
+      `;
+      container.appendChild(el);
+      extra.push(el);
+      setTimeout(()=>el.remove(), 2000);
+    }
+  }
+  // Initial burst after 1s, then every 8s
+  setTimeout(burst, 1000);
+  setInterval(burst, 8000);
+})();
+
 </script>
 </body>
 </html>
