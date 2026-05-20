@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Tax Agent · Wednesday, 20 May 2026 · 19:22 EEST</title>
+<title>International Tax Agent · Wednesday, 20 May 2026 · 19:39 EEST</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 :root {
-  --bg:#1a2744;
-  --bg2:#1e3056;
-  --bg3:#253668;
-  --bg4:#2d3f78;
+  --bg:#1a1500;
+  --bg2:#2a2000;
+  --bg3:#332800;
+  --bg4:#3d3000;
   --border:rgba(139,148,158,0.15);
   --border2:rgba(139,148,158,0.3);
   --accent:#7cb9e8;        /* cool steel blue — Seine at dawn */
@@ -28,7 +28,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:linear-gradient(180deg,#1a2744 0%,#1e2d52 30%,#223060 60%,#1e2850 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
+body{background:linear-gradient(180deg,#1a1500 0%,#231a00 30%,#2a1f00 60%,#1f1800 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
 
 /* ── Animations ── */
 @keyframes candle-flicker{
@@ -92,7 +92,7 @@ body{background:linear-gradient(180deg,#1a2744 0%,#1e2d52 30%,#223060 60%,#1e285
   background-size:cover;
   background-position:center 20%;
   overflow:hidden;
-  min-height:540px;
+  min-height:500px;
 }
 .hero-bg::before{
   content:'';
@@ -110,14 +110,14 @@ body{background:linear-gradient(180deg,#1a2744 0%,#1e2d52 30%,#223060 60%,#1e285
 .hero-bg::after{
   content:'';
   position:absolute;bottom:0;left:0;right:0;height:120px;
-  background:linear-gradient(to bottom,transparent,#1a2744);
+  background:linear-gradient(to bottom,transparent,#1a1500);
   pointer-events:none;z-index:2;
 }
 
 /* ── Gold top strip ── */
 body::before{
   content:'';display:block;height:4px;
-  background:linear-gradient(90deg,var(--bordeaux2),var(--bordeaux),var(--accent2),var(--accent),var(--accent2),var(--bordeaux),var(--bordeaux2));
+  background:linear-gradient(90deg,#4a3200,#c8960c,#f0c040,#ffe066,#f0c040,#c8960c,#4a3200);
   position:fixed;top:0;left:0;right:0;z-index:200;
 }
 
@@ -126,7 +126,7 @@ body::before{
   border-bottom:1px solid var(--border);padding:0 2rem;
   display:flex;align-items:center;justify-content:space-between;
   height:60px;position:sticky;top:4px;z-index:100;
-  background:rgba(20,30,60,0.97);backdrop-filter:blur(16px);
+  background:rgba(20,16,0,0.97);backdrop-filter:blur(16px);
   box-shadow:0 2px 20px rgba(0,0,0,0.6);
 }
 .topbar-left{display:flex;align-items:center;gap:1rem;}
@@ -151,13 +151,13 @@ body::before{
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero inside background ── */
-.hero-inner{position:relative;z-index:3;padding:2rem 2rem 4rem;max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.hero-inner{position:relative;z-index:3;padding:3rem 2rem 2.5rem;max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;}
 .hero-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);
   letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.8;}
 .hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);font-weight:700;line-height:1.2;margin-bottom:.8rem;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,0.9),0 0 60px rgba(0,0,0,0.7);}
 .hero h1 em{color:var(--accent);font-style:italic;}
 .hero h1 .rouge{color:#e8657a;}
-.hero-sub{font-size:14px;color:#c8d8f0;max-width:600px;line-height:1.8;text-shadow:0 1px 12px rgba(0,0,0,0.95);}
+.hero-sub{font-size:16px;color:#e8f0fa;max-width:660px;line-height:1.8;text-shadow:0 2px 16px rgba(0,0,0,1),0 0 40px rgba(0,0,0,0.9);margin-top:.5rem;}
 .hero-sub strong{color:var(--cream);}
 
 /* ── Plat du Jour (Signal) ── */
@@ -384,7 +384,7 @@ footer a:hover{color:var(--accent);}
     <span class="logo-text"><span class="logo-int">International</span> Tax Agent</span>
   </div>
   <div class="topbar-right">
-    <span class="topbar-ts">Wednesday, 20 May 2026 · 19:22 EEST</span>
+    <span class="topbar-ts">Wednesday, 20 May 2026 · 19:39 EEST</span>
     <a class="sibling-link tp" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent →</a>
     <a class="sibling-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain →</a>
   </div>
@@ -395,12 +395,12 @@ footer a:hover{color:var(--accent);}
   <!-- Eiffel Tower sparkle overlay -->
   <div class="sparkle-container" id="sparkleContainer"></div>
   <!-- Street lamp glows — matched to actual lamp positions in painting -->
-  <!-- Left lamp: bottom-left near café entrance -->
-  <div class="street-lamp-glow" style="width:55px;height:55px;left:14%;top:62%;--dur:3.1s;animation-delay:0s"></div>
-  <!-- Center-left lamp: cobblestone street, mid scene -->
-  <div class="street-lamp-glow" style="width:50px;height:50px;left:42%;top:57%;--dur:2.7s;animation-delay:1.1s"></div>
-  <!-- Right lamp: far right side of street -->
-  <div class="street-lamp-glow" style="width:45px;height:45px;left:87%;top:40%;--dur:3.4s;animation-delay:0.6s"></div>
+  <!-- Left café lamp -->
+  <div class="street-lamp-glow" style="width:70px;height:70px;left:13%;top:310px;--dur:3.1s;animation-delay:0s"></div>
+  <!-- Center street lamp -->
+  <div class="street-lamp-glow" style="width:60px;height:60px;left:41%;top:280px;--dur:2.7s;animation-delay:1.1s"></div>
+  <!-- Right side lamp -->
+  <div class="street-lamp-glow" style="width:55px;height:55px;left:86%;top:200px;--dur:3.4s;animation-delay:0.6s"></div>
   <div class="hero-inner">
     <p class="hero-label">Paris · Global international tax intelligence</p>
     <h1>What moved in<br><em>international taxation</em><br>today</h1>
@@ -412,17 +412,15 @@ footer a:hover{color:var(--accent);}
 
 <!-- Plat du Jour -->
 <div class="signal-wrap" style="padding-top:1.75rem">
-  <div class="signal-card urgency-high">
+  <div class="signal-card urgency-low">
     <p class="signal-label">⚜ Plat du Jour — Today's International Tax Signal</p>
-    <h2 class="signal-headline">China-Italy DTT 2026 brings significant changes for multinationals.</h2>
-    <p class="signal-body">Multinationals with operations in China and Italy must proactively assess the implications of the new Double Tax Treaty effective from 2026. This revised agreement will impact withholding taxes, capital gains, and potentially permanent establishment definitions, requiring a review of existing structures and future investment plans to ensure compliance and optimise tax positions.</p>
+    <h2 class="signal-headline">International tax intelligence gathered — see items below</h2>
+    <p class="signal-body">Signal analysis unavailable. All items are classified below.</p>
     <div class="signal-meta">
-      <div class="urgency-dot high"></div>
-      <span class="signal-lens">Tax treaties &amp; conventions</span>
+      <div class="urgency-dot low"></div>
+      <span class="signal-lens">General international tax</span>
       
-      <span class="signal-country">China &amp; Italy</span>
-      
-      <span style="font-size:11px;color:var(--cream3);font-family:var(--font-mono)">high urgency</span>
+      <span style="font-size:11px;color:var(--cream3);font-family:var(--font-mono)">low urgency</span>
     </div>
   </div>
 </div>
@@ -431,11 +429,11 @@ footer a:hover{color:var(--accent);}
 <div class="stats-row">
   <div class="stat-card">
     <p class="stat-label">Items today</p>
-    <p class="stat-val accent">5</p>
+    <p class="stat-val accent">4</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Lenses active</p>
-    <p class="stat-val">3</p>
+    <p class="stat-val">2</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Landmark / Major</p>
@@ -489,11 +487,6 @@ footer a:hover{color:var(--accent);}
         
       
     
-      
-        
-        
-      
-    
     
     <span class="source-pill">AKIpress News Agency<span class="source-count">1</span></span>
     
@@ -502,8 +495,6 @@ footer a:hover{color:var(--accent);}
     <span class="source-pill">Odessa Journal<span class="source-count">1</span></span>
     
     <span class="source-pill">MSN<span class="source-count">1</span></span>
-    
-    <span class="source-pill">MSME Africa<span class="source-count">1</span></span>
     
   </div>
 </div>
@@ -516,8 +507,6 @@ footer a:hover{color:var(--accent);}
   <button class="filter-btn" onclick="filterLens('tax-treaties-and-conventions',this)">Tax treaties &amp; conventions</button>
   
   <button class="filter-btn" onclick="filterLens('digital-economy-taxation',this)">Digital economy taxation</button>
-  
-  <button class="filter-btn" onclick="filterLens('general-international-tax',this)">General international tax</button>
   
 </div>
 
@@ -569,7 +558,7 @@ footer a:hover{color:var(--accent);}
             <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
             
           </div>
-          <p class="card-summary">The Parliament of Kyrgyzstan has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan, a critical step towards the treaty&#39;s entry into force. This ratification is set to facilitate cross-border investment and trade, providing tax certainty for businesses and individuals engaged in economic activities between Kyrgyzstan and Japan.</p>
+          <p class="card-summary">Kyrgyzstan&#39;s Parliament has officially ratified a new Double Taxation Avoidance Agreement (DTAA) with Japan, establishing a modern framework to prevent double taxation and fiscal evasion. This ratification is crucial for enhancing economic ties, facilitating investment, and promoting trade by clarifying taxing rights between the two nations.</p>
           
           <div class="card-countries"><span class="card-country">Japan</span></div>
           
@@ -598,7 +587,7 @@ footer a:hover{color:var(--accent);}
             <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
             
           </div>
-          <p class="card-summary">The new or significantly updated China-Italy Double Tax Treaty, expected to be effective in 2026, will clarify tax implications for Italian investors operating in China. This development is crucial for fostering bilateral trade and investment flows by providing enhanced tax certainty and preventing double taxation between the two nations.</p>
+          <p class="card-summary">The article provides FAQs regarding the 2026 China-Italy Double Tax Treaty, aiming to clarify its implications for Italian investors in China. It details key provisions impacting cross-border investments, such as withholding tax rates, permanent establishment definitions, and dispute resolution mechanisms, signalling an update to the bilateral tax relationship.</p>
           
           <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
           
@@ -627,7 +616,7 @@ footer a:hover{color:var(--accent);}
             <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Ukraine and Germany have signed a new agreement on the avoidance of double taxation - Odessa Journal</a>
             
           </div>
-          <p class="card-summary">Ukraine and Germany have signed a new agreement on the avoidance of double taxation, replacing an outdated treaty. This new DTA is strategically important for strengthening economic ties and providing essential tax certainty to investors and businesses, particularly supporting Ukraine&#39;s post-conflict reconstruction and integration efforts with the EU.</p>
+          <p class="card-summary">Ukraine and Germany have formally signed a new agreement on the avoidance of double taxation, updating their previous treaty to reflect contemporary international tax standards. This accord is designed to foster greater economic cooperation and bilateral investment by providing certainty on taxation of income and capital and incorporating robust anti-abuse clauses.</p>
           
           <div class="card-countries"><span class="card-country">Germany</span></div>
           
@@ -686,69 +675,12 @@ footer a:hover{color:var(--accent);}
             <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">California advances game preservation bill as digital tax debate grows - MSN</a>
             
           </div>
-          <p class="card-summary">California is progressing a bill concerning game preservation, amidst escalating debate surrounding digital taxation at the state level. This discussion reflects broader national and international challenges in effectively taxing the digital economy and defining digital nexus rules for various services and transactions.</p>
+          <p class="card-summary">In California, a legislative push for a game preservation bill has brought renewed attention to the broader debate surrounding digital taxation within the state. Discussions are intensifying on how to appropriately tax digital goods and services, exploring potential new levies or adjustments to existing tax structures to capture revenue from the evolving digital economy.</p>
           
           <div class="card-footer">
             <span class="card-fresh">1d ago</span>
             
             <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-      </div>
-    </section>
-    
-    
-    
-    
-    <section class="lens-section" data-lens="general-international-tax">
-      <div class="lens-header">
-        <div class="lens-dot"></div>
-        <span class="lens-title">General international tax</span>
-        <div class="sparkline">
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
-          
-        </div>
-        <span class="lens-count">1 item</span>
-      </div>
-      <div class="card-grid">
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.0s">
-          <div class="card-meta">
-            <span class="badge badge-source">MSME Africa</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVlZ0OGxuejBRWkpuWkRtY0s0S216akR0TzhqZWlqNnZHWDUzZFpkWU5SOUJRNVRyNWs3dmZzbTM0aUJaM18xR3ktR1VXc21NNzdsSm9IYU1yc2tZNHppRjgydWpxQ1VhREpRb2p4VnJfQTd0NlcwNFJxT1I0Y1pmVW5YWnBubnBDSkJQTXhPSDJzRmRhMDU1VEREZnBlODNYclF6MERsLUd1Z05YVXZ2YlNxUVJQTGUzVWZlR2kxd3g?oc=5" target="_blank" rel="noopener">Nigerian Govt Launches Free Digital Tax Dispute Platforms to Support Businesses and Taxpayers - MSME Africa</a>
-            
-          </div>
-          <p class="card-summary">The Nigerian Government has introduced free digital platforms aimed at resolving tax disputes for businesses and taxpayers. This procedural update seeks to enhance efficiency and transparency in tax administration, which can indirectly benefit foreign investors by offering clearer and more accessible channels for dispute resolution within Nigeria.</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh">1d ago</span>
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVlZ0OGxuejBRWkpuWkRtY0s0S216akR0TzhqZWlqNnZHWDUzZFpkWU5SOUJRNVRyNWs3dmZzbTM0aUJaM18xR3ktR1VXc21NNzdsSm9IYU1yc2tZNHppRjgydWpxQ1VhREpRb2p4VnJfQTd0NlcwNFJxT1I0Y1pmVW5YWnBubnBDSkJQTXhPSDJzRmRhMDU1VEREZnBlODNYclF6MERsLUd1Z05YVXZ2YlNxUVJQTGUzVWZlR2kxd3g?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
             
           </div>
         </article>
@@ -810,17 +742,6 @@ footer a:hover{color:var(--accent);}
       
       <div class="archive-item">
         <div class="archive-dot"></div>
-        <span class="archive-source">Yahoo Finance</span>
-        <span class="archive-title-text">
-          <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZk9vejlxNk95bWR5dXdZUUNFeUVxOEJSSFFfSnZvZEN4a3M2bjlzVTJubVFxN0VLMUNadFlhVlV1U0xLMk1Fc1E4NEJHT0lNQUw5aXpYbUdLa0NsOWdxVHdOX1k1aDF5MHI0SVlianI2SWc1cGZmdGowLVU5NFo0ZWtvUXd1cWRKMzBBZ1JiNDNKYjdhVHVWSE9hUWMyMnFpMlMxbzB3UVRMUQ?oc=5" target="_blank" rel="noopener">Baker Tilly partners with HubSync to overhaul digital tax workflows - Yahoo Finance</a>
-          
-        </span>
-        
-      </div>
-      
-      
-      <div class="archive-item">
-        <div class="archive-dot"></div>
         <span class="archive-source">MSN</span>
         <span class="archive-title-text">
           <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">California advances game preservation bill as digital tax debate grows - MSN</a>
@@ -828,6 +749,17 @@ footer a:hover{color:var(--accent);}
         </span>
         
         <span class="archive-lens-tag">Digital economy ta</span>
+        
+      </div>
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
+        <span class="archive-source">Yahoo Finance</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZk9vejlxNk95bWR5dXdZUUNFeUVxOEJSSFFfSnZvZEN4a3M2bjlzVTJubVFxN0VLMUNadFlhVlV1U0xLMk1Fc1E4NEJHT0lNQUw5aXpYbUdLa0NsOWdxVHdOX1k1aDF5MHI0SVlianI2SWc1cGZmdGowLVU5NFo0ZWtvUXd1cWRKMzBBZ1JiNDNKYjdhVHVWSE9hUWMyMnFpMlMxbzB3UVRMUQ?oc=5" target="_blank" rel="noopener">Baker Tilly partners with HubSync to overhaul digital tax workflows - Yahoo Finance</a>
+          
+        </span>
         
       </div>
       
@@ -906,50 +838,53 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(!container) return;
   const heroH = 420;
   // Tower position: roughly right 55-75% horizontally, top 5-80% vertically
-  // Eiffel Tower is at approx 58-70% width, 5-75% height of the hero
-  // We use a narrower, taller distribution to match the tower shape
-  // Tower is narrow at top, wider at base — model this with distribution
-  const SPARKS = 200;
+  // Eiffel Tower in this painting:
+  // Center X: ~67% from left (tower is right of center)
+  // Top of tower: ~6% of hero height
+  // Base of tower: ~68% of hero height
+  // Tower shape: very narrow at top (~1%), wider at base (~5%)
+  const heroH = container.offsetHeight || 500;
+  const TOWER_CENTER_X = 67;  // % from left
+  const TOWER_TOP_Y    = heroH * 0.06;
+  const TOWER_BASE_Y   = heroH * 0.68;
+  const SPARKS = 220;
+
   for(let i=0;i<SPARKS;i++){
     const el = document.createElement('div');
-    // Tower shape: narrow band, denser at middle sections
     const progress = Math.random(); // 0=top, 1=base
-    // Tower width gets wider toward base: top ~2%, base ~6%
-    const towerCenterX = 63.5; // % from left where tower center is
-    const halfWidth = 1.5 + progress * 3.5; // narrow top, wide base
-    const xBase = towerCenterX - halfWidth + Math.random() * halfWidth * 2;
-    const heroH = container.offsetHeight || 540;
-    const yBase = 20 + progress * (heroH * 0.65); // top to 85% of hero height
-    const colors = ['','','','gold','gold','blue'];
+    const halfW = 0.8 + progress * 2.8; // narrow spire, wide base
+    const xBase = TOWER_CENTER_X - halfW + Math.random() * halfW * 2;
+    const yBase = TOWER_TOP_Y + progress * (TOWER_BASE_Y - TOWER_TOP_Y);
+    const colors = ['','','','gold','gold',''];
     el.className = 'spark ' + colors[Math.floor(Math.random()*colors.length)];
-    const dur   = 0.6 + Math.random()*2.5;
-    const delay = Math.random()*4;
-    const size  = 1 + Math.random()*2;
+    const dur   = 0.5 + Math.random()*2.8;
+    const delay = Math.random()*5;
+    const size  = 1 + Math.random()*1.8;
     el.style.cssText = `left:${xBase}%;top:${yBase}px;width:${size}px;height:${size}px;--dur:${dur}s;--delay:${delay}s;`;
     container.appendChild(el);
   }
 
-  // Burst mode every 8s — gold sparks float UP from tower
+  // Burst every 8s — sparks float up within tower silhouette
   function burst(){
-    for(let i=0;i<60;i++){
+    for(let i=0;i<70;i++){
       const el = document.createElement('div');
       el.className = 'spark gold';
       const progress = Math.random();
-      const xBase = 63.5 - (1+progress*3) + Math.random()*(2+progress*6);
-      const heroH = container.offsetHeight || 540;
-      const yBase = 25 + progress * (heroH * 0.6);
+      const halfW = 0.8 + progress * 2.8;
+      const xBase = TOWER_CENTER_X - halfW + Math.random() * halfW * 2;
+      const yBase = TOWER_TOP_Y + progress * (TOWER_BASE_Y - TOWER_TOP_Y);
       el.style.cssText = `
         left:${xBase}%;top:${yBase}px;
         width:${1+Math.random()*2}px;height:${1+Math.random()*2}px;
-        --dur:${0.4+Math.random()*0.6}s;--delay:0s;
-        --dx:${(Math.random()-0.5)*12}px;
-        animation:float-spark ${0.8+Math.random()*1.2}s ease-out forwards;
+        --dur:${0.3+Math.random()*0.5}s;--delay:0s;
+        --dx:${(Math.random()-0.5)*8}px;
+        animation:float-spark ${0.6+Math.random()*1}s ease-out forwards;
       `;
       container.appendChild(el);
-      setTimeout(()=>el.remove(), 2500);
+      setTimeout(()=>el.remove(), 2200);
     }
   }
-  setTimeout(burst, 800);
+  setTimeout(burst, 600);
   setInterval(burst, 8000);
 })();
 
