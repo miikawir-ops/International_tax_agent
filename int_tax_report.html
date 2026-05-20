@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Tax Agent · Wednesday, 20 May 2026 · 18:49 EEST</title>
+<title>International Tax Agent · Wednesday, 20 May 2026 · 19:07 EEST</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 :root {
-  --bg:#0d1117;
-  --bg2:#161b22;
-  --bg3:#21262d;
-  --bg4:#2d333b;
+  --bg:#0d1230;
+  --bg2:#13163a;
+  --bg3:#1c1f4a;
+  --bg4:#252858;
   --border:rgba(139,148,158,0.15);
   --border2:rgba(139,148,158,0.3);
   --accent:#7cb9e8;        /* cool steel blue — Seine at dawn */
@@ -28,7 +28,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
+body{background:linear-gradient(180deg,#0d1117 0%,#0d1230 30%,#12103a 60%,#1a0d2e 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
 
 /* ── Animations ── */
 @keyframes candle-flicker{
@@ -50,30 +50,67 @@ body{background:var(--bg);color:var(--cream);font-family:var(--font-body);font-s
   animation:candle-flicker 3s ease-in-out 0.5s forwards;
 }
 
+
+/* ── Eiffel Tower sparkle effect ── */
+@keyframes sparkle{
+  0%,100%{opacity:0;transform:scale(0)}
+  50%{opacity:1;transform:scale(1)}
+}
+@keyframes lamp-glow{
+  0%,100%{opacity:0.6;filter:blur(2px)}
+  50%{opacity:1;filter:blur(3px)}
+  75%{opacity:0.8;filter:blur(2px)}
+}
+@keyframes float-spark{
+  0%{transform:translateY(0) translateX(0);opacity:1}
+  100%{transform:translateY(-40px) translateX(var(--dx,10px));opacity:0}
+}
+.sparkle-container{
+  position:absolute;inset:0;pointer-events:none;z-index:3;overflow:hidden;
+}
+.spark{
+  position:absolute;
+  width:2px;height:2px;
+  border-radius:50%;
+  background:#fff;
+  animation:sparkle var(--dur,1.5s) ease-in-out var(--delay,0s) infinite;
+}
+.spark.gold{background:#ffe066;}
+.spark.blue{background:#b8d4ff;}
+.street-lamp-glow{
+  position:absolute;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,220,100,0.6),transparent 70%);
+  animation:lamp-glow 3s ease-in-out infinite;
+  pointer-events:none;z-index:3;
+}
+
 /* ── Hero background — Café Ellu Paris painting ── */
 .hero-bg{
   position:relative;
   background-image:url('hero.jpg');
   background-size:cover;
-  background-position:center 40%;
+  background-position:center 35%;
   overflow:hidden;
-  padding-bottom:2rem;
+  min-height:420px;
 }
 .hero-bg::before{
   content:'';
   position:absolute;inset:0;
+  /* Dark on LEFT (café side), lighter on RIGHT (Eiffel side) */
   background:linear-gradient(
-    135deg,
-    rgba(10,8,6,0.75) 0%,
-    rgba(15,12,8,0.65) 40%,
-    rgba(10,8,6,0.55) 100%
+    105deg,
+    rgba(8,6,20,0.88) 0%,
+    rgba(10,8,25,0.75) 35%,
+    rgba(12,10,30,0.45) 65%,
+    rgba(8,6,20,0.25) 100%
   );
   z-index:1;
 }
 .hero-bg::after{
   content:'';
-  position:absolute;bottom:0;left:0;right:0;height:80px;
-  background:linear-gradient(to bottom,transparent,var(--bg));
+  position:absolute;bottom:0;left:0;right:0;height:100px;
+  background:linear-gradient(to bottom,transparent,#0d1230);
   pointer-events:none;z-index:2;
 }
 
@@ -114,7 +151,7 @@ body::before{
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero inside background ── */
-.hero-inner{position:relative;z-index:3;padding:4rem 2rem 3rem;max-width:1100px;margin:0 auto;}
+.hero-inner{position:relative;z-index:3;padding:3.5rem 2rem 3.5rem;max-width:580px;margin:0;}
 .hero-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);
   letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.8;}
 .hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);
@@ -269,6 +306,7 @@ body::before{
 .badge-imp-1{background:var(--bg);color:var(--cream3);}
 .badge-court{background:var(--bordeaux-dim);color:#e8657a;font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
 .badge-treaty{background:var(--accent-dim);color:var(--accent);font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
+.badge-finnish{background:rgba(0,56,168,0.15);color:#6baed6;font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;border:1px solid rgba(0,56,168,0.3);}
 
 .card-title{font-size:13.5px;font-weight:600;color:var(--cream);line-height:1.45;}
 .card-title a{color:inherit;text-decoration:none;transition:color .15s;}
@@ -349,7 +387,7 @@ footer a:hover{color:var(--accent);}
     <span class="logo-text"><span class="logo-int">International</span> Tax Agent</span>
   </div>
   <div class="topbar-right">
-    <span class="topbar-ts">Wednesday, 20 May 2026 · 18:49 EEST</span>
+    <span class="topbar-ts">Wednesday, 20 May 2026 · 19:07 EEST</span>
     <a class="sibling-link tp" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent →</a>
     <a class="sibling-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain →</a>
   </div>
@@ -357,9 +395,15 @@ footer a:hover{color:var(--accent);}
 
 <!-- Hero with Café Ellu Paris painting background -->
 <div class="hero-bg">
+  <!-- Eiffel Tower sparkle overlay -->
+  <div class="sparkle-container" id="sparkleContainer"></div>
+  <!-- Street lamp glows -->
+  <div class="street-lamp-glow" style="width:60px;height:60px;left:47%;top:52%;--dur:2.8s"></div>
+  <div class="street-lamp-glow" style="width:50px;height:50px;left:53%;top:55%;--dur:3.2s;animation-delay:.8s"></div>
+  <div class="street-lamp-glow" style="width:40px;height:40px;left:60%;top:50%;--dur:2.5s;animation-delay:1.4s"></div>
   <div class="hero-inner">
     <p class="hero-label">Paris · Global international tax intelligence</p>
-    <h1>What moved in <em>international taxation</em><br>and international tax law today</h1>
+    <h1>What moved in<br><em>international taxation</em><br>today</h1>
     <p class="hero-sub">Daily intelligence on <strong>Pillar Two / GloBE</strong>, <strong>CJEU decisions</strong> and <strong>tax treaties</strong> — filtered and classified by AI. All items relate to international taxation.</p>
   </div>
 </div>
@@ -370,11 +414,11 @@ footer a:hover{color:var(--accent);}
 <div class="signal-wrap" style="padding-top:1.75rem">
   <div class="signal-card urgency-high">
     <p class="signal-label">⚜ Plat du Jour — Today's International Tax Signal</p>
-    <h2 class="signal-headline">New China-Italy tax treaty impacts MNE investment flows.</h2>
-    <p class="signal-body">The new double tax treaty between China and Italy, effective 2026, will significantly reshape taxing rights and withholding tax rates. Multinationals with operations or investment plans in either country must proactively assess its impact on their global tax strategies and compliance frameworks.</p>
+    <h2 class="signal-headline">California digital tax debate raises global unilateralism, compliance risks.</h2>
+    <p class="signal-body">The intensifying debate around digital taxation in California signals a growing trend of unilateral measures amidst slow progress on a global consensus. This fragmented landscape necessitates multinationals to closely monitor sub-national tax developments, potentially facing new complex compliance obligations and increased tax costs.</p>
     <div class="signal-meta">
       <div class="urgency-dot high"></div>
-      <span class="signal-lens">Tax treaties &amp; conventions</span>
+      <span class="signal-lens">Digital economy taxation</span>
       
       <span style="font-size:11px;color:var(--cream3);font-family:var(--font-mono)">high urgency</span>
     </div>
@@ -385,15 +429,15 @@ footer a:hover{color:var(--accent);}
 <div class="stats-row">
   <div class="stat-card">
     <p class="stat-label">Items today</p>
-    <p class="stat-val accent">5</p>
+    <p class="stat-val accent">4</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Lenses active</p>
-    <p class="stat-val">3</p>
+    <p class="stat-val">2</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Landmark / Major</p>
-    <p class="stat-val">3</p>
+    <p class="stat-val">2</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Updated</p>
@@ -401,8 +445,7 @@ footer a:hover{color:var(--accent);}
   </div>
 </div>
 
-<!-- Treaty alerts -->
-
+<!-- Treaty alerts removed — treaties appear in main feed -->
 
 <!-- Country tracker -->
 
@@ -444,21 +487,14 @@ footer a:hover{color:var(--accent);}
         
       
     
-      
-        
-        
-      
-    
     
     <span class="source-pill">AKIpress News Agency<span class="source-count">1</span></span>
     
-    <span class="source-pill">China Briefing<span class="source-count">1</span></span>
-    
     <span class="source-pill">Odessa Journal<span class="source-count">1</span></span>
     
-    <span class="source-pill">MSN<span class="source-count">1</span></span>
+    <span class="source-pill">China Briefing<span class="source-count">1</span></span>
     
-    <span class="source-pill">MSME Africa<span class="source-count">1</span></span>
+    <span class="source-pill">MSN<span class="source-count">1</span></span>
     
   </div>
 </div>
@@ -471,8 +507,6 @@ footer a:hover{color:var(--accent);}
   <button class="filter-btn" onclick="filterLens('tax-treaties-and-conventions',this)">Tax treaties &amp; conventions</button>
   
   <button class="filter-btn" onclick="filterLens('digital-economy-taxation',this)">Digital economy taxation</button>
-  
-  <button class="filter-btn" onclick="filterLens('general-international-tax',this)">General international tax</button>
   
 </div>
 
@@ -517,13 +551,14 @@ footer a:hover{color:var(--accent);}
             <span class="badge badge-imp-4">Major</span>
             
             
+            
           </div>
           <div class="card-title">
             
             <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
             
           </div>
-          <p class="card-summary">A national parliament has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan, marking a significant step towards its entry into force. This DTAA aims to prevent double taxation, foster economic cooperation, and reduce tax barriers on cross-border income flows between the signatory nation and Japan.</p>
+          <p class="card-summary">An unnamed parliament, likely in Central Asia based on the news source, has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan. This ratification marks a crucial domestic step for the DTAA&#39;s entry into force, aiming to facilitate bilateral trade and investment by preventing double taxation.</p>
           
           <div class="card-countries"><span class="card-country">Japan</span></div>
           
@@ -541,36 +576,9 @@ footer a:hover{color:var(--accent);}
         
         <article class="news-card imp-4" style="animation-delay:0.05s">
           <div class="card-meta">
-            <span class="badge badge-source">China Briefing</span>
-            <span class="badge badge-imp-4">Major</span>
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
-            
-          </div>
-          <p class="card-summary">This item provides FAQs regarding the new China-Italy Double Tax Treaty (DTT) for 2026, offering crucial guidance for Italian investors operating in China. The DTT aims to clarify taxing rights, reduce withholding taxes, and enhance bilateral trade and investment by establishing a more predictable tax environment between the two nations.</p>
-          
-          <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
-          
-          <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>1h ago</span>
-            
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-4" style="animation-delay:0.1s">
-          <div class="card-meta">
             <span class="badge badge-source">Odessa Journal</span>
             <span class="badge badge-imp-4">Major</span>
+            
             
             
           </div>
@@ -579,7 +587,7 @@ footer a:hover{color:var(--accent);}
             <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Ukraine and Germany have signed a new agreement on the avoidance of double taxation - Odessa Journal</a>
             
           </div>
-          <p class="card-summary">Ukraine and Germany have officially signed a new agreement on the avoidance of double taxation, signifying an important development in their bilateral economic relations. This new DTA is expected to streamline tax treatment for cross-border investments and transactions, providing greater certainty for businesses and individuals operating between the two countries.</p>
+          <p class="card-summary">Ukraine and Germany have officially signed a new Double Taxation Avoidance Agreement (DTAA), replacing an older treaty to modernize tax cooperation. This new agreement is intended to provide greater tax certainty for investors and businesses operating between the two countries, critically supporting Ukraine&#39;s economic recovery and reconstruction efforts.</p>
           
           <div class="card-countries"><span class="card-country">Germany</span></div>
           
@@ -587,6 +595,35 @@ footer a:hover{color:var(--accent);}
             <span class="card-fresh">1d ago</span>
             
             <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.1s">
+          <div class="card-meta">
+            <span class="badge badge-source">China Briefing</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
+            
+          </div>
+          <p class="card-summary">This item provides FAQs for Italian investors regarding the China-Italy Double Tax Treaty, which is expected to be effective from 2026. It offers practical insights into the application of the bilateral treaty, addressing common international tax considerations for cross-border investments between China and Italy.</p>
+          
+          <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>1h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
             
           </div>
         </article>
@@ -631,74 +668,19 @@ footer a:hover{color:var(--accent);}
             <span class="badge badge-imp-3">Notable</span>
             
             
+            
           </div>
           <div class="card-title">
             
             <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">California advances game preservation bill as digital tax debate grows - MSN</a>
             
           </div>
-          <p class="card-summary">California is progressing with a game preservation bill amid an intensifying debate on digital taxation at the state level. This discussion explores potential new tax structures for digital goods and services, which could impact the digital economy and set precedents for other U.S. states considering similar measures.</p>
+          <p class="card-summary">California is progressing with a game preservation bill amidst an escalating debate over digital taxation at the state level. This discussion underscores the ongoing challenges for jurisdictions like California in adapting existing tax frameworks to effectively tax digital products and services.</p>
           
           <div class="card-footer">
             <span class="card-fresh">1d ago</span>
             
             <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-      </div>
-    </section>
-    
-    
-    
-    
-    <section class="lens-section" data-lens="general-international-tax">
-      <div class="lens-header">
-        <div class="lens-dot"></div>
-        <span class="lens-title">General international tax</span>
-        <div class="sparkline">
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
-          
-          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
-          
-        </div>
-        <span class="lens-count">1 item</span>
-      </div>
-      <div class="card-grid">
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.0s">
-          <div class="card-meta">
-            <span class="badge badge-source">MSME Africa</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVlZ0OGxuejBRWkpuWkRtY0s0S216akR0TzhqZWlqNnZHWDUzZFpkWU5SOUJRNVRyNWs3dmZzbTM0aUJaM18xR3ktR1VXc21NNzdsSm9IYU1yc2tZNHppRjgydWpxQ1VhREpRb2p4VnJfQTd0NlcwNFJxT1I0Y1pmVW5YWnBubnBDSkJQTXhPSDJzRmRhMDU1VEREZnBlODNYclF6MERsLUd1Z05YVXZ2YlNxUVJQTGUzVWZlR2kxd3g?oc=5" target="_blank" rel="noopener">Nigerian Govt Launches Free Digital Tax Dispute Platforms to Support Businesses and Taxpayers - MSME Africa</a>
-            
-          </div>
-          <p class="card-summary">The Nigerian government has introduced free digital platforms dedicated to resolving tax disputes for businesses and taxpayers. This initiative aims to enhance the accessibility and efficiency of tax dispute resolution processes, potentially benefitting foreign investors and local enterprises operating in Nigeria.</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh">1d ago</span>
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVlZ0OGxuejBRWkpuWkRtY0s0S216akR0TzhqZWlqNnZHWDUzZFpkWU5SOUJRNVRyNWs3dmZzbTM0aUJaM18xR3ktR1VXc21NNzdsSm9IYU1yc2tZNHppRjgydWpxQ1VhREpRb2p4VnJfQTd0NlcwNFJxT1I0Y1pmVW5YWnBubnBDSkJQTXhPSDJzRmRhMDU1VEREZnBlODNYclF6MERsLUd1Z05YVXZ2YlNxUVJQTGUzVWZlR2kxd3g?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
             
           </div>
         </article>
@@ -788,7 +770,7 @@ footer a:hover{color:var(--accent);}
 
 
 <footer>
-  <span><span class="footer-cafe">Café Ellu</span> · International Tax Special Agent · Paris desk · Built in Espoo, Finland</span>
+  <span>International Tax Special Agent · Paris desk · Built in Espoo, Finland</span>
   <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
     <a href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent</a>
     <a href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain Agent</a>
@@ -825,6 +807,66 @@ function highlightKeywords(el){
   });
 }
 document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKeywords);
+
+// ── Eiffel Tower sparkle effect ──────────────────────────────────────────────
+// Recreates the iconic nightly sparkle of the Eiffel Tower
+// Sparks are concentrated in the right 40% of the hero (where the tower is)
+(function(){
+  const container = document.getElementById('sparkleContainer');
+  if(!container) return;
+  const heroH = 420;
+  // Tower position: roughly right 55-75% horizontally, top 5-80% vertically
+  const SPARKS = 180;
+  const sparks = [];
+  for(let i=0;i<SPARKS;i++){
+    const el = document.createElement('div');
+    el.className = 'spark ' + (['','','','gold','blue'][Math.floor(Math.random()*5)]);
+    // Concentrate sparks on tower area
+    const xBase = 55 + Math.random()*20; // 55-75% of width
+    const yBase = 5  + Math.random()*75; // 5-80% of height
+    const dur   = 0.8 + Math.random()*2.2;
+    const delay = Math.random()*3;
+    const size  = 1 + Math.random()*2;
+    el.style.cssText = `
+      left:${xBase}%;
+      top:${yBase}px;
+      width:${size}px;
+      height:${size}px;
+      --dur:${dur}s;
+      --delay:${delay}s;
+      --dx:${(Math.random()-0.5)*20}px;
+    `;
+    container.appendChild(el);
+    sparks.push({el, xBase, yBase, dur, delay});
+  }
+
+  // Every 5 seconds — burst mode (like the real tower at top of hour)
+  function burst(){
+    const extra = [];
+    for(let i=0;i<80;i++){
+      const el = document.createElement('div');
+      el.className = 'spark gold';
+      const x = 52 + Math.random()*24;
+      const y = 3  + Math.random()*80;
+      el.style.cssText = `
+        left:${x}%;top:${y}px;
+        width:${1+Math.random()*2.5}px;
+        height:${1+Math.random()*2.5}px;
+        --dur:${0.3+Math.random()*0.8}s;
+        --delay:${Math.random()*0.4}s;
+        animation:float-spark ${0.6+Math.random()*1}s ease-out forwards;
+        --dx:${(Math.random()-0.5)*30}px;
+      `;
+      container.appendChild(el);
+      extra.push(el);
+      setTimeout(()=>el.remove(), 2000);
+    }
+  }
+  // Initial burst after 1s, then every 8s
+  setTimeout(burst, 1000);
+  setInterval(burst, 8000);
+})();
+
 </script>
 </body>
 </html>

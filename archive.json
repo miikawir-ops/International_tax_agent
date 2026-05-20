@@ -12,11 +12,12 @@
       "China"
     ],
     "is_treaty": false,
+    "is_finnish": false,
     "lens": "Tax treaties & conventions",
     "region": "Global",
     "country_focus": "China",
-    "importance": 4,
-    "ai_summary": "This item provides FAQs regarding the new China-Italy Double Tax Treaty (DTT) for 2026, offering crucial guidance for Italian investors operating in China. The DTT aims to clarify taxing rights, reduce withholding taxes, and enhance bilateral trade and investment by establishing a more predictable tax environment between the two nations.",
+    "importance": 3,
+    "ai_summary": "This item provides FAQs for Italian investors regarding the China-Italy Double Tax Treaty, which is expected to be effective from 2026. It offers practical insights into the application of the bilateral treaty, addressing common international tax considerations for cross-border investments between China and Italy.",
     "freshness": "1h ago",
     "accessible": true,
     "archive_date": "2026-05-20"
@@ -33,11 +34,12 @@
       "Japan"
     ],
     "is_treaty": false,
+    "is_finnish": false,
     "lens": "Tax treaties & conventions",
     "region": "Global",
     "country_focus": "Japan",
     "importance": 4,
-    "ai_summary": "A national parliament has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan, marking a significant step towards its entry into force. This DTAA aims to prevent double taxation, foster economic cooperation, and reduce tax barriers on cross-border income flows between the signatory nation and Japan.",
+    "ai_summary": "An unnamed parliament, likely in Central Asia based on the news source, has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan. This ratification marks a crucial domestic step for the DTAA's entry into force, aiming to facilitate bilateral trade and investment by preventing double taxation.",
     "freshness": "6h ago",
     "accessible": true,
     "archive_date": "2026-05-20"
@@ -54,11 +56,12 @@
       "Germany"
     ],
     "is_treaty": false,
+    "is_finnish": false,
     "lens": "Tax treaties & conventions",
-    "region": "Global",
+    "region": "EU",
     "country_focus": "Germany",
     "importance": 4,
-    "ai_summary": "Ukraine and Germany have officially signed a new agreement on the avoidance of double taxation, signifying an important development in their bilateral economic relations. This new DTA is expected to streamline tax treatment for cross-border investments and transactions, providing greater certainty for businesses and individuals operating between the two countries.",
+    "ai_summary": "Ukraine and Germany have officially signed a new Double Taxation Avoidance Agreement (DTAA), replacing an older treaty to modernize tax cooperation. This new agreement is intended to provide greater tax certainty for investors and businesses operating between the two countries, critically supporting Ukraine's economic recovery and reconstruction efforts.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-20"
@@ -73,11 +76,12 @@
     "open": true,
     "countries": [],
     "is_treaty": false,
+    "is_finnish": false,
     "lens": "Digital economy taxation",
     "region": "US",
     "country_focus": "US",
     "importance": 3,
-    "ai_summary": "California is progressing with a game preservation bill amid an intensifying debate on digital taxation at the state level. This discussion explores potential new tax structures for digital goods and services, which could impact the digital economy and set precedents for other U.S. states considering similar measures.",
+    "ai_summary": "California is progressing with a game preservation bill amidst an escalating debate over digital taxation at the state level. This discussion underscores the ongoing challenges for jurisdictions like California in adapting existing tax frameworks to effectively tax digital products and services.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-20"
