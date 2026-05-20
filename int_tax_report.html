@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Tax Agent · Wednesday, 20 May 2026 · 18:38 EEST</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+:root {
+  --bg:#0d1117;
+  --bg2:#161b22;
+  --bg3:#21262d;
+  --bg4:#2d333b;
+  --border:rgba(139,148,158,0.15);
+  --border2:rgba(139,148,158,0.3);
+  --accent:#7cb9e8;        /* cool steel blue — Seine at dawn */
+  --accent2:#5a9fd4;
+  --accent-dim:rgba(124,185,232,0.08);
+  --bordeaux:#e05252;      /* clear red for court/urgency */
+  --bordeaux2:#c0392b;
+  --bordeaux-dim:rgba(224,82,82,0.1);
+  --cream:#e6edf3;         /* cool white */
+  --cream2:#8b949e;        /* silver grey */
+  --cream3:#484f58;        /* muted slate */
+  --font-head:'Playfair Display',serif;
+  --font-body:'Lora',serif;
+  --font-mono:'DM Mono',monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
+
+/* ── Animations ── */
+@keyframes candle-flicker{
+  0%,100%{transform:translateX(-100%);opacity:0}
+  8%{opacity:.6}
+  92%{opacity:.6}
+  100%{transform:translateX(100vw);opacity:0}
+}
+@keyframes fade-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes card-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+@keyframes flicker{0%,100%{opacity:1}50%{opacity:.85}75%{opacity:.95}}
+
+/* Candle scanning beam — warm amber */
+.scan-beam{
+  position:fixed;top:0;left:0;width:180px;height:100vh;
+  background:linear-gradient(90deg,transparent,rgba(124,185,232,0.04),rgba(124,185,232,0.09),rgba(124,185,232,0.04),transparent);
+  pointer-events:none;z-index:999;
+  animation:candle-flicker 3s ease-in-out 0.5s forwards;
+}
+
+/* ── Hero background — Café Ellu Paris painting ── */
+.hero-bg{
+  position:relative;
+  background-image:url('../hero.jpg');
+  background-size:cover;
+  background-position:center 40%;
+  overflow:hidden;
+  padding-bottom:2rem;
+}
+.hero-bg::before{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(10,8,6,0.75) 0%,
+    rgba(15,12,8,0.65) 40%,
+    rgba(10,8,6,0.55) 100%
+  );
+  z-index:1;
+}
+.hero-bg::after{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;height:80px;
+  background:linear-gradient(to bottom,transparent,var(--bg));
+  pointer-events:none;z-index:2;
+}
+
+/* ── Gold top strip ── */
+body::before{
+  content:'';display:block;height:4px;
+  background:linear-gradient(90deg,var(--bordeaux2),var(--bordeaux),var(--accent2),var(--accent),var(--accent2),var(--bordeaux),var(--bordeaux2));
+  position:fixed;top:0;left:0;right:0;z-index:200;
+}
+
+/* ── Topbar ── */
+.topbar{
+  border-bottom:1px solid var(--border);padding:0 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:60px;position:sticky;top:4px;z-index:100;
+  background:rgba(18,16,14,0.95);backdrop-filter:blur(16px);
+  box-shadow:0 2px 20px rgba(0,0,0,0.6);
+}
+.topbar-left{display:flex;align-items:center;gap:1rem;}
+.cafe-badge{
+  font-family:var(--font-head);font-size:13px;font-style:italic;
+  color:var(--accent);letter-spacing:.05em;
+  border:1px solid var(--border2);padding:3px 10px;border-radius:3px;
+  background:var(--accent-dim);animation:flicker 4s ease-in-out infinite;
+}
+.logo-text{font-family:var(--font-head);font-size:19px;font-weight:700;color:var(--cream);letter-spacing:-.01em;}
+.logo-text .logo-int{color:var(--accent);font-style:italic;}
+.topbar-right{display:flex;align-items:center;gap:1rem;}
+.topbar-ts{font-size:11px;color:var(--cream3);font-family:var(--font-mono);}
+.sibling-link{font-size:11px;color:var(--accent2);text-decoration:none;font-family:var(--font-mono);
+  border:1px solid var(--border);padding:4px 10px;border-radius:3px;
+  transition:all .2s;background:var(--accent-dim);}
+.sibling-link:hover{border-color:var(--accent);color:var(--accent);background:rgba(124,185,232,0.14);}
+.sibling-link.tp{color:var(--cream2);border-color:rgba(192,184,154,0.25);background:rgba(192,184,154,0.05);}
+.sibling-link.tp:hover{border-color:var(--cream2);color:var(--cream);}
+
+/* ── Page wrapper ── */
+.page{max-width:1100px;margin:0 auto;padding:0 2rem;}
+
+/* ── Hero inside background ── */
+.hero-inner{position:relative;z-index:3;padding:4rem 2rem 3rem;max-width:1100px;margin:0 auto;}
+.hero-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);
+  letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.8;}
+.hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);
+  font-weight:700;line-height:1.15;margin-bottom:.8rem;color:var(--cream);
+  text-shadow:0 2px 20px rgba(0,0,0,0.8);}
+.hero h1 em{color:var(--accent);font-style:italic;}
+.hero h1 .rouge{color:#e8657a;}
+.hero-sub{font-size:14px;color:var(--cream2);max-width:560px;line-height:1.8;
+  text-shadow:0 1px 8px rgba(0,0,0,0.9);}
+.hero-sub strong{color:var(--cream);}
+
+/* ── Plat du Jour (Signal) ── */
+.signal-wrap{padding:0 0 0;}
+.signal-card{
+  border:1px solid var(--border2);border-left:5px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--bg3),var(--bg2));
+  animation:fade-in 0.6s ease 0.3s both;
+  box-shadow:0 4px 24px rgba(0,0,0,0.5),inset 0 1px 0 rgba(124,185,232,0.1);
+}
+.signal-card::before{content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(124,185,232,0.07) 0%,transparent 60%);pointer-events:none;}
+.signal-card.urgency-high{border-left-color:var(--accent);}
+.signal-card.urgency-medium{border-left-color:var(--bordeaux);}
+.signal-card.urgency-low{border-left-color:var(--cream3);}
+.signal-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:.5rem;font-weight:500;}
+.signal-headline{font-family:var(--font-head);font-size:clamp(1.2rem,2.4vw,1.8rem);
+  line-height:1.25;color:var(--cream);margin-bottom:.65rem;font-style:italic;}
+.signal-body{font-size:14px;color:var(--cream2);line-height:1.8;max-width:680px;}
+.signal-meta{display:flex;gap:.75rem;align-items:center;margin-top:.85rem;flex-wrap:wrap;}
+.signal-lens{font-size:11px;font-family:var(--font-mono);color:var(--accent);
+  background:var(--accent-dim);padding:3px 10px;border-radius:3px;border:1px solid var(--border);}
+.signal-country{font-size:11px;font-family:var(--font-mono);color:#e8657a;
+  background:var(--bordeaux-dim);padding:3px 10px;border-radius:3px;}
+.urgency-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.urgency-dot.high{background:var(--accent);}
+.urgency-dot.medium{background:var(--bordeaux);}
+.urgency-dot.low{background:var(--cream3);}
+
+/* ── Stats ── */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;
+  margin:1.75rem 0;animation:fade-in .5s ease .3s both;}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  padding:.85rem 1.2rem;transition:box-shadow .2s,transform .2s;}
+.stat-card:hover{box-shadow:0 4px 20px rgba(124,185,232,0.1);transform:translateY(-1px);}
+.stat-card:first-child{border-left:4px solid var(--accent);background:linear-gradient(135deg,var(--accent-dim),var(--bg2));}
+.stat-label{font-size:10px;color:var(--cream3);font-family:var(--font-mono);
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;}
+.stat-val{font-size:24px;font-weight:700;color:var(--cream);font-family:var(--font-mono);}
+.stat-val.gold{color:var(--accent);}
+
+/* ── Treaty Alert ── */
+.treaty-section{margin:0 0 1.75rem;animation:fade-in .5s ease .35s both;}
+.treaty-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;}
+.treaty-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--bordeaux);font-weight:600;}
+.treaty-list{display:flex;flex-direction:column;gap:.5rem;}
+.treaty-item{background:var(--bordeaux-dim);border:1px solid rgba(224,82,82,0.3);
+  border-left:4px solid var(--bordeaux);border-radius:0 8px 8px 0;
+  padding:.65rem 1rem;font-size:13px;display:flex;align-items:baseline;gap:.75rem;}
+.treaty-source{font-family:var(--font-mono);font-size:10px;color:#e8657a;font-weight:600;min-width:80px;flex-shrink:0;}
+.treaty-title a{color:var(--cream2);text-decoration:none;font-weight:500;}
+.treaty-title a:hover{color:var(--accent);}
+
+/* ── Country tracker ── */
+.country-bar{margin:0 0 1.75rem;animation:fade-in .5s ease .4s both;}
+.country-label{font-size:10px;color:var(--cream3);font-family:var(--font-mono);
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:.65rem;}
+.country-pills{display:flex;gap:.4rem;flex-wrap:wrap;}
+.country-pill{font-size:11px;font-family:var(--font-mono);color:var(--cream2);
+  background:var(--bg3);border:1px solid var(--border);
+  padding:4px 12px;border-radius:20px;display:flex;align-items:center;gap:.35rem;transition:all .15s;}
+.country-pill:hover{border-color:var(--accent);color:var(--accent);}
+.country-count{background:var(--accent);color:var(--bg);border-radius:10px;
+  padding:1px 6px;font-weight:700;font-size:10px;}
+
+/* ── Source pills ── */
+.source-bar{margin:0 0 1.75rem;}
+.source-pills{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem;}
+.source-pill{font-size:11px;font-family:var(--font-mono);color:var(--cream2);
+  background:var(--bg3);border:1px solid var(--border);
+  padding:4px 10px;border-radius:20px;display:flex;align-items:center;gap:.4rem;}
+.source-count{background:var(--accent-dim);color:var(--accent);border-radius:10px;
+  padding:1px 6px;font-weight:700;font-size:10px;border:1px solid var(--border);}
+
+/* ── Filter bar ── */
+.filter-bar{margin:0 0 1.75rem;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;}
+.filter-label{font-size:11px;color:var(--cream3);font-family:var(--font-mono);margin-right:.25rem;}
+.filter-btn{font-size:11px;padding:5px 13px;border-radius:20px;
+  border:1px solid var(--border);background:var(--bg2);color:var(--cream2);
+  cursor:pointer;font-family:var(--font-mono);transition:all .18s;}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent);color:var(--accent);background:var(--accent-dim);}
+
+/* ── Lens (chalkboard style) ── */
+.lens-section{margin-bottom:2.5rem;}
+.lens-header{display:flex;align-items:center;gap:.65rem;margin-bottom:1rem;
+  padding:.65rem 1rem;border-left:4px solid var(--accent);
+  background:linear-gradient(90deg,var(--bg3),var(--bg2));
+  border-radius:0 8px 8px 0;box-shadow:0 2px 8px rgba(0,0,0,0.3);}
+.lens-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;}
+.lens-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--cream);font-weight:500;}
+.lens-count{margin-left:auto;font-size:11px;color:var(--cream3);font-family:var(--font-mono);}
+.sparkline{display:flex;gap:2px;align-items:flex-end;height:18px;margin-left:.6rem;}
+.spark-bar{width:5px;border-radius:1px 1px 0 0;background:var(--accent);min-height:2px;}
+
+/* ── Cards ── */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:.9rem;}
+.news-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+  padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.65rem;
+  position:relative;overflow:hidden;
+  transition:border-color .2s,transform .18s,box-shadow .18s;animation:card-in .4s ease both;}
+.news-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:transparent;}
+.news-card:hover{border-color:var(--border2);transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5),0 0 0 1px rgba(124,185,232,0.1);}
+
+/* Landmark — full width gold */
+.news-card.imp-5{
+  grid-column:1/-1;
+  background:linear-gradient(135deg,rgba(124,185,232,0.08),var(--bg2) 60%);
+  border:1px solid var(--border2);border-left:6px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:1.5rem 1.75rem;
+  box-shadow:0 6px 30px rgba(0,0,0,0.6),0 0 0 1px rgba(124,185,232,0.15);
+}
+.news-card.imp-5::before{background:none;}
+.news-card.imp-5 .card-title{font-size:17px;font-family:var(--font-head);font-weight:700;line-height:1.3;font-style:italic;}
+
+/* Major — Bordeaux red accent */
+.news-card.imp-4{
+  grid-column:span 2;
+  border-top:3px solid var(--bordeaux);
+  background:linear-gradient(135deg,var(--bordeaux-dim),var(--bg2) 50%);
+}
+.news-card.imp-4::before{background:none;}
+.news-card.imp-4 .card-title{font-size:14.5px;font-weight:600;}
+
+/* Notable */
+.news-card.imp-3::before{background:linear-gradient(90deg,var(--bordeaux2),var(--bordeaux));}
+.news-card.imp-2{opacity:.88;}
+.news-card.imp-1{opacity:.65;background:var(--bg);}
+
+.card-meta{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;}
+.badge{font-size:10px;padding:2px 8px;border-radius:3px;font-family:var(--font-mono);
+  font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+.badge-source{background:var(--bg3);color:var(--cream2);border:1px solid var(--border);}
+.badge-imp-5{background:rgba(124,185,232,.15);color:var(--accent);border:1px solid rgba(124,185,232,.3);}
+.badge-imp-4{background:var(--bordeaux-dim);color:#e8657a;border:1px solid rgba(224,82,82,.3);}
+.badge-imp-3{background:rgba(224,82,82,.08);color:#c4556a;}
+.badge-imp-2{background:var(--bg3);color:var(--cream3);}
+.badge-imp-1{background:var(--bg);color:var(--cream3);}
+.badge-court{background:var(--bordeaux-dim);color:#e8657a;font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
+.badge-treaty{background:var(--accent-dim);color:var(--accent);font-size:10px;padding:2px 7px;border-radius:3px;font-family:var(--font-mono);font-weight:600;}
+
+.card-title{font-size:13.5px;font-weight:600;color:var(--cream);line-height:1.45;}
+.card-title a{color:inherit;text-decoration:none;transition:color .15s;}
+.card-title a:hover{color:var(--accent);}
+.card-title .no-link{color:var(--cream2);font-weight:500;}
+.card-title .kw{color:var(--accent);font-weight:700;}
+.card-summary{font-size:12.5px;color:var(--cream2);line-height:1.7;flex:1;}
+.card-countries{display:flex;gap:.3rem;flex-wrap:wrap;}
+.card-country{font-size:10px;font-family:var(--font-mono);color:var(--cream3);
+  background:var(--bg3);padding:1px 6px;border-radius:3px;border:1px solid var(--border);}
+.card-footer{display:flex;align-items:center;justify-content:space-between;
+  padding-top:.5rem;border-top:1px solid var(--border);}
+.card-fresh{font-size:11px;color:var(--cream3);font-family:var(--font-mono);}
+.fresh-pulse{display:inline-flex;align-items:center;gap:4px;}
+.pulse-dot{width:6px;height:6px;border-radius:50%;background:#4caf82;flex-shrink:0;
+  animation:pulse-dot 1.5s ease-in-out infinite;}
+.paywall-note{font-size:10px;color:var(--cream3);font-family:var(--font-mono);
+  background:var(--bg3);border:1px solid var(--border);padding:2px 7px;border-radius:3px;}
+.card-link-btn{font-size:11px;color:var(--accent2);text-decoration:none;
+  font-family:var(--font-mono);display:flex;align-items:center;gap:3px;transition:color .15s;font-weight:500;}
+.card-link-btn:hover{color:var(--accent);}
+.card-link-btn svg{width:9px;height:9px;}
+
+/* ── Archive ── */
+.archive-section{margin:2.5rem 0 0;padding-bottom:4rem;}
+.archive-title{font-family:var(--font-head);font-size:18px;font-style:italic;
+  color:var(--accent);margin-bottom:1.25rem;padding-bottom:.7rem;
+  border-bottom:1px solid var(--border);display:block;}
+.archive-day{margin-bottom:1.75rem;}
+.archive-day-label{font-size:13px;font-family:var(--font-mono);color:var(--accent);
+  margin-bottom:.65rem;font-weight:500;letter-spacing:.04em;}
+.archive-list{background:var(--bg2);border-radius:8px;border:1px solid var(--border);overflow:hidden;}
+.archive-item{display:flex;align-items:baseline;gap:.75rem;padding:9px 14px;
+  border-bottom:1px solid var(--border);font-size:13px;transition:background .15s;}
+.archive-item:last-child{border-bottom:none;}
+.archive-item:hover{background:var(--accent-dim);}
+.archive-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);
+  flex-shrink:0;margin-top:4px;opacity:.5;}
+.archive-source{font-family:var(--font-mono);font-size:10px;color:var(--cream3);
+  min-width:100px;flex-shrink:0;}
+.archive-title-text{color:var(--cream2);flex:1;line-height:1.5;}
+.archive-title-text a{color:var(--cream);text-decoration:none;transition:color .15s;}
+.archive-title-text a:hover{color:var(--accent);}
+.archive-title-text .kw{color:var(--accent);font-weight:700;}
+.archive-lens-tag{font-family:var(--font-mono);font-size:10px;color:var(--cream3);
+  flex-shrink:0;background:var(--bg3);padding:1px 6px;border-radius:3px;}
+
+/* ── Empty ── */
+.empty{text-align:center;padding:4rem 2rem;color:var(--cream3);
+  font-family:var(--font-mono);font-size:13px;background:var(--bg2);
+  border-radius:10px;border:1px solid var(--border);}
+
+/* ── Footer ── */
+footer{border-top:1px solid var(--border);padding:1.5rem 0;display:flex;
+  align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  font-size:12px;color:var(--cream3);font-family:var(--font-mono);}
+footer a{color:var(--cream3);text-decoration:none;}
+footer a:hover{color:var(--accent);}
+.footer-cafe{font-family:var(--font-head);font-style:italic;color:var(--accent);font-size:13px;}
+
+@media(max-width:600px){
+  .page,.hero-inner{padding-left:1rem;padding-right:1rem;}
+  .hero h1{font-size:1.8rem;}
+  .card-grid{grid-template-columns:1fr;}
+  .news-card.imp-4{grid-column:1/-1;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .archive-source{display:none;}
+  .topbar-right .topbar-ts{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="scan-beam"></div>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="cafe-badge">Café Ellu</span>
+    <span class="logo-text"><span class="logo-int">International</span> Tax Agent</span>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-ts">Wednesday, 20 May 2026 · 18:38 EEST</span>
+    <a class="sibling-link tp" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent →</a>
+    <a class="sibling-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain →</a>
+  </div>
+</header>
+
+<!-- Hero with Café Ellu Paris painting background -->
+<div class="hero-bg">
+  <div class="hero-inner">
+    <p class="hero-label">Paris · Global international tax intelligence</p>
+    <h1>What moved in <em>international taxation</em><br>and <span class="rouge">EU tax law</span> today</h1>
+    <p class="hero-sub">Daily intelligence on <strong>Pillar Two / GloBE</strong>, <strong>CJEU decisions</strong> and <strong>tax treaties</strong> — filtered and classified by AI. All items relate to international taxation.</p>
+  </div>
+</div>
+
+<div class="page">
+
+<!-- Plat du Jour -->
+<div class="signal-wrap" style="padding-top:1.75rem">
+  <div class="signal-card urgency-high">
+    <p class="signal-label">⚜ Plat du Jour — Today's International Tax Signal</p>
+    <h2 class="signal-headline">California digital tax debate signals rising global fragmentation.</h2>
+    <p class="signal-body">California&#39;s advancement of digital tax discussions, even within specific initiatives, highlights the persistent global challenge of unilateral digital taxation measures. Multinationals must enhance monitoring of jurisdictional digital tax developments to navigate new compliance obligations and mitigate potential double taxation risks across their global operations.</p>
+    <div class="signal-meta">
+      <div class="urgency-dot high"></div>
+      <span class="signal-lens">Digital economy taxation</span>
+      
+      <span style="font-size:11px;color:var(--cream3);font-family:var(--font-mono)">high urgency</span>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-row">
+  <div class="stat-card">
+    <p class="stat-label">Items today</p>
+    <p class="stat-val accent">4</p>
+  </div>
+  <div class="stat-card">
+    <p class="stat-label">Lenses active</p>
+    <p class="stat-val">2</p>
+  </div>
+  <div class="stat-card">
+    <p class="stat-label">Landmark / Major</p>
+    <p class="stat-val">2</p>
+  </div>
+  <div class="stat-card">
+    <p class="stat-label">Updated</p>
+    <p class="stat-val" style="font-size:13px;padding-top:5px">2026-05-20</p>
+  </div>
+</div>
+
+<!-- Treaty alerts -->
+
+
+<!-- Country tracker -->
+
+<div class="country-bar">
+  <p class="country-label">Countries in focus today</p>
+  <div class="country-pills">
+    
+    <span class="country-pill">China<span class="country-count">2</span></span>
+    
+    <span class="country-pill">Italy<span class="country-count">1</span></span>
+    
+    <span class="country-pill">Japan<span class="country-count">1</span></span>
+    
+    <span class="country-pill">Germany<span class="country-count">1</span></span>
+    
+  </div>
+</div>
+
+
+<!-- Sources -->
+<div class="source-bar">
+  <p class="country-label">Sources today</p>
+  <div class="source-pills">
+    
+    
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+    
+    <span class="source-pill">AKIpress News Agency<span class="source-count">1</span></span>
+    
+    <span class="source-pill">Odessa Journal<span class="source-count">1</span></span>
+    
+    <span class="source-pill">China Briefing<span class="source-count">1</span></span>
+    
+    <span class="source-pill">MSN<span class="source-count">1</span></span>
+    
+  </div>
+</div>
+
+<!-- Filter -->
+<div class="filter-bar">
+  <span class="filter-label">Lens:</span>
+  <button class="filter-btn active" onclick="filterLens('all',this)">All</button>
+  
+  <button class="filter-btn" onclick="filterLens('tax-treaties-and-conventions',this)">Tax treaties &amp; conventions</button>
+  
+  <button class="filter-btn" onclick="filterLens('digital-economy-taxation',this)">Digital economy taxation</button>
+  
+</div>
+
+<!-- Items -->
+<main>
+  
+    
+    
+    
+    
+    <section class="lens-section" data-lens="tax-treaties-and-conventions">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Tax treaties &amp; conventions</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">3 items</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-4" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">AKIpress News Agency</span>
+            <span class="badge badge-imp-4">Major</span>
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
+            
+          </div>
+          <p class="card-summary">The Parliament of Kyrgyzstan has officially ratified a Double Taxation Avoidance Agreement (DTAA) with Japan. This ratification marks a significant step towards formalizing tax cooperation and aims to prevent double taxation, thereby fostering bilateral trade and investment between Kyrgyzstan and Japan.</p>
+          
+          <div class="card-countries"><span class="card-country">Japan</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>5h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-4" style="animation-delay:0.05s">
+          <div class="card-meta">
+            <span class="badge badge-source">Odessa Journal</span>
+            <span class="badge badge-imp-4">Major</span>
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Ukraine and Germany have signed a new agreement on the avoidance of double taxation - Odessa Journal</a>
+            
+          </div>
+          <p class="card-summary">Ukraine and Germany have formally signed a new agreement on the avoidance of double taxation. This new Double Taxation Agreement (DTA) is designed to enhance economic relations and provide greater tax certainty for businesses and investors operating between Ukraine and Germany.</p>
+          
+          <div class="card-countries"><span class="card-country">Germany</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh">1d ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.1s">
+          <div class="card-meta">
+            <span class="badge badge-source">China Briefing</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
+            
+          </div>
+          <p class="card-summary">This item provides FAQs for Italian investors regarding the China-Italy Double Tax Treaty, potentially focusing on the 2026 outlook or a revised agreement. It offers practical guidance on treaty provisions relevant to cross-border investment and operations between the two countries, addressing aspects like income, capital gains, and permanent establishment rules.</p>
+          
+          <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>1h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="lens-section" data-lens="digital-economy-taxation">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Digital economy taxation</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">1 item</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">MSN</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">California advances game preservation bill as digital tax debate grows - MSN</a>
+            
+          </div>
+          <p class="card-summary">California is experiencing a growing debate concerning potential digital taxation policies, alongside the advancement of a game preservation bill. The discussion likely centers on introducing new state-level taxes targeting digital services or products, reflecting broader global efforts to adapt tax systems to the digital economy.</p>
+          
+          <div class="card-footer">
+            <span class="card-fresh">1d ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+  
+</main>
+
+<!-- Archive -->
+
+<section class="archive-section">
+  <span class="archive-title">7-Day Archive — International Tax News</span>
+  
+  <div class="archive-day">
+    <p class="archive-day-label">Today</p>
+    <div class="archive-list">
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
+        <span class="archive-source">China Briefing</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
+          
+        </span>
+        
+        <span class="archive-lens-tag">Tax treaties &amp; con</span>
+        
+      </div>
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
+        <span class="archive-source">AKIpress News Agency</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
+          
+        </span>
+        
+        <span class="archive-lens-tag">Tax treaties &amp; con</span>
+        
+      </div>
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
+        <span class="archive-source">Odessa Journal</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaUhRbVVzVDFqS0NBbjdKQUxCZDl6WGxyUFpNMzBXTmgxamVybU9tWDlIcURKVGJwRWE0Nm4wTURlSEdYWjIwMDBGMjk0SEZZdGQ3OWZycXhUVGJZcWdHdmxJbFpjaHlRWDBKVnNmVHc0MHBybWtRaXpJRlhPYWZFUVpFeDNDY25wZTU2U3RUcTdXVURsRjJmMjBQY3JIc0NpTUVDenVFTVZhN3M2cW84?oc=5" target="_blank" rel="noopener">Ukraine and Germany have signed a new agreement on the avoidance of double taxation - Odessa Journal</a>
+          
+        </span>
+        
+        <span class="archive-lens-tag">Tax treaties &amp; con</span>
+        
+      </div>
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
+        <span class="archive-source">MSN</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRjJOS0NXVEtIcG0yb043TWN4c0kyakk2MjFlTnZnQ2tueVlDUjhOYnZPaHVhSllNU01pRmdXb3BabWE3Um1aemJkT1dBcVRfTzA5b3dKVFlkSXhVRnRNZUwtZHZ4WndCM21YM2pMTWxTOW40Z3dqUmVuQVU1UEl0b0U3eTBEdlJzcnRMY0g3Y1RaZWVRaEVtQ2ItNFE3RlM3YW5vazJ5UHdaVm0zejVpQ1dpOWc1OGUwR3N2TTRYQkQ3X1YxNTVyZldIa0daTkNaZlh5bmJMWkVLdw?oc=5" target="_blank" rel="noopener">California advances game preservation bill as digital tax debate grows - MSN</a>
+          
+        </span>
+        
+        <span class="archive-lens-tag">Digital economy ta</span>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</section>
+
+
+<footer>
+  <span><span class="footer-cafe">Café Ellu</span> · International Tax Special Agent · Paris desk · Built in Espoo, Finland</span>
+  <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+    <a href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent</a>
+    <a href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain Agent</a>
+    <span>Not legal advice · Sources may require subscription</span>
+  </div>
+</footer>
+
+</div>
+
+<script>
+function filterLens(lens,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.lens-section').forEach(s=>{
+    s.style.display=(lens==='all'||s.dataset.lens===lens)?'':'none';
+  });
+}
+const INT_KEYWORDS=['pillar two','pillar 2','GloBE','UTPR','STTR','QDMTT',
+  'global minimum tax','minimum tax','CJEU','Court of Justice',
+  'state aid','tax treaty','double taxation','digital services tax',
+  'digital tax','ATAD','DAC6','DAC7','DAC8','BEFIT','BEPS',
+  'base erosion','profit shifting','controlled foreign','CFC',
+  'hybrid mismatch','anti-avoidance','beneficial ownership','tax haven',
+  'withholding tax','multilateral instrument','MLI'];
+function highlightKeywords(el){
+  if(!el)return;
+  el.querySelectorAll('a,.no-link').forEach(link=>{
+    let html=link.innerHTML;
+    INT_KEYWORDS.forEach(kw=>{
+      const re=new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      html=html.replace(re,'<span class="kw">$1</span>');
+    });
+    link.innerHTML=html;
+  });
+}
+document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKeywords);
+</script>
+</body>
+</html>
