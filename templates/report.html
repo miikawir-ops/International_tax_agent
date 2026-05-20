@@ -7,10 +7,10 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 :root {
-  --bg:#0d1230;
-  --bg2:#13163a;
-  --bg3:#1c1f4a;
-  --bg4:#252858;
+  --bg:#1a2744;
+  --bg2:#1e3056;
+  --bg3:#253668;
+  --bg4:#2d3f78;
   --border:rgba(139,148,158,0.15);
   --border2:rgba(139,148,158,0.3);
   --accent:#7cb9e8;        /* cool steel blue — Seine at dawn */
@@ -28,7 +28,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:linear-gradient(180deg,#0d1117 0%,#0d1230 30%,#12103a 60%,#1a0d2e 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
+body{background:linear-gradient(180deg,#1a2744 0%,#1e2d52 30%,#223060 60%,#1e2850 100%);background-attachment:fixed;color:var(--cream);font-family:var(--font-body);font-size:15px;line-height:1.7;min-height:100vh;}
 
 /* ── Animations ── */
 @keyframes candle-flicker{
@@ -90,27 +90,27 @@ body{background:linear-gradient(180deg,#0d1117 0%,#0d1230 30%,#12103a 60%,#1a0d2
   position:relative;
   background-image:url('hero.jpg');
   background-size:cover;
-  background-position:center 35%;
+  background-position:center 20%;
   overflow:hidden;
-  min-height:420px;
+  min-height:540px;
 }
 .hero-bg::before{
   content:'';
   position:absolute;inset:0;
-  /* Dark on LEFT (café side), lighter on RIGHT (Eiffel side) */
+  /* Very light overlay — show the painting clearly */
   background:linear-gradient(
-    105deg,
-    rgba(8,6,20,0.88) 0%,
-    rgba(10,8,25,0.75) 35%,
-    rgba(12,10,30,0.45) 65%,
-    rgba(8,6,20,0.25) 100%
+    180deg,
+    rgba(5,5,15,0.15) 0%,
+    rgba(5,5,15,0.25) 50%,
+    rgba(20,25,60,0.7) 85%,
+    rgba(26,39,68,1) 100%
   );
   z-index:1;
 }
 .hero-bg::after{
   content:'';
-  position:absolute;bottom:0;left:0;right:0;height:100px;
-  background:linear-gradient(to bottom,transparent,#0d1230);
+  position:absolute;bottom:0;left:0;right:0;height:120px;
+  background:linear-gradient(to bottom,transparent,#1a2744);
   pointer-events:none;z-index:2;
 }
 
@@ -126,7 +126,7 @@ body::before{
   border-bottom:1px solid var(--border);padding:0 2rem;
   display:flex;align-items:center;justify-content:space-between;
   height:60px;position:sticky;top:4px;z-index:100;
-  background:rgba(18,16,14,0.95);backdrop-filter:blur(16px);
+  background:rgba(20,30,60,0.97);backdrop-filter:blur(16px);
   box-shadow:0 2px 20px rgba(0,0,0,0.6);
 }
 .topbar-left{display:flex;align-items:center;gap:1rem;}
@@ -151,16 +151,13 @@ body::before{
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero inside background ── */
-.hero-inner{position:relative;z-index:3;padding:3.5rem 2rem 3.5rem;max-width:580px;margin:0;}
+.hero-inner{position:relative;z-index:3;padding:2rem 2rem 4rem;max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;}
 .hero-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);
   letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.8;}
-.hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);
-  font-weight:700;line-height:1.15;margin-bottom:.8rem;color:var(--cream);
-  text-shadow:0 2px 20px rgba(0,0,0,0.8);}
+.hero h1{font-family:var(--font-head);font-size:clamp(1.9rem,4vw,3.1rem);font-weight:700;line-height:1.2;margin-bottom:.8rem;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,0.9),0 0 60px rgba(0,0,0,0.7);}
 .hero h1 em{color:var(--accent);font-style:italic;}
 .hero h1 .rouge{color:#e8657a;}
-.hero-sub{font-size:14px;color:var(--cream2);max-width:560px;line-height:1.8;
-  text-shadow:0 1px 8px rgba(0,0,0,0.9);}
+.hero-sub{font-size:14px;color:#c8d8f0;max-width:600px;line-height:1.8;text-shadow:0 1px 12px rgba(0,0,0,0.95);}
 .hero-sub strong{color:var(--cream);}
 
 /* ── Plat du Jour (Signal) ── */
@@ -397,10 +394,13 @@ footer a:hover{color:var(--accent);}
 <div class="hero-bg">
   <!-- Eiffel Tower sparkle overlay -->
   <div class="sparkle-container" id="sparkleContainer"></div>
-  <!-- Street lamp glows -->
-  <div class="street-lamp-glow" style="width:60px;height:60px;left:47%;top:52%;--dur:2.8s"></div>
-  <div class="street-lamp-glow" style="width:50px;height:50px;left:53%;top:55%;--dur:3.2s;animation-delay:.8s"></div>
-  <div class="street-lamp-glow" style="width:40px;height:40px;left:60%;top:50%;--dur:2.5s;animation-delay:1.4s"></div>
+  <!-- Street lamp glows — matched to actual lamp positions in painting -->
+  <!-- Left lamp: bottom-left near café entrance -->
+  <div class="street-lamp-glow" style="width:55px;height:55px;left:14%;top:62%;--dur:3.1s;animation-delay:0s"></div>
+  <!-- Center-left lamp: cobblestone street, mid scene -->
+  <div class="street-lamp-glow" style="width:50px;height:50px;left:42%;top:57%;--dur:2.7s;animation-delay:1.1s"></div>
+  <!-- Right lamp: far right side of street -->
+  <div class="street-lamp-glow" style="width:45px;height:45px;left:87%;top:40%;--dur:3.4s;animation-delay:0.6s"></div>
   <div class="hero-inner">
     <p class="hero-label">Paris · Global international tax intelligence</p>
     <h1>What moved in<br><em>international taxation</em><br>today</h1>
@@ -619,54 +619,50 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(!container) return;
   const heroH = 420;
   // Tower position: roughly right 55-75% horizontally, top 5-80% vertically
-  const SPARKS = 180;
-  const sparks = [];
+  // Eiffel Tower is at approx 58-70% width, 5-75% height of the hero
+  // We use a narrower, taller distribution to match the tower shape
+  // Tower is narrow at top, wider at base — model this with distribution
+  const SPARKS = 200;
   for(let i=0;i<SPARKS;i++){
     const el = document.createElement('div');
-    el.className = 'spark ' + (['','','','gold','blue'][Math.floor(Math.random()*5)]);
-    // Concentrate sparks on tower area
-    const xBase = 55 + Math.random()*20; // 55-75% of width
-    const yBase = 5  + Math.random()*75; // 5-80% of height
-    const dur   = 0.8 + Math.random()*2.2;
-    const delay = Math.random()*3;
+    // Tower shape: narrow band, denser at middle sections
+    const progress = Math.random(); // 0=top, 1=base
+    // Tower width gets wider toward base: top ~2%, base ~6%
+    const towerCenterX = 63.5; // % from left where tower center is
+    const halfWidth = 1.5 + progress * 3.5; // narrow top, wide base
+    const xBase = towerCenterX - halfWidth + Math.random() * halfWidth * 2;
+    const heroH = container.offsetHeight || 540;
+    const yBase = 20 + progress * (heroH * 0.65); // top to 85% of hero height
+    const colors = ['','','','gold','gold','blue'];
+    el.className = 'spark ' + colors[Math.floor(Math.random()*colors.length)];
+    const dur   = 0.6 + Math.random()*2.5;
+    const delay = Math.random()*4;
     const size  = 1 + Math.random()*2;
-    el.style.cssText = `
-      left:${xBase}%;
-      top:${yBase}px;
-      width:${size}px;
-      height:${size}px;
-      --dur:${dur}s;
-      --delay:${delay}s;
-      --dx:${(Math.random()-0.5)*20}px;
-    `;
+    el.style.cssText = `left:${xBase}%;top:${yBase}px;width:${size}px;height:${size}px;--dur:${dur}s;--delay:${delay}s;`;
     container.appendChild(el);
-    sparks.push({el, xBase, yBase, dur, delay});
   }
 
-  // Every 5 seconds — burst mode (like the real tower at top of hour)
+  // Burst mode every 8s — gold sparks float UP from tower
   function burst(){
-    const extra = [];
-    for(let i=0;i<80;i++){
+    for(let i=0;i<60;i++){
       const el = document.createElement('div');
       el.className = 'spark gold';
-      const x = 52 + Math.random()*24;
-      const y = 3  + Math.random()*80;
+      const progress = Math.random();
+      const xBase = 63.5 - (1+progress*3) + Math.random()*(2+progress*6);
+      const heroH = container.offsetHeight || 540;
+      const yBase = 25 + progress * (heroH * 0.6);
       el.style.cssText = `
-        left:${x}%;top:${y}px;
-        width:${1+Math.random()*2.5}px;
-        height:${1+Math.random()*2.5}px;
-        --dur:${0.3+Math.random()*0.8}s;
-        --delay:${Math.random()*0.4}s;
-        animation:float-spark ${0.6+Math.random()*1}s ease-out forwards;
-        --dx:${(Math.random()-0.5)*30}px;
+        left:${xBase}%;top:${yBase}px;
+        width:${1+Math.random()*2}px;height:${1+Math.random()*2}px;
+        --dur:${0.4+Math.random()*0.6}s;--delay:0s;
+        --dx:${(Math.random()-0.5)*12}px;
+        animation:float-spark ${0.8+Math.random()*1.2}s ease-out forwards;
       `;
       container.appendChild(el);
-      extra.push(el);
-      setTimeout(()=>el.remove(), 2000);
+      setTimeout(()=>el.remove(), 2500);
     }
   }
-  // Initial burst after 1s, then every 8s
-  setTimeout(burst, 1000);
+  setTimeout(burst, 800);
   setInterval(burst, 8000);
 })();
 
