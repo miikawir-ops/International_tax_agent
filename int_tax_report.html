@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Tax Agent · Thursday, 21 May 2026 · 21:03 EEST</title>
+<title>International Tax Agent · Thursday, 21 May 2026 · 21:11 EEST</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
 
@@ -27,7 +27,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:linear-gradient(160deg,#cdd8e8 0%,#d5e2ef 30%,#dce8f2 60%,#d0dcea 100%);background-attachment:fixed;color:#0f172a;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;min-height:100vh;}
+body{background:linear-gradient(160deg,#b8c8dc 0%,#c0d0e4 30%,#c8d8ec 60%,#bccadc 100%);background-attachment:fixed;color:#0f172a;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;min-height:100vh;}
 
 /* Top accent strip */
 body::before{content:'';display:block;height:3px;
@@ -59,7 +59,7 @@ body::before{content:'';display:block;height:3px;
   animation:lamp-glow 3s ease-in-out infinite;pointer-events:none;z-index:3;}
 
 /* Beacon */
-.eiffel-beacon{position:absolute;left:68%;top:2%;width:0;height:0;
+.eiffel-beacon{position:absolute;left:65.5%;top:2%;width:0;height:0;
   pointer-events:none;z-index:4;animation:beam-pulse 6s ease-in-out infinite;}
 .beacon-beam{position:absolute;top:0;left:0;width:500px;height:500px;
   transform-origin:0 0;
@@ -102,7 +102,7 @@ body::before{content:'';display:block;height:3px;
     rgba(0,5,15,0.35) 65%,
     rgba(0,5,20,0.72) 100%);}
 .hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;
-  background:linear-gradient(to bottom,transparent,#cdd8e8);
+  background:linear-gradient(to bottom,transparent,#b8c8dc);
   pointer-events:none;z-index:2;}
 .hero-inner{position:relative;z-index:3;width:100%;max-width:1100px;margin:0 auto;
   padding:0 2rem;min-height:520px;
@@ -149,7 +149,7 @@ body::before{content:'';display:block;height:3px;
 /* ── Stats ── */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;
   margin:1.75rem 0;animation:fade-in .5s ease .3s both;}
-.stat-card{background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;
+.stat-card{background:linear-gradient(145deg,#ffffff,#f0f6ff);border:1px solid #d4e0f0;border-radius:10px;
   padding:.85rem 1.2rem;transition:box-shadow .2s,transform .2s;
   box-shadow:0 1px 4px rgba(0,0,0,0.05);}
 .stat-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
@@ -193,7 +193,7 @@ body::before{content:'';display:block;height:3px;
 /* ── Lens ── */
 .lens-section{margin-bottom:2.25rem;}
 .lens-header{display:flex;align-items:center;gap:.65rem;margin-bottom:1rem;
-  padding:.6rem 1rem;border-left:4px solid #0891b2;background:#ffffff;
+  padding:.6rem 1rem;border-left:4px solid #0891b2;background:linear-gradient(90deg,#e8f4fd,#f8fbff);
   border-radius:0 8px 8px 0;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
 .lens-dot{width:7px;height:7px;border-radius:50%;background:#0891b2;flex-shrink:0;}
 .lens-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;
@@ -204,26 +204,26 @@ body::before{content:'';display:block;height:3px;
 
 /* ── Cards — ONE style, clean white ── */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:.85rem;}
-.news-card{background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;
+.news-card{background:linear-gradient(145deg,#ffffff 0%,#f0f6ff 50%,#f8fbff 100%);border:1px solid #d4e0f0;border-radius:12px;
   padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.6rem;
   position:relative;overflow:hidden;
   transition:border-color .2s,transform .18s,box-shadow .18s;
   animation:card-in .4s ease both;box-shadow:0 1px 4px rgba(0,0,0,0.05);}
 .news-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:transparent;}
 .news-card:hover{border-color:#0891b2;transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(8,145,178,0.1);}
+  box-shadow:0 8px 28px rgba(8,145,178,0.15),0 2px 8px rgba(0,0,0,0.05);}
 
 /* Landmark — full width, teal accent */
 .news-card.imp-5{grid-column:1/-1;border-left:5px solid #0891b2;
   border-radius:0 12px 12px 0;padding:1.5rem 1.75rem;
-  background:linear-gradient(135deg,#f0f9ff,#ffffff);
-  box-shadow:0 4px 20px rgba(8,145,178,0.08);}
+  background:linear-gradient(135deg,#e0f2fe 0%,#f0f9ff 40%,#ffffff 100%);
+  box-shadow:0 6px 24px rgba(8,145,178,0.12);}
 .news-card.imp-5::before{background:linear-gradient(90deg,#0891b2,#06b6d4);opacity:.5;}
 .news-card.imp-5 .card-title{font-size:17px;font-family:'Playfair Display',serif;font-style:italic;}
 
 /* Major — 2 col */
-.news-card.imp-4{grid-column:span 2;}
-.news-card.imp-4::before{background:#0891b2;opacity:.35;}
+.news-card.imp-4{grid-column:span 2;background:linear-gradient(145deg,#f8fdff 0%,#e8f4fd 60%,#f0f8ff 100%);}
+.news-card.imp-4::before{background:#0891b2;opacity:.4;}
 
 /* Notable */
 .news-card.imp-3::before{background:#0891b2;opacity:.2;}
@@ -273,7 +273,7 @@ body::before{content:'';display:block;height:3px;
 .archive-day{margin-bottom:1.5rem;}
 .archive-day-label{font-size:13px;font-family:'DM Mono',monospace;color:#0891b2;
   margin-bottom:.6rem;font-weight:600;}
-.archive-list{background:#ffffff;border-radius:10px;border:1px solid #e2e8f0;
+.archive-list{background:linear-gradient(160deg,#f8fbff,#f0f6ff);border-radius:10px;border:1px solid #d4e0f0;
   overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
 .archive-item{display:flex;align-items:baseline;gap:.75rem;padding:9px 14px;
   border-bottom:1px solid #f1f5f9;font-size:13px;transition:background .15s;}
@@ -336,7 +336,7 @@ footer a:hover{color:#0369a1;}
     <span class="logo-text"><span class="logo-int">International</span> Tax Agent</span>
   </div>
   <div class="topbar-right">
-    <span class="topbar-ts">Thursday, 21 May 2026 · 21:03 EEST</span>
+    <span class="topbar-ts">Thursday, 21 May 2026 · 21:11 EEST</span>
     <a class="sibling-link tp" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent →</a>
     <a class="sibling-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain →</a>
   </div>
@@ -372,8 +372,8 @@ footer a:hover{color:#0369a1;}
 <div class="signal-wrap" style="padding-top:1.75rem">
   <div class="signal-card urgency-high">
     <p class="signal-label">⚜ Plat du Jour — Today's International Tax Signal</p>
-    <h2 class="signal-headline">G7 backs Pillar Two, solidifying global minimum tax implementation for MNEs.</h2>
-    <p class="signal-body">The G7&#39;s renewed commitment reinforces the global resolve to implement the OECD&#39;s Pillar Two GloBE rules, including the Subject-to-Tax Rule (STTR), bringing greater certainty to the timeline. Multinationals must accelerate final preparations for complex effective tax rate calculations, comprehensive data collection, and new reporting obligations under this imminent global minimum tax regime.</p>
+    <h2 class="signal-headline">G7 backs Pillar Two, ensuring global tax reform momentum.</h2>
+    <p class="signal-body">The G7&#39;s continued political support for Pillar Two&#39;s Subject-to-Tax Rule (STTR) reinforces the global commitment to a minimum corporate tax regime, while the renewed Pillar One dialogue signals further significant changes ahead. Multinationals must ensure robust data systems and detailed compliance processes are in place to navigate the complexity of these interconnected global tax reforms.</p>
     <div class="signal-meta">
       <div class="urgency-dot high"></div>
       <span class="signal-lens">Pillar Two / GloBE</span>
@@ -387,15 +387,15 @@ footer a:hover{color:#0369a1;}
 <div class="stats-row">
   <div class="stat-card">
     <p class="stat-label">Items today</p>
-    <p class="stat-val accent">8</p>
+    <p class="stat-val accent">9</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Lenses active</p>
-    <p class="stat-val">1</p>
+    <p class="stat-val">6</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Landmark / Major</p>
-    <p class="stat-val">0</p>
+    <p class="stat-val">4</p>
   </div>
   <div class="stat-card">
     <p class="stat-label">Updated</p>
@@ -411,13 +411,17 @@ footer a:hover{color:#0369a1;}
   <p class="country-label">Countries in focus today</p>
   <div class="country-pills">
     
+    <span class="country-pill">Australia<span class="country-count">2</span></span>
+    
+    <span class="country-pill">Hong Kong<span class="country-count">2</span></span>
+    
+    <span class="country-pill">UAE<span class="country-count">1</span></span>
+    
     <span class="country-pill">Italy<span class="country-count">1</span></span>
     
     <span class="country-pill">China<span class="country-count">1</span></span>
     
     <span class="country-pill">Japan<span class="country-count">1</span></span>
-    
-    <span class="country-pill">Hong Kong<span class="country-count">1</span></span>
     
   </div>
 </div>
@@ -433,20 +437,7 @@ footer a:hover{color:#0369a1;}
         
         
       
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
+    
       
         
         
@@ -455,22 +446,50 @@ footer a:hover{color:#0369a1;}
         
       
     
+      
+        
+        
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+        
+        
+      
+    
+    
+    <span class="source-pill">Tax Justice Network<span class="source-count">1</span></span>
     
     <span class="source-pill">AKIpress News Agency<span class="source-count">1</span></span>
     
-    <span class="source-pill">Bloomberg Law News<span class="source-count">1</span></span>
-    
     <span class="source-pill">China Briefing<span class="source-count">1</span></span>
     
-    <span class="source-pill">Ecofin Agency<span class="source-count">1</span></span>
-    
     <span class="source-pill">International Tax Review<span class="source-count">1</span></span>
+    
+    <span class="source-pill">VitalLaw.com<span class="source-count">1</span></span>
+    
+    <span class="source-pill">Bloomberg Law News<span class="source-count">1</span></span>
     
     <span class="source-pill">KPMG<span class="source-count">1</span></span>
     
     <span class="source-pill">Quiver Quantitative<span class="source-count">1</span></span>
     
-    <span class="source-pill">Tax Justice Network<span class="source-count">1</span></span>
+    <span class="source-pill">Ecofin Agency<span class="source-count">1</span></span>
     
   </div>
 </div>
@@ -480,6 +499,16 @@ footer a:hover{color:#0369a1;}
   <span class="filter-label">Lens:</span>
   <button class="filter-btn active" onclick="filterLens('all',this)">All</button>
   
+  <button class="filter-btn" onclick="filterLens('pillar-two---globe',this)">Pillar Two / GloBE</button>
+  
+  <button class="filter-btn" onclick="filterLens('cjeu-and-eu-court-decisions',this)">CJEU &amp; EU Court decisions</button>
+  
+  <button class="filter-btn" onclick="filterLens('tax-treaties-and-conventions',this)">Tax treaties &amp; conventions</button>
+  
+  <button class="filter-btn" onclick="filterLens('digital-economy-taxation',this)">Digital economy taxation</button>
+  
+  <button class="filter-btn" onclick="filterLens('tax-transparency',this)">Tax transparency</button>
+  
   <button class="filter-btn" onclick="filterLens('general-international-tax',this)">General international tax</button>
   
 </div>
@@ -487,6 +516,380 @@ footer a:hover{color:#0369a1;}
 <!-- Items -->
 <main>
   
+    
+    
+    
+    
+    <section class="lens-section" data-lens="pillar-two---globe">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Pillar Two / GloBE</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">2 items</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-4" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">International Tax Review</span>
+            <span class="badge badge-imp-4">Major</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYkJmMTFyWGN6amdaQmxwTVFXWVoxM0thMXR4TmxKX0lqSmRqcHp4endZRk1yZWs1ZTY4X0xDTjgtNlBPQklXNlFBVU84ckpkRlh5Vmx2V2N3YnBRd0VjLXNtUER3RExOaWV3MUlhWXgzdl9ESUY0NDZUMzhjYkl0QTdINEpFZkV0Y3Q0cVRHZE52ajljeklnNEZNU0tIc3prY1p2Uk5tLThTMy03WkwzejlHTFJsdml1TXRaNm52RjNBSUNQV2RvYWVkVXB4UE5hLWE4blVsTQ?oc=5" target="_blank" rel="noopener">G7 backs pillar two SbS deal, opens pillar one dialogue - International Tax Review</a>
+            
+          </div>
+          <p class="card-summary">The G7 nations have expressed support for a Pillar Two Subject-to-Tax Rule (STTR) deal and initiated discussions on Pillar One of the OECD&#39;s international tax reform efforts. This consensus signals continued global commitment to implementing a minimum effective tax rate and addressing tax challenges arising from the digitalization of the economy.</p>
+          
+          <div class="card-footer">
+            <span class="card-fresh">7h ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYkJmMTFyWGN6amdaQmxwTVFXWVoxM0thMXR4TmxKX0lqSmRqcHp4endZRk1yZWs1ZTY4X0xDTjgtNlBPQklXNlFBVU84ckpkRlh5Vmx2V2N3YnBRd0VjLXNtUER3RExOaWV3MUlhWXgzdl9ESUY0NDZUMzhjYkl0QTdINEpFZkV0Y3Q0cVRHZE52ajljeklnNEZNU0tIc3prY1p2Uk5tLThTMy03WkwzejlHTFJsdml1TXRaNm52RjNBSUNQV2RvYWVkVXB4UE5hLWE4blVsTQ?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.05s">
+          <div class="card-meta">
+            <span class="badge badge-source">VitalLaw.com</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPWkxzTzdiQkhuVHlYMnNjdExJOUJ6SU95TXd3LXpKTFBqTVBUbEc0SUNuOHhIMDRWbnJ4Rk5QY3ZhODI5UExyRUZhWUlLN19UaEU4WVI3ekNoT0ZXdTVILWZ6RTFPc19oRUtmc3BsLW5OY2ZIcFFmOTRDa1h2ZTZ1QUJ1V3RSeV9xM0hpM19hMHFXSlV2TU9KMm5iLXU3YVY5ODZzaw?oc=5" target="_blank" rel="noopener">Australian Tax Agency Advises On Pillar Two Account Creation (May 20, 2026)</a>
+            
+          </div>
+          <p class="card-summary">The Australian Tax Agency (ATO) has issued guidance regarding the creation of accounts for Pillar Two implementation. This advisory helps multinational enterprises (MNEs) in Australia prepare for the country&#39;s upcoming GloBE rules.</p>
+          
+          <div class="card-countries"><span class="card-country">Australia</span><span class="card-country">UAE</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh">1d ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPWkxzTzdiQkhuVHlYMnNjdExJOUJ6SU95TXd3LXpKTFBqTVBUbEc0SUNuOHhIMDRWbnJ4Rk5QY3ZhODI5UExyRUZhWUlLN19UaEU4WVI3ekNoT0ZXdTVILWZ6RTFPc19oRUtmc3BsLW5OY2ZIcFFmOTRDa1h2ZTZ1QUJ1V3RSeV9xM0hpM19hMHFXSlV2TU9KMm5iLXU3YVY5ODZzaw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="lens-section" data-lens="cjeu-and-eu-court-decisions">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">CJEU &amp; EU Court decisions</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">1 item</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-5" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">Tax Justice Network</span>
+            <span class="badge badge-imp-5">Landmark</span>
+            
+            <span class="badge badge-court">⚖ Court</span>
+            
+          </div>
+          <div class="card-title">
+            <span style="margin-right:3px;opacity:.7">⚖</span>
+            <a href="https://taxjustice.net/2026/05/21/finally-the-european-court-of-justice-cracks-down-on-trusts/" target="_blank" rel="noopener">Finally, the European Court of Justice cracks down on trusts</a>
+            
+          </div>
+          <p class="card-summary">The European Court of Justice (CJEU) issued landmark rulings on May 21, 2026, directly addressing trusts regarding risks of secrecy and asset protection. These decisions are expected to significantly impact the use of trusts within the EU, promoting greater transparency and combating potential tax avoidance strategies.</p>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>2h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://taxjustice.net/2026/05/21/finally-the-european-court-of-justice-cracks-down-on-trusts/" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="lens-section" data-lens="tax-treaties-and-conventions">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Tax treaties &amp; conventions</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">2 items</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-4" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">AKIpress News Agency</span>
+            <span class="badge badge-imp-4">Major</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
+            
+          </div>
+          <p class="card-summary">The Parliament of Kyrgyzstan has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan. This ratification formally brings the treaty into effect, providing a framework to prevent double taxation and foster economic relations between the two countries.</p>
+          
+          <div class="card-countries"><span class="card-country">Japan</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh">1d ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-4" style="animation-delay:0.05s">
+          <div class="card-meta">
+            <span class="badge badge-source">China Briefing</span>
+            <span class="badge badge-imp-4">Major</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
+            
+          </div>
+          <p class="card-summary">China Briefing provided FAQs for Italian investors regarding the new China-Italy Double Tax Treaty (DTT) effective in 2026. This DTT aims to clarify tax obligations and prevent double taxation for cross-border investments between the two nations.</p>
+          
+          <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh">1d ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="lens-section" data-lens="digital-economy-taxation">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Digital economy taxation</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">2 items</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">Quiver Quantitative</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxObi1CdVlRYjQ3ZWwwcWVKYzg2YTNtTV8zSVFvWG81V0RVSk1ocTI4SXIxZG1UOW1LN0dnZWEwWVJ4LVp0cVFhOGJZQ3NJNGtqZVBmSHNVQUJKVjNiVU8wOHZ5bUM0elZnMi1GZ0FHTjM1XzIza1dSZ1o0Q3BhaDJvOTRma2ZBNm1TTDJZQVU4eW5Ta1NsT05fNlZhcTBoaEZqMW5zc2wxd011cmxVN0hhQnFBR0tDUUlWdXJRMnFfbElfNWpxSmVscnFrRExMbGw2STdwUXJ3dw?oc=5" target="_blank" rel="noopener">Trident Digital Tech Holdings Ltd. Launches Nationwide Digital Tax and MSME Formalization Platform in Ghana - Quiver Quantitative</a>
+            
+          </div>
+          <p class="card-summary">Trident Digital Tech Holdings Ltd. has launched a nationwide digital tax and MSME formalization platform in Ghana. This initiative aims to streamline tax collection for micro, small, and medium enterprises (MSMEs) and improve tax compliance through digital means across Ghana.</p>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>4h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxObi1CdVlRYjQ3ZWwwcWVKYzg2YTNtTV8zSVFvWG81V0RVSk1ocTI4SXIxZG1UOW1LN0dnZWEwWVJ4LVp0cVFhOGJZQ3NJNGtqZVBmSHNVQUJKVjNiVU8wOHZ5bUM0elZnMi1GZ0FHTjM1XzIza1dSZ1o0Q3BhaDJvOTRma2ZBNm1TTDJZQVU4eW5Ta1NsT05fNlZhcTBoaEZqMW5zc2wxd011cmxVN0hhQnFBR0tDUUlWdXJRMnFfbElfNWpxSmVscnFrRExMbGw2STdwUXJ3dw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+        
+        
+        
+        <article class="news-card imp-2" style="animation-delay:0.05s">
+          <div class="card-meta">
+            <span class="badge badge-source">Ecofin Agency</span>
+            <span class="badge badge-imp-2">Update</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxORHZOUjFZbFBGWjdtU1hVMmxmemwtVHJfTjlpbVlFZktUQjdwVjBiN3EyNWRrTURsTWh6NEpNYVJXaUZFU3Z0S2FwUl9rNGdGaTdqbTVPMncxN2hnUUYyeExmd2R6cjREMkxTZ1RKc0ZKT1Jsd19hWGhRWkdfQUZBOHhNTEk2Z1Qzcjl6dUVabkVkTkFYRDUzZzU0elp3dFlGMjdHaEFwR3BZUEJPQ2psRDVra0hLMmpTNndWaXlWYw?oc=5" target="_blank" rel="noopener">Nigeria Launches Digital Tax Complaint System to Support Revenue Reform Drive - Ecofin Agency</a>
+            
+          </div>
+          <p class="card-summary">Nigeria has launched a new digital tax complaint system as part of its broader revenue reform drive. This system aims to enhance transparency and responsiveness in tax administration, providing taxpayers with a digital channel to address concerns.</p>
+          
+          <div class="card-footer">
+            <span class="card-fresh">11h ago</span>
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxORHZOUjFZbFBGWjdtU1hVMmxmemwtVHJfTjlpbVlFZktUQjdwVjBiN3EyNWRrTURsTWh6NEpNYVJXaUZFU3Z0S2FwUl9rNGdGaTdqbTVPMncxN2hnUUYyeExmd2R6cjREMkxTZ1RKc0ZKT1Jsd19hWGhRWkdfQUZBOHhNTEk2Z1Qzcjl6dUVabkVkTkFYRDUzZzU0elp3dFlGMjdHaEFwR3BZUEJPQ2psRDVra0hLMmpTNndWaXlWYw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="lens-section" data-lens="tax-transparency">
+      <div class="lens-header">
+        <div class="lens-dot"></div>
+        <span class="lens-title">Tax transparency</span>
+        <div class="sparkline">
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:2px;opacity:0.20"></div>
+          
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
+          
+        </div>
+        <span class="lens-count">1 item</span>
+      </div>
+      <div class="card-grid">
+        
+        
+        
+        
+        <article class="news-card imp-3" style="animation-delay:0.0s">
+          <div class="card-meta">
+            <span class="badge badge-source">Bloomberg Law News</span>
+            <span class="badge badge-imp-3">Notable</span>
+            
+            
+            
+          </div>
+          <div class="card-title">
+            
+            <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOEptRWxlanZHdG5Wb3ZUajg0YU4xOFZ0QkxfUDB5UG9YeUlEa1NtTURENUJvdG9CUTFZZFM4NlgyRk5PRWdEcTk5Szd1RlFZV2dGSWQtUjJyYXpHZnk3eHVCYkxsUXRidHRESUh4QV9tdXhEWmVBOFNyZXU5UThkM2ZVeWQ5YmNPMDA3aXFmNWp2TDkybFk3TUtsLW5jRl90NUJMLWdnVEVLalRmRDF4M3NYemhiSnVZ?oc=5" target="_blank" rel="noopener">Hong Kong Moves to Adopt OECD Crypto Reporting Framework - Bloomberg Law News</a>
+            
+          </div>
+          <p class="card-summary">Hong Kong is moving towards adopting the OECD&#39;s Crypto-Asset Reporting Framework (CARF). This initiative aims to enhance tax transparency by requiring the automatic exchange of information on crypto-asset transactions conducted by service providers in Hong Kong.</p>
+          
+          <div class="card-countries"><span class="card-country">Hong Kong</span></div>
+          
+          <div class="card-footer">
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>3h ago</span>
+            
+            
+            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOEptRWxlanZHdG5Wb3ZUajg0YU4xOFZ0QkxfUDB5UG9YeUlEa1NtTURENUJvdG9CUTFZZFM4NlgyRk5PRWdEcTk5Szd1RlFZV2dGSWQtUjJyYXpHZnk3eHVCYkxsUXRidHRESUh4QV9tdXhEWmVBOFNyZXU5UThkM2ZVeWQ5YmNPMDA3aXFmNWp2TDkybFk3TUtsLW5jRl90NUJMLWdnVEVLalRmRDF4M3NYemhiSnVZ?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </section>
     
     
     
@@ -507,160 +910,22 @@ footer a:hover{color:#0369a1;}
           
           <div class="spark-bar" style="height:2px;opacity:0.20"></div>
           
-          <div class="spark-bar" style="height:3px;opacity:0.34"></div>
+          <div class="spark-bar" style="height:16px;opacity:0.85"></div>
           
           <div class="spark-bar" style="height:16px;opacity:0.85"></div>
           
         </div>
-        <span class="lens-count">8 items</span>
+        <span class="lens-count">1 item</span>
       </div>
       <div class="card-grid">
         
         
         
         
-        <article class="news-card imp-2" style="animation-delay:0.0s">
-          <div class="card-meta">
-            <span class="badge badge-source">AKIpress News Agency</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
-            
-          </div>
-          <p class="card-summary">Parliament ratifies double taxation avoidance agreement with Japan AKIpress News Agency</p>
-          
-          <div class="card-countries"><span class="card-country">Japan</span></div>
-          
-          <div class="card-footer">
-            <span class="card-fresh">1d ago</span>
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.05s">
-          <div class="card-meta">
-            <span class="badge badge-source">Bloomberg Law News</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOEptRWxlanZHdG5Wb3ZUajg0YU4xOFZ0QkxfUDB5UG9YeUlEa1NtTURENUJvdG9CUTFZZFM4NlgyRk5PRWdEcTk5Szd1RlFZV2dGSWQtUjJyYXpHZnk3eHVCYkxsUXRidHRESUh4QV9tdXhEWmVBOFNyZXU5UThkM2ZVeWQ5YmNPMDA3aXFmNWp2TDkybFk3TUtsLW5jRl90NUJMLWdnVEVLalRmRDF4M3NYemhiSnVZ?oc=5" target="_blank" rel="noopener">Hong Kong Moves to Adopt OECD Crypto Reporting Framework - Bloomberg Law News</a>
-            
-          </div>
-          <p class="card-summary">Hong Kong Moves to Adopt OECD Crypto Reporting Framework Bloomberg Law News</p>
-          
-          <div class="card-countries"><span class="card-country">Hong Kong</span></div>
-          
-          <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>3h ago</span>
-            
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOEptRWxlanZHdG5Wb3ZUajg0YU4xOFZ0QkxfUDB5UG9YeUlEa1NtTURENUJvdG9CUTFZZFM4NlgyRk5PRWdEcTk5Szd1RlFZV2dGSWQtUjJyYXpHZnk3eHVCYkxsUXRidHRESUh4QV9tdXhEWmVBOFNyZXU5UThkM2ZVeWQ5YmNPMDA3aXFmNWp2TDkybFk3TUtsLW5jRl90NUJMLWdnVEVLalRmRDF4M3NYemhiSnVZ?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.1s">
-          <div class="card-meta">
-            <span class="badge badge-source">China Briefing</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing</a>
-            
-          </div>
-          <p class="card-summary">China-Italy Double Tax Treaty 2026: FAQs for Italian Investors China Briefing</p>
-          
-          <div class="card-countries"><span class="card-country">Italy</span><span class="card-country">China</span></div>
-          
-          <div class="card-footer">
-            <span class="card-fresh">1d ago</span>
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOXzdCaDM2RnVraVdBM19fd2VVOHcwS3FfdFVkWmlXa3pSX1hpMjloYzJ4eERyZnhZRVRGaEdMQy1pQXllOWFwZ1V6dEdmblRNNUxONUZvMVJMdlJpN1BScDRfRnZfVm4zXzFrdFZ0X25YbUpuNXNpQzFrQzdrQTRzbmVvemFGMXdnZlAyNDNjaU95LV9aNnAzcmNacko1alhZZU9V?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.15000000000000002s">
-          <div class="card-meta">
-            <span class="badge badge-source">Ecofin Agency</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxORHZOUjFZbFBGWjdtU1hVMmxmemwtVHJfTjlpbVlFZktUQjdwVjBiN3EyNWRrTURsTWh6NEpNYVJXaUZFU3Z0S2FwUl9rNGdGaTdqbTVPMncxN2hnUUYyeExmd2R6cjREMkxTZ1RKc0ZKT1Jsd19hWGhRWkdfQUZBOHhNTEk2Z1Qzcjl6dUVabkVkTkFYRDUzZzU0elp3dFlGMjdHaEFwR3BZUEJPQ2psRDVra0hLMmpTNndWaXlWYw?oc=5" target="_blank" rel="noopener">Nigeria Launches Digital Tax Complaint System to Support Revenue Reform Drive - Ecofin Agency</a>
-            
-          </div>
-          <p class="card-summary">Nigeria Launches Digital Tax Complaint System to Support Revenue Reform Drive Ecofin Agency</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh">11h ago</span>
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxORHZOUjFZbFBGWjdtU1hVMmxmemwtVHJfTjlpbVlFZktUQjdwVjBiN3EyNWRrTURsTWh6NEpNYVJXaUZFU3Z0S2FwUl9rNGdGaTdqbTVPMncxN2hnUUYyeExmd2R6cjREMkxTZ1RKc0ZKT1Jsd19hWGhRWkdfQUZBOHhNTEk2Z1Qzcjl6dUVabkVkTkFYRDUzZzU0elp3dFlGMjdHaEFwR3BZUEJPQ2psRDVra0hLMmpTNndWaXlWYw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.2s">
-          <div class="card-meta">
-            <span class="badge badge-source">International Tax Review</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYkJmMTFyWGN6amdaQmxwTVFXWVoxM0thMXR4TmxKX0lqSmRqcHp4endZRk1yZWs1ZTY4X0xDTjgtNlBPQklXNlFBVU84ckpkRlh5Vmx2V2N3YnBRd0VjLXNtUER3RExOaWV3MUlhWXgzdl9ESUY0NDZUMzhjYkl0QTdINEpFZkV0Y3Q0cVRHZE52ajljeklnNEZNU0tIc3prY1p2Uk5tLThTMy03WkwzejlHTFJsdml1TXRaNm52RjNBSUNQV2RvYWVkVXB4UE5hLWE4blVsTQ?oc=5" target="_blank" rel="noopener">G7 backs pillar two SbS deal, opens pillar one dialogue - International Tax Review</a>
-            
-          </div>
-          <p class="card-summary">G7 backs pillar two SbS deal, opens pillar one dialogue International Tax Review</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>6h ago</span>
-            
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYkJmMTFyWGN6amdaQmxwTVFXWVoxM0thMXR4TmxKX0lqSmRqcHp4endZRk1yZWs1ZTY4X0xDTjgtNlBPQklXNlFBVU84ckpkRlh5Vmx2V2N3YnBRd0VjLXNtUER3RExOaWV3MUlhWXgzdl9ESUY0NDZUMzhjYkl0QTdINEpFZkV0Y3Q0cVRHZE52ajljeklnNEZNU0tIc3prY1p2Uk5tLThTMy03WkwzejlHTFJsdml1TXRaNm52RjNBSUNQV2RvYWVkVXB4UE5hLWE4blVsTQ?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.25s">
+        <article class="news-card imp-3" style="animation-delay:0.0s">
           <div class="card-meta">
             <span class="badge badge-source">KPMG</span>
-            <span class="badge badge-imp-2">Update</span>
+            <span class="badge badge-imp-3">Notable</span>
             
             
             
@@ -670,66 +935,12 @@ footer a:hover{color:#0369a1;}
             <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPbTVnZl9xWUF6WTMyRFVRVkVDaDdJclRDRGhOYjZfUktvUm1sWmptY0t3bTFtWldtUHRXdzRWbk5mc0FvRUs0NFIwMGNLd1NFVURMU2tCMXdmSWpnZDZzUkE0N2F0QmRYbThkQjBkNF8tX1hWUm5KM19zRm9XYlJ0TEp2UUxCc3p1Q2hfRHhTTXE0dFNFVUotdHprSzFXZDQwaWNUVGhMY0tsakI5RjZJ?oc=5" target="_blank" rel="noopener">Euro Tax Flash from KPMG&#39;s EU Tax Centre: 19 May 2026 - KPMG</a>
             
           </div>
-          <p class="card-summary">Euro Tax Flash from KPMG&#39;s EU Tax Centre: 19 May 2026 KPMG</p>
+          <p class="card-summary">KPMG&#39;s EU Tax Centre published its Euro Tax Flash on May 19, 2026, providing an overview of recent European tax developments. This regular update typically covers various international tax issues relevant to businesses operating within the EU, including potential legislative changes or guidance.</p>
           
           <div class="card-footer">
             <span class="card-fresh">1d ago</span>
             
             <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPbTVnZl9xWUF6WTMyRFVRVkVDaDdJclRDRGhOYjZfUktvUm1sWmptY0t3bTFtWldtUHRXdzRWbk5mc0FvRUs0NFIwMGNLd1NFVURMU2tCMXdmSWpnZDZzUkE0N2F0QmRYbThkQjBkNF8tX1hWUm5KM19zRm9XYlJ0TEp2UUxCc3p1Q2hfRHhTTXE0dFNFVUotdHprSzFXZDQwaWNUVGhMY0tsakI5RjZJ?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.30000000000000004s">
-          <div class="card-meta">
-            <span class="badge badge-source">Quiver Quantitative</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxObi1CdVlRYjQ3ZWwwcWVKYzg2YTNtTV8zSVFvWG81V0RVSk1ocTI4SXIxZG1UOW1LN0dnZWEwWVJ4LVp0cVFhOGJZQ3NJNGtqZVBmSHNVQUJKVjNiVU8wOHZ5bUM0elZnMi1GZ0FHTjM1XzIza1dSZ1o0Q3BhaDJvOTRma2ZBNm1TTDJZQVU4eW5Ta1NsT05fNlZhcTBoaEZqMW5zc2wxd011cmxVN0hhQnFBR0tDUUlWdXJRMnFfbElfNWpxSmVscnFrRExMbGw2STdwUXJ3dw?oc=5" target="_blank" rel="noopener">Trident Digital Tech Holdings Ltd. Launches Nationwide Digital Tax and MSME Formalization Platform in Ghana - Quiver Quantitative</a>
-            
-          </div>
-          <p class="card-summary">Trident Digital Tech Holdings Ltd. Launches Nationwide Digital Tax and MSME Formalization Platform in Ghana Quiver Quantitative</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>4h ago</span>
-            
-            
-            <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxObi1CdVlRYjQ3ZWwwcWVKYzg2YTNtTV8zSVFvWG81V0RVSk1ocTI4SXIxZG1UOW1LN0dnZWEwWVJ4LVp0cVFhOGJZQ3NJNGtqZVBmSHNVQUJKVjNiVU8wOHZ5bUM0elZnMi1GZ0FHTjM1XzIza1dSZ1o0Q3BhaDJvOTRma2ZBNm1TTDJZQVU4eW5Ta1NsT05fNlZhcTBoaEZqMW5zc2wxd011cmxVN0hhQnFBR0tDUUlWdXJRMnFfbElfNWpxSmVscnFrRExMbGw2STdwUXJ3dw?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
-            
-          </div>
-        </article>
-        
-        
-        
-        
-        <article class="news-card imp-2" style="animation-delay:0.35000000000000003s">
-          <div class="card-meta">
-            <span class="badge badge-source">Tax Justice Network</span>
-            <span class="badge badge-imp-2">Update</span>
-            
-            
-            
-          </div>
-          <div class="card-title">
-            
-            <a href="https://taxjustice.net/2026/05/21/finally-the-european-court-of-justice-cracks-down-on-trusts/" target="_blank" rel="noopener">Finally, the European Court of Justice cracks down on trusts</a>
-            
-          </div>
-          <p class="card-summary">The Tax Justice Network has banged the drum about the threats posed by trusts for decades. On 21 May 2026, the European Court of Justice has finally joined us. They have published rulings that directly relate to trusts regarding two major risks: secrecy and asset protection. As we set out below, the</p>
-          
-          <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>2h ago</span>
-            
-            
-            <a class="card-link-btn" href="https://taxjustice.net/2026/05/21/finally-the-european-court-of-justice-cracks-down-on-trusts/" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
             
           </div>
         </article>
@@ -752,6 +963,19 @@ footer a:hover{color:#0369a1;}
       
       <div class="archive-item">
         <div class="archive-dot"></div>
+        <span class="archive-source">VitalLaw.com</span>
+        <span class="archive-title-text">
+          <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPWkxzTzdiQkhuVHlYMnNjdExJOUJ6SU95TXd3LXpKTFBqTVBUbEc0SUNuOHhIMDRWbnJ4Rk5QY3ZhODI5UExyRUZhWUlLN19UaEU4WVI3ekNoT0ZXdTVILWZ6RTFPc19oRUtmc3BsLW5OY2ZIcFFmOTRDa1h2ZTZ1QUJ1V3RSeV9xM0hpM19hMHFXSlV2TU9KMm5iLXU3YVY5ODZzaw?oc=5" target="_blank" rel="noopener">Australian Tax Agency Advises On Pillar Two Account Creation (May 20, 2026)</a>
+          
+        </span>
+        
+        <span class="archive-lens-tag">Pillar Two / GloBE</span>
+        
+      </div>
+      
+      
+      <div class="archive-item">
+        <div class="archive-dot"></div>
         <span class="archive-source">KPMG</span>
         <span class="archive-title-text">
           <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPbTVnZl9xWUF6WTMyRFVRVkVDaDdJclRDRGhOYjZfUktvUm1sWmptY0t3bTFtWldtUHRXdzRWbk5mc0FvRUs0NFIwMGNLd1NFVURMU2tCMXdmSWpnZDZzUkE0N2F0QmRYbThkQjBkNF8tX1hWUm5KM19zRm9XYlJ0TEp2UUxCc3p1Q2hfRHhTTXE0dFNFVUotdHprSzFXZDQwaWNUVGhMY0tsakI5RjZJ?oc=5" target="_blank" rel="noopener">Euro Tax Flash from KPMG&#39;s EU Tax Centre: 19 May 2026 - KPMG</a>
@@ -769,6 +993,8 @@ footer a:hover{color:#0369a1;}
           
         </span>
         
+        <span class="archive-lens-tag">Tax treaties &amp; con</span>
+        
       </div>
       
       
@@ -779,6 +1005,8 @@ footer a:hover{color:#0369a1;}
           <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5" target="_blank" rel="noopener">Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency</a>
           
         </span>
+        
+        <span class="archive-lens-tag">Tax treaties &amp; con</span>
         
       </div>
       
@@ -791,6 +1019,8 @@ footer a:hover{color:#0369a1;}
           
         </span>
         
+        <span class="archive-lens-tag">Digital economy ta</span>
+        
       </div>
       
       
@@ -801,6 +1031,8 @@ footer a:hover{color:#0369a1;}
           <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxORHZOUjFZbFBGWjdtU1hVMmxmemwtVHJfTjlpbVlFZktUQjdwVjBiN3EyNWRrTURsTWh6NEpNYVJXaUZFU3Z0S2FwUl9rNGdGaTdqbTVPMncxN2hnUUYyeExmd2R6cjREMkxTZ1RKc0ZKT1Jsd19hWGhRWkdfQUZBOHhNTEk2Z1Qzcjl6dUVabkVkTkFYRDUzZzU0elp3dFlGMjdHaEFwR3BZUEJPQ2psRDVra0hLMmpTNndWaXlWYw?oc=5" target="_blank" rel="noopener">Nigeria Launches Digital Tax Complaint System to Support Revenue Reform Drive - Ecofin Agency</a>
           
         </span>
+        
+        <span class="archive-lens-tag">Digital economy ta</span>
         
       </div>
       
@@ -813,6 +1045,8 @@ footer a:hover{color:#0369a1;}
           
         </span>
         
+        <span class="archive-lens-tag">Tax transparency</span>
+        
       </div>
       
       
@@ -823,6 +1057,8 @@ footer a:hover{color:#0369a1;}
           <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYkJmMTFyWGN6amdaQmxwTVFXWVoxM0thMXR4TmxKX0lqSmRqcHp4endZRk1yZWs1ZTY4X0xDTjgtNlBPQklXNlFBVU84ckpkRlh5Vmx2V2N3YnBRd0VjLXNtUER3RExOaWV3MUlhWXgzdl9ESUY0NDZUMzhjYkl0QTdINEpFZkV0Y3Q0cVRHZE52ajljeklnNEZNU0tIc3prY1p2Uk5tLThTMy03WkwzejlHTFJsdml1TXRaNm52RjNBSUNQV2RvYWVkVXB4UE5hLWE4blVsTQ?oc=5" target="_blank" rel="noopener">G7 backs pillar two SbS deal, opens pillar one dialogue - International Tax Review</a>
           
         </span>
+        
+        <span class="archive-lens-tag">Pillar Two / GloBE</span>
         
       </div>
       
@@ -835,18 +1071,7 @@ footer a:hover{color:#0369a1;}
           
         </span>
         
-      </div>
-      
-      
-      <div class="archive-item">
-        <div class="archive-dot"></div>
-        <span class="archive-source">VitalLaw.com</span>
-        <span class="archive-title-text">
-          <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPWkxzTzdiQkhuVHlYMnNjdExJOUJ6SU95TXd3LXpKTFBqTVBUbEc0SUNuOHhIMDRWbnJ4Rk5QY3ZhODI5UExyRUZhWUlLN19UaEU4WVI3ekNoT0ZXdTVILWZ6RTFPc19oRUtmc3BsLW5OY2ZIcFFmOTRDa1h2ZTZ1QUJ1V3RSeV9xM0hpM19hMHFXSlV2TU9KMm5iLXU3YVY5ODZzaw?oc=5" target="_blank" rel="noopener">Australian Tax Agency Advises On Pillar Two Account Creation (May 20, 2026)</a>
-          
-        </span>
-        
-        <span class="archive-lens-tag">Pillar Two / GloBE</span>
+        <span class="archive-lens-tag">CJEU &amp; EU Court de</span>
         
       </div>
       
@@ -979,7 +1204,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   const container = document.getElementById('sparkleContainer');
   if(!container) return;
   const heroH = container.offsetHeight || 500;
-  const TOWER_CENTER_X = 68;  // % from left — Eiffel tower position in painting
+  const TOWER_CENTER_X = 65.5;  // % from left — adjusted left
   const TOWER_TOP_Y    = heroH * 0.02;  // tower top starts 2% from top
   const TOWER_BASE_Y   = heroH * 0.48;  // tower base at 48% of hero height
 
@@ -988,7 +1213,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(beacon){
     const heroEl = container.closest('.hero-bg');
     const heroRect = heroEl ? heroEl.getBoundingClientRect() : null;
-    beacon.style.left = '68%';
+    beacon.style.left = '65.5%';
     beacon.style.top  = TOWER_TOP_Y + 'px';
   }
   const SPARKS = 220;
@@ -996,7 +1221,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   for(let i=0;i<SPARKS;i++){
     const el = document.createElement('div');
     const progress = Math.random(); // 0=top, 1=base
-    const halfW = 0.8 + progress * 2.8; // narrow spire, wide base
+    const halfW = 0.5 + progress * 1.8; // narrower tower
     const xBase = TOWER_CENTER_X - halfW + Math.random() * halfW * 2;
     const yBase = TOWER_TOP_Y + progress * (TOWER_BASE_Y - TOWER_TOP_Y);
     const colors = ['','','','gold','gold',''];
