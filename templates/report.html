@@ -27,7 +27,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:linear-gradient(160deg,#cdd8e8 0%,#d5e2ef 30%,#dce8f2 60%,#d0dcea 100%);background-attachment:fixed;color:#0f172a;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;min-height:100vh;}
+body{background:linear-gradient(160deg,#b8c8dc 0%,#c0d0e4 30%,#c8d8ec 60%,#bccadc 100%);background-attachment:fixed;color:#0f172a;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;min-height:100vh;}
 
 /* Top accent strip */
 body::before{content:'';display:block;height:3px;
@@ -59,7 +59,7 @@ body::before{content:'';display:block;height:3px;
   animation:lamp-glow 3s ease-in-out infinite;pointer-events:none;z-index:3;}
 
 /* Beacon */
-.eiffel-beacon{position:absolute;left:68%;top:2%;width:0;height:0;
+.eiffel-beacon{position:absolute;left:65.5%;top:2%;width:0;height:0;
   pointer-events:none;z-index:4;animation:beam-pulse 6s ease-in-out infinite;}
 .beacon-beam{position:absolute;top:0;left:0;width:500px;height:500px;
   transform-origin:0 0;
@@ -102,7 +102,7 @@ body::before{content:'';display:block;height:3px;
     rgba(0,5,15,0.35) 65%,
     rgba(0,5,20,0.72) 100%);}
 .hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;
-  background:linear-gradient(to bottom,transparent,#cdd8e8);
+  background:linear-gradient(to bottom,transparent,#b8c8dc);
   pointer-events:none;z-index:2;}
 .hero-inner{position:relative;z-index:3;width:100%;max-width:1100px;margin:0 auto;
   padding:0 2rem;min-height:520px;
@@ -149,7 +149,7 @@ body::before{content:'';display:block;height:3px;
 /* ── Stats ── */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;
   margin:1.75rem 0;animation:fade-in .5s ease .3s both;}
-.stat-card{background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;
+.stat-card{background:linear-gradient(145deg,#ffffff,#f0f6ff);border:1px solid #d4e0f0;border-radius:10px;
   padding:.85rem 1.2rem;transition:box-shadow .2s,transform .2s;
   box-shadow:0 1px 4px rgba(0,0,0,0.05);}
 .stat-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
@@ -193,7 +193,7 @@ body::before{content:'';display:block;height:3px;
 /* ── Lens ── */
 .lens-section{margin-bottom:2.25rem;}
 .lens-header{display:flex;align-items:center;gap:.65rem;margin-bottom:1rem;
-  padding:.6rem 1rem;border-left:4px solid #0891b2;background:#ffffff;
+  padding:.6rem 1rem;border-left:4px solid #0891b2;background:linear-gradient(90deg,#e8f4fd,#f8fbff);
   border-radius:0 8px 8px 0;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
 .lens-dot{width:7px;height:7px;border-radius:50%;background:#0891b2;flex-shrink:0;}
 .lens-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;
@@ -204,26 +204,26 @@ body::before{content:'';display:block;height:3px;
 
 /* ── Cards — ONE style, clean white ── */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:.85rem;}
-.news-card{background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;
+.news-card{background:linear-gradient(145deg,#ffffff 0%,#f0f6ff 50%,#f8fbff 100%);border:1px solid #d4e0f0;border-radius:12px;
   padding:1.15rem 1.25rem;display:flex;flex-direction:column;gap:.6rem;
   position:relative;overflow:hidden;
   transition:border-color .2s,transform .18s,box-shadow .18s;
   animation:card-in .4s ease both;box-shadow:0 1px 4px rgba(0,0,0,0.05);}
 .news-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:transparent;}
 .news-card:hover{border-color:#0891b2;transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(8,145,178,0.1);}
+  box-shadow:0 8px 28px rgba(8,145,178,0.15),0 2px 8px rgba(0,0,0,0.05);}
 
 /* Landmark — full width, teal accent */
 .news-card.imp-5{grid-column:1/-1;border-left:5px solid #0891b2;
   border-radius:0 12px 12px 0;padding:1.5rem 1.75rem;
-  background:linear-gradient(135deg,#f0f9ff,#ffffff);
-  box-shadow:0 4px 20px rgba(8,145,178,0.08);}
+  background:linear-gradient(135deg,#e0f2fe 0%,#f0f9ff 40%,#ffffff 100%);
+  box-shadow:0 6px 24px rgba(8,145,178,0.12);}
 .news-card.imp-5::before{background:linear-gradient(90deg,#0891b2,#06b6d4);opacity:.5;}
 .news-card.imp-5 .card-title{font-size:17px;font-family:'Playfair Display',serif;font-style:italic;}
 
 /* Major — 2 col */
-.news-card.imp-4{grid-column:span 2;}
-.news-card.imp-4::before{background:#0891b2;opacity:.35;}
+.news-card.imp-4{grid-column:span 2;background:linear-gradient(145deg,#f8fdff 0%,#e8f4fd 60%,#f0f8ff 100%);}
+.news-card.imp-4::before{background:#0891b2;opacity:.4;}
 
 /* Notable */
 .news-card.imp-3::before{background:#0891b2;opacity:.2;}
@@ -273,7 +273,7 @@ body::before{content:'';display:block;height:3px;
 .archive-day{margin-bottom:1.5rem;}
 .archive-day-label{font-size:13px;font-family:'DM Mono',monospace;color:#0891b2;
   margin-bottom:.6rem;font-weight:600;}
-.archive-list{background:#ffffff;border-radius:10px;border:1px solid #e2e8f0;
+.archive-list{background:linear-gradient(160deg,#f8fbff,#f0f6ff);border-radius:10px;border:1px solid #d4e0f0;
   overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
 .archive-item{display:flex;align-items:baseline;gap:.75rem;padding:9px 14px;
   border-bottom:1px solid #f1f5f9;font-size:13px;transition:background .15s;}
@@ -574,7 +574,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   const container = document.getElementById('sparkleContainer');
   if(!container) return;
   const heroH = container.offsetHeight || 500;
-  const TOWER_CENTER_X = 68;  // % from left — Eiffel tower position in painting
+  const TOWER_CENTER_X = 65.5;  // % from left — adjusted left
   const TOWER_TOP_Y    = heroH * 0.02;  // tower top starts 2% from top
   const TOWER_BASE_Y   = heroH * 0.48;  // tower base at 48% of hero height
 
@@ -583,7 +583,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(beacon){
     const heroEl = container.closest('.hero-bg');
     const heroRect = heroEl ? heroEl.getBoundingClientRect() : null;
-    beacon.style.left = '68%';
+    beacon.style.left = '65.5%';
     beacon.style.top  = TOWER_TOP_Y + 'px';
   }
   const SPARKS = 220;
@@ -591,7 +591,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   for(let i=0;i<SPARKS;i++){
     const el = document.createElement('div');
     const progress = Math.random(); // 0=top, 1=base
-    const halfW = 0.8 + progress * 2.8; // narrow spire, wide base
+    const halfW = 0.5 + progress * 1.8; // narrower tower
     const xBase = TOWER_CENTER_X - halfW + Math.random() * halfW * 2;
     const yBase = TOWER_TOP_Y + progress * (TOWER_BASE_Y - TOWER_TOP_Y);
     const colors = ['','','','gold','gold',''];
