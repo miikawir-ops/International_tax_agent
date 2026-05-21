@@ -59,7 +59,7 @@ body::before{content:'';display:block;height:3px;
   animation:lamp-glow 3s ease-in-out infinite;pointer-events:none;z-index:3;}
 
 /* Beacon */
-.eiffel-beacon{position:absolute;left:65.5%;top:2%;width:0;height:0;
+.eiffel-beacon{position:absolute;left:67%;top:2%;width:0;height:0;
   pointer-events:none;z-index:4;animation:beam-pulse 6s ease-in-out infinite;}
 .beacon-beam{position:absolute;top:0;left:0;width:500px;height:500px;
   transform-origin:0 0;
@@ -574,7 +574,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   const container = document.getElementById('sparkleContainer');
   if(!container) return;
   const heroH = container.offsetHeight || 500;
-  const TOWER_CENTER_X = 65.5;  // % from left — adjusted left
+  const TOWER_CENTER_X = 67;  // % from left — moved right
   const TOWER_TOP_Y    = heroH * 0.02;  // tower top starts 2% from top
   const TOWER_BASE_Y   = heroH * 0.48;  // tower base at 48% of hero height
 
@@ -583,7 +583,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(beacon){
     const heroEl = container.closest('.hero-bg');
     const heroRect = heroEl ? heroEl.getBoundingClientRect() : null;
-    beacon.style.left = '65.5%';
+    beacon.style.left = '67%';
     beacon.style.top  = TOWER_TOP_Y + 'px';
   }
   const SPARKS = 220;
