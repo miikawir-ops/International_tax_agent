@@ -107,22 +107,22 @@ body::before{content:'';display:block;height:3px;
 .hero-inner{position:relative;z-index:3;width:100%;max-width:1100px;margin:0 auto;
   padding:0 2rem;min-height:520px;
   display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
-  padding-bottom:6%;color:#ffffff !important;}
+  padding-bottom:3%;color:#ffffff !important;}
 .hero-glass{width:100%;max-width:560px;
   background:transparent;
   border:none;
   padding:1.5rem 1.5rem;text-align:center;color:#ffffff;}
-.hero-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;
-  text-transform:uppercase;color:rgba(200,240,255,0.9);margin-bottom:.75rem;display:block;
-  text-shadow:0 1px 8px rgba(0,0,0,0.8);}
+.hero-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.2em;
+  text-transform:uppercase;color:#ffffff;margin-bottom:.85rem;display:block;
+  font-weight:500;text-shadow:0 1px 10px rgba(0,0,0,0.9);}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.8vw,2.3rem);
   font-weight:400;line-height:1.25;margin-bottom:.85rem;color:#ffffff;
   font-style:italic;letter-spacing:0;
   text-shadow:0 2px 24px rgba(0,0,0,0.9),0 1px 6px rgba(0,0,0,0.7);}
-.hero-sub{font-size:14px;color:rgba(255,255,255,0.8);
-  max-width:460px;margin:0 auto;line-height:1.75;font-weight:300;font-style:normal;
+.hero-sub{font-size:14px;color:rgba(255,255,255,0.92);
+  max-width:480px;margin:0 auto;line-height:1.75;font-weight:400;font-style:normal;
   font-family:'Inter',sans-serif;
-  text-shadow:0 1px 8px rgba(0,0,0,0.7);}
+  text-shadow:0 1px 10px rgba(0,0,0,0.9);}
 
 /* ── Signal / Plat du Jour ── */
 .signal-wrap{padding:1.75rem 0 0;}
@@ -576,7 +576,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   const heroH = container.offsetHeight || 500;
   const TOWER_CENTER_X = 68;  // % from left — Eiffel tower position in painting
   const TOWER_TOP_Y    = heroH * 0.02;  // tower top starts 2% from top
-  const TOWER_BASE_Y   = heroH * 0.60;  // tower base at 60% of hero height
+  const TOWER_BASE_Y   = heroH * 0.48;  // tower base at 48% of hero height
 
   // Position beacon EXACTLY at tower top using same coordinates as sparkles
   const beacon = document.querySelector('.eiffel-beacon');
@@ -612,6 +612,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
       const halfW = 0.8 + progress * 2.8;
       const xBase = TOWER_CENTER_X - halfW + Math.random() * halfW * 2;
       const yBase = TOWER_TOP_Y + progress * (TOWER_BASE_Y - TOWER_TOP_Y);
+      if(yBase > TOWER_BASE_Y) continue;
       el.style.cssText = `
         left:${xBase}%;top:${yBase}px;
         width:${1+Math.random()*2}px;height:${1+Math.random()*2}px;
