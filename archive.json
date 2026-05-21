@@ -1,5 +1,25 @@
 [
   {
+    "id": "76c36b04431f",
+    "title": "Euro Tax Flash from KPMG's EU Tax Centre: 19 May 2026 - KPMG",
+    "summary": "Euro Tax Flash from KPMG's EU Tax Centre: 19 May 2026 KPMG",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbTVnZl9xWUF6WTMyRFVRVkVDaDdJclRDRGhOYjZfUktvUm1sWmptY0t3bTFtWldtUHRXdzRWbk5mc0FvRUs0NFIwMGNLd1NFVURMU2tCMXdmSWpnZDZzUkE0N2F0QmRYbThkQjBkNF8tX1hWUm5KM19zRm9XYlJ0TEp2UUxCc3p1Q2hfRHhTTXE0dFNFVUotdHprSzFXZDQwaWNUVGhMY0tsakI5RjZJ?oc=5",
+    "source": "KPMG",
+    "pub": "Wed, 20 May 2026 08:16:58 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "General international tax",
+    "region": "EU",
+    "country_focus": "EU",
+    "importance": 3,
+    "ai_summary": "KPMG's EU Tax Centre published a 'Euro Tax Flash' on May 19, 2026, providing an update on recent EU tax developments. These publications typically offer practitioner analysis and insights into legislative changes, CJEU judgments, and policy discussions relevant to international taxation within the European Union.",
+    "freshness": "1d ago",
+    "accessible": true,
+    "archive_date": "2026-05-21"
+  },
+  {
     "id": "0a34134f483a",
     "title": "China-Italy Double Tax Treaty 2026: FAQs for Italian Investors - China Briefing",
     "summary": "China-Italy Double Tax Treaty 2026: FAQs for Italian Investors China Briefing",
@@ -16,33 +36,11 @@
     "lens": "Tax treaties & conventions",
     "region": "APAC",
     "country_focus": "China",
-    "importance": 4,
-    "ai_summary": "The article provides FAQs regarding the 2026 China-Italy Double Tax Treaty, aiming to clarify its implications for Italian investors in China. It details key provisions impacting cross-border investments, such as withholding tax rates, permanent establishment definitions, and dispute resolution mechanisms, signalling an update to the bilateral tax relationship.",
-    "freshness": "2h ago",
+    "importance": 3,
+    "ai_summary": "China Briefing released a set of Frequently Asked Questions (FAQs) regarding the China-Italy Double Tax Treaty (DTT) for Italian investors. This guidance provides practical insights for navigating the bilateral convention, particularly concerning tax implications for Italian businesses and individuals investing in China.",
+    "freshness": "18h ago",
     "accessible": true,
-    "archive_date": "2026-05-20"
-  },
-  {
-    "id": "1d7a71a39ca5",
-    "title": "Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency",
-    "summary": "Parliament ratifies double taxation avoidance agreement with Japan AKIpress News Agency",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5",
-    "source": "AKIpress News Agency",
-    "pub": "Wed, 20 May 2026 09:48:00 GMT",
-    "open": true,
-    "countries": [
-      "Japan"
-    ],
-    "is_treaty": false,
-    "is_finnish": false,
-    "lens": "Tax treaties & conventions",
-    "region": "Other",
-    "country_focus": "Kyrgyzstan",
-    "importance": 4,
-    "ai_summary": "Kyrgyzstan's Parliament has officially ratified a new Double Taxation Avoidance Agreement (DTAA) with Japan, establishing a modern framework to prevent double taxation and fiscal evasion. This ratification is crucial for enhancing economic ties, facilitating investment, and promoting trade by clarifying taxing rights between the two nations.",
-    "freshness": "6h ago",
-    "accessible": true,
-    "archive_date": "2026-05-20"
+    "archive_date": "2026-05-21"
   },
   {
     "id": "314e80ad0648",
@@ -59,12 +57,34 @@
     "is_finnish": false,
     "lens": "Tax treaties & conventions",
     "region": "EU",
-    "country_focus": "Ukraine",
+    "country_focus": "Global",
     "importance": 4,
-    "ai_summary": "Ukraine and Germany have formally signed a new agreement on the avoidance of double taxation, updating their previous treaty to reflect contemporary international tax standards. This accord is designed to foster greater economic cooperation and bilateral investment by providing certainty on taxation of income and capital and incorporating robust anti-abuse clauses.",
+    "ai_summary": "Ukraine and Germany have formally signed a new agreement for the avoidance of double taxation, replacing previous arrangements. This significant bilateral treaty aims to reduce tax barriers, enhance legal certainty for cross-border investments, and foster economic cooperation between the two nations.",
     "freshness": "1d ago",
     "accessible": true,
-    "archive_date": "2026-05-20"
+    "archive_date": "2026-05-21"
+  },
+  {
+    "id": "1d7a71a39ca5",
+    "title": "Parliament ratifies double taxation avoidance agreement with Japan - AKIpress News Agency",
+    "summary": "Parliament ratifies double taxation avoidance agreement with Japan AKIpress News Agency",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU0ctd25waGxQU2c4YWFYNEo3LXhPZFNQX1pVSC1SaVhmXzBRWnBDclpwdEc5YkFfX2s0RlljS0F3Vnd2U2VmOUFhclZtX1ZXY3p5RmVPTVV2WUVkeVhYZ0JaZ214NGh6ck1lYm5zWjctdjdhRVFNUWJWUXhIb3IyREllUldyNExfN0NRbWxmOFJtVjRRdnBWRkhTeU42eFQzNFE?oc=5",
+    "source": "AKIpress News Agency",
+    "pub": "Wed, 20 May 2026 09:48:00 GMT",
+    "open": true,
+    "countries": [
+      "Japan"
+    ],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Tax treaties & conventions",
+    "region": "APAC",
+    "country_focus": "Global",
+    "importance": 4,
+    "ai_summary": "The Parliament of Kyrgyzstan has ratified a Double Taxation Avoidance Agreement (DTAA) with Japan. This ratification is a crucial step for the DTAA's entry into force, which will facilitate trade and investment flows by preventing double taxation of income for residents of both countries.",
+    "freshness": "22h ago",
+    "accessible": true,
+    "archive_date": "2026-05-21"
   },
   {
     "id": "3d2aa0973a87",
@@ -81,10 +101,10 @@
     "region": "US",
     "country_focus": "US",
     "importance": 3,
-    "ai_summary": "In California, a legislative push for a game preservation bill has brought renewed attention to the broader debate surrounding digital taxation within the state. Discussions are intensifying on how to appropriately tax digital goods and services, exploring potential new levies or adjustments to existing tax structures to capture revenue from the evolving digital economy.",
+    "ai_summary": "California is progressing a game preservation bill, while simultaneously engaging in a growing debate over digital taxation within the state. This discussion reflects the broader global trend of jurisdictions exploring new revenue streams from the digital economy, potentially impacting digital goods and services.",
     "freshness": "1d ago",
     "accessible": true,
-    "archive_date": "2026-05-20"
+    "archive_date": "2026-05-21"
   },
   {
     "id": "f4e157e00d4f",
