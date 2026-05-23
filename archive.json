@@ -1,5 +1,25 @@
 [
   {
+    "id": "dd665c1523c5",
+    "title": "Global Minimum Tax Creates Dispute Risks, Polish Official Says",
+    "summary": "Global Minimum Tax Creates Dispute Risks, Polish Official Says news.bloombergtax.com",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTEZlbll1Sjl4YlVfUjlDUUtQTGNXaTVPd1k1ZXNKTHZzS19VUTNjRVI3RTl0VHA1VlFMeHFMX1ZiSmpoektiZUtWVmU4bEhiY0JwcFpUWElPdjdKREU1a19JaUtWNUVxcVJNbTAyalhoaTU1S1p2dG9NWVNzR3Z1UWNqUlpXbDY5eEswYlVOOUdabTJyR2RSQnVkV0xoUzVpUUx4a25zQlZqYzFGM3k4ZjJlRHFXTU53X3dtZ3Nzcw?oc=5",
+    "source": "news.bloombergtax.com",
+    "pub": "Thu, 21 May 2026 19:04:00 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Pillar Two / GloBE",
+    "region": "EU",
+    "country_focus": "Poland",
+    "importance": 3,
+    "ai_summary": "A Polish official expressed concerns that the global minimum tax (Pillar Two) could significantly increase international tax disputes, particularly for multinational enterprises operating within the EU. This highlights the practical implementation challenges and potential for litigation arising from the complex new GloBE rules.",
+    "freshness": "1d ago",
+    "accessible": true,
+    "archive_date": "2026-05-23"
+  },
+  {
     "id": "ed6aa8efb20c",
     "title": "Proposed Directive to implement Pillar Two in the EU - KPMG",
     "summary": "Proposed Directive to implement Pillar Two in the EU KPMG",
@@ -14,7 +34,7 @@
     "region": "EU",
     "country_focus": "Global",
     "importance": 4,
-    "ai_summary": "The European Commission has issued a proposed Directive aimed at implementing the OECD Pillar Two GloBE rules across all EU Member States. This legislative initiative is a major step towards ensuring a harmonized 15% minimum effective corporate tax rate within the European Union, impacting multinational enterprises operating in the region.",
+    "ai_summary": "The European Union has proposed a directive to implement the OECD's Pillar Two global minimum tax rules across all Member States. This directive aims to ensure consistent application of the GloBE rules, including the Income Inclusion Rule (IIR) and Undertaxed Payments Rule (UTPR), within the EU framework.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -34,7 +54,7 @@
     "region": "EU",
     "country_focus": "Poland",
     "importance": 4,
-    "ai_summary": "Poland's proposed Digital Services Tax (DST) has elicited strong opposition from the United States, as highlighted by Americans for Tax Reform. This unilateral measure by Poland underscores ongoing international tensions regarding the taxation of the digital economy in the absence of a global consensus under the OECD's Pillar One framework.",
+    "ai_summary": "Americans for Tax Reform strongly advocated against Poland's proposed Digital Services Tax, urging the U.S. government to oppose its implementation. This proposal from Poland highlights ongoing international tensions regarding unilateral digital taxation measures outside of a global consensus.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -53,8 +73,8 @@
     "lens": "Digital economy taxation",
     "region": "Other",
     "country_focus": "Ghana",
-    "importance": 3,
-    "ai_summary": "Trident Digital Tech Holdings Ltd. has launched a nationwide digital tax and MSME formalization platform in Ghana, aiming to streamline tax collection for digital transactions and integrate micro, small, and medium enterprises into the formal economy. This initiative represents a significant country-specific development in enhancing tax compliance through digital means.",
+    "importance": 2,
+    "ai_summary": "Trident Digital Tech Holdings Ltd. has launched a nationwide digital tax and MSME formalization platform in Ghana. This initiative aims to streamline tax collection and broaden the tax base by bringing micro, small, and medium enterprises into the formal tax system through digital means.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -73,8 +93,8 @@
     "lens": "Digital economy taxation",
     "region": "APAC",
     "country_focus": "Cambodia",
-    "importance": 3,
-    "ai_summary": "Cambodia has reportedly achieved a fivefold increase in tax revenue, amounting to $3.57 billion, attributed to a strategic 'digital tax shift'. This notable surge in revenue highlights the significant financial impact of Cambodia's policies aimed at modernizing tax collection and taxing the digital economy within its jurisdiction.",
+    "importance": 2,
+    "ai_summary": "Cambodia's digital tax shift has reportedly led to a fivefold surge in revenue, reaching $3.57 billion, indicating a significant impact on public finances. This growth suggests successful integration of digital taxation measures into the national economy, potentially reflecting increased compliance or expanded tax scope.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -94,7 +114,7 @@
     "region": "Other",
     "country_focus": "Ghana",
     "importance": 2,
-    "ai_summary": "Trident Digital Tech Holdings is preparing to launch its digital tax platform for Ghana on June 5, indicating a procedural update in the country's efforts to digitalize its tax collection system. This platform is expected to facilitate tax compliance and aid in the formalization of businesses within Ghana's digital economy.",
+    "ai_summary": "Trident Digital Tech Holdings is preparing to launch its digital tax platform for Ghana on June 5, aiming to modernize tax administration and compliance. This platform is expected to facilitate tax collection and expand the formal tax base for micro, small, and medium enterprises in the country.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -114,7 +134,7 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 4,
-    "ai_summary": "The G7 group has publicly backed the Pillar Two Subject to Tax Rule (STTR) deal, a critical component of the global minimum tax framework. Concurrently, the G7 has opened dialogue on Pillar One, signaling a continued commitment to addressing the taxation challenges of the digital economy and reallocating taxing rights internationally.",
+    "ai_summary": "The G7 group of nations has formally endorsed the Pillar Two Subject-to-Tax Rule (STTR) deal, signaling strong political support for its implementation. Additionally, the G7 has opened dialogue regarding the ongoing work on Pillar One, indicating continued efforts towards a global consensus on digital economy taxation.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -133,8 +153,8 @@
     "lens": "State aid",
     "region": "EU",
     "country_focus": "Portugal",
-    "importance": 4,
-    "ai_summary": "The European Union Court has ruled that Portugal must reclaim illegal state aid, affirming a previous decision by the European Commission. This significant judgment underscores the strict application of EU state aid rules, compelling Member States to recover unlawful tax advantages that distort competition within the single market.",
+    "importance": 5,
+    "ai_summary": "The EU Court ruled that Portugal must reclaim illegal state aid, confirming a prior European Commission decision regarding non-compliant tax advantages. This judgment reinforces the EU's strict stance on state aid rules, ensuring fair competition within the single market.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
@@ -152,9 +172,9 @@
     "is_finnish": false,
     "lens": "CJEU & EU Court decisions",
     "region": "EU",
-    "country_focus": "Global",
-    "importance": 4,
-    "ai_summary": "The European Court of Justice (CJEU) has issued landmark rulings on May 21, 2026, directly addressing trusts with specific regard to secrecy and asset protection. These decisions are expected to significantly impact tax transparency and anti-avoidance measures concerning trust structures across the European Union, reinforcing efforts to combat illicit financial flows.",
+    "country_focus": "EU",
+    "importance": 5,
+    "ai_summary": "The European Court of Justice issued significant rulings concerning trusts, directly addressing risks related to secrecy and asset protection. These judgments represent a landmark development in combating the misuse of trusts for tax avoidance and promoting greater transparency within the EU's financial systems.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-05-23"
