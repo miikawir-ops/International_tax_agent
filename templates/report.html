@@ -90,13 +90,13 @@ body::before{content:'';display:block;height:3px;
 
 /* ── Content background ── */
 .content-bg{position:relative;background-image:url('montmartre.jpg');background-size:cover;background-position:center top;background-attachment:fixed;}
-.content-bg::before{content:'';position:absolute;inset:0;background:rgba(215,228,240,0.88);pointer-events:none;z-index:0;}
+.content-bg::before{content:'';position:absolute;inset:0;background:rgba(215,228,240,0.75);pointer-events:none;z-index:0;}
 /* ── Page ── */
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;z-index:1;}
 
 /* ── Hero — painting visible ── */
 .hero-bg{position:relative;background-image:url('hero.jpg');background-size:cover;
-  background-position:center 35%;overflow:hidden;min-height:560px;width:100%;}
+  background-position:center 20%;overflow:hidden;min-height:640px;width:100%;}
 .hero-bg::before{content:'';position:absolute;inset:0;z-index:1;
   /* Very subtle overlay — painting must be visible */
   background:linear-gradient(180deg,
@@ -129,7 +129,7 @@ body::before{content:'';display:block;height:3px;
 
 /* ── Signal / Plat du Jour ── */
 .signal-wrap{padding:1.75rem 0 0;}
-.signal-card{background:#0f172a;border:1px solid rgba(8,145,178,0.2);
+.signal-card{background:rgba(10,20,40,0.88);border:1px solid rgba(8,145,178,0.2);backdrop-filter:blur(8px);
   border-left:4px solid #0891b2;border-radius:12px;
   padding:1.75rem 2rem;position:relative;overflow:hidden;
   animation:fade-in 0.5s ease 0.3s both;
