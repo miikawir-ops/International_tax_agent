@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Tax Agent · Sunday, 24 May 2026 · 21:27 EEST</title>
+<title>International Tax Agent · Sunday, 24 May 2026 · 21:49 EEST</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
 
@@ -59,7 +59,7 @@ body::before{content:'';display:block;height:3px;
   animation:lamp-glow 3s ease-in-out infinite;pointer-events:none;z-index:3;}
 
 /* Beacon */
-.eiffel-beacon{position:absolute;left:67%;top:2%;width:0;height:0;
+.eiffel-beacon{position:absolute;left:67%;top:4%;width:0;height:0;
   pointer-events:none;z-index:4;animation:beam-pulse 6s ease-in-out infinite;}
 .beacon-beam{position:absolute;top:0;left:0;width:500px;height:500px;
   transform-origin:0 0;
@@ -92,9 +92,8 @@ body::before{content:'';display:block;height:3px;
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero — painting visible ── */
-.hero-bg{position:relative;background-image:url('hero.jpg');background-size:contain;
-  background-position:center top;background-repeat:no-repeat;
-  overflow:hidden;min-height:600px;background-color:#1a1a2e;}
+.hero-bg{position:relative;background-image:url('hero.jpg');background-size:cover;
+  background-position:center 35%;overflow:hidden;min-height:560px;width:100%;}
 .hero-bg::before{content:'';position:absolute;inset:0;z-index:1;
   /* Very subtle overlay — painting must be visible */
   background:linear-gradient(180deg,
@@ -337,7 +336,7 @@ footer a:hover{color:#0369a1;}
     <span class="logo-text"><span class="logo-int">International</span> Tax Agent</span>
   </div>
   <div class="topbar-right">
-    <span class="topbar-ts">Sunday, 24 May 2026 · 21:27 EEST</span>
+    <span class="topbar-ts">Sunday, 24 May 2026 · 21:49 EEST</span>
     <a class="sibling-link tp" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank" rel="noopener">TP Special Agent →</a>
     <a class="sibling-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank" rel="noopener">AI Valuechain →</a>
   </div>
@@ -352,12 +351,12 @@ footer a:hover{color:#0369a1;}
     <div class="beacon-beam"></div>
   </div>
   <!-- Street lamp glows — matched to actual lamp positions in painting -->
-  <!-- Left café lamp: warm glow at café entrance -->
-  <div class="street-lamp-glow" style="width:75px;height:75px;left:13%;top:255px;--dur:3.1s;animation-delay:0s"></div>
-  <!-- Center street lamp: cobblestone street -->
-  <div class="street-lamp-glow" style="width:70px;height:70px;left:41%;top:268px;--dur:2.7s;animation-delay:1.1s"></div>
-  <!-- Right building lamp: far right -->
-  <div class="street-lamp-glow" style="width:65px;height:65px;left:86%;top:182px;--dur:3.4s;animation-delay:0.6s"></div>
+  <!-- Left café lamp -->
+  <div class="street-lamp-glow" style="width:70px;height:70px;left:13%;top:300px;--dur:3.1s;animation-delay:0s"></div>
+  <!-- Center street lamp -->
+  <div class="street-lamp-glow" style="width:65px;height:65px;left:40%;top:320px;--dur:2.7s;animation-delay:1.1s"></div>
+  <!-- Right lamp -->
+  <div class="street-lamp-glow" style="width:60px;height:60px;left:86%;top:220px;--dur:3.4s;animation-delay:0.6s"></div>
   <div class="hero-inner">
     <div class="hero-glass">
       <p class="hero-label">⚜ Global International Tax Intelligence</p>
@@ -373,8 +372,8 @@ footer a:hover{color:#0369a1;}
 <div class="signal-wrap" style="padding-top:1.75rem">
   <div class="signal-card urgency-high">
     <p class="signal-label">⚜ Plat du Jour — Today's International Tax Signal</p>
-    <h2 class="signal-headline">Kuwait QDMTT recognition simplifies MNE Pillar Two compliance.</h2>
-    <p class="signal-body">Kuwait&#39;s Qualified Domestic Minimum Top-up Tax (QDMTT) recognition by the OECD streamlines Pillar Two compliance for multinationals with operations there, reducing complexity. This validation means MNEs can now credit the Kuwaiti domestic top-up tax against their GloBE liability, preventing further taxation elsewhere on Kuwaiti profits.</p>
+    <h2 class="signal-headline">Kuwait&#39;s QDMTT recognition simplifies Pillar Two compliance for multinationals.</h2>
+    <p class="signal-body">Kuwait&#39;s Qualified Domestic Minimum Top-up Tax (QDMTT) has received OECD recognition, streamlining Pillar Two application for MNEs with operations there. This development allows MNEs to pay any top-up tax locally, reducing exposure to other jurisdictions&#39; Income Inclusion Rule (IIR) or Undertaxed Profits Rule (UTPR) and simplifying global compliance calculations.</p>
     <div class="signal-meta">
       <div class="urgency-dot high"></div>
       <span class="signal-lens">Pillar Two / GloBE</span>
@@ -483,10 +482,10 @@ footer a:hover{color:#0369a1;}
             <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY2xYNy1xRnRLV0R3WXBSMEdtZDdPVGt0VXJSN1pMcU1pcHlKdmpZMHh5U1ZxNEpFNWxydEUyWjc5SXR1dVMwNVNvT0hxMmxraVZpa3p3OXpONVp0Q2hLTVd3LV84WFRfR3FSV2Rkc1dKZklBWHhDSHJtdGNtY3JxTWg4clUzdVUzcXlscjBoT1lmbDZXU3RHR2VZOW1XMnJWQTlnaW14LTF5SE5YQzhuQnFR0gG2AUFVX3lxTE9KTEIybklrcnlVLUcwcVJBOURtMHdhODM2QTc2NERKQkZBcVJoSWZ0aWNiOWNCX0d0SUpPRkxxbjRtblZ1cFB4RGhIZTNlM25SUjJaYjNXbHMzaU5KbFZQU2VSQVRsU01GaUNDLUpQVmZwMXRsUW54dDRZRGk4QTBreDlnMWlzM0RkVXNUNmFpalVYWll5T1k4dURLQkFqcGJkSTdKNTFjNG1OOHpmT2xkelpsMk53?oc=5" target="_blank" rel="noopener">What does Kuwait’s OECD QDMTT recognition mean for multinationals? - Kuwait Times</a>
             
           </div>
-          <p class="card-summary">Kuwait has received OECD recognition for its Qualified Domestic Minimum Top-up Tax (QDMTT), confirming its alignment with the Pillar Two GloBE rules. This recognition offers crucial certainty for multinational enterprises operating in Kuwait, as their local top-up tax payments will now be acknowledged and creditable against their GloBE minimum tax liabilities in other jurisdictions.</p>
+          <p class="card-summary">Kuwait has received formal recognition from the OECD for its Qualified Domestic Minimum Top-up Tax (QDMTT). This development is major for multinational enterprises operating in Kuwait, as it simplifies Pillar Two compliance by ensuring the domestic top-up tax is creditable and reduces the potential application of the Income Inclusion Rule (IIR) or Undertaxed Profits Rule (UTPR) from other jurisdictions.</p>
           
           <div class="card-footer">
-            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>1h ago</span>
+            <span class="card-fresh fresh-pulse"><span class="pulse-dot"></span>2h ago</span>
             
             
             <a class="card-link-btn" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY2xYNy1xRnRLV0R3WXBSMEdtZDdPVGt0VXJSN1pMcU1pcHlKdmpZMHh5U1ZxNEpFNWxydEUyWjc5SXR1dVMwNVNvT0hxMmxraVZpa3p3OXpONVp0Q2hLTVd3LV84WFRfR3FSV2Rkc1dKZklBWHhDSHJtdGNtY3JxTWg4clUzdVUzcXlscjBoT1lmbDZXU3RHR2VZOW1XMnJWQTlnaW14LTF5SE5YQzhuQnFR0gG2AUFVX3lxTE9KTEIybklrcnlVLUcwcVJBOURtMHdhODM2QTc2NERKQkZBcVJoSWZ0aWNiOWNCX0d0SUpPRkxxbjRtblZ1cFB4RGhIZTNlM25SUjJaYjNXbHMzaU5KbFZQU2VSQVRsU01GaUNDLUpQVmZwMXRsUW54dDRZRGk4QTBreDlnMWlzM0RkVXNUNmFpalVYWll5T1k4dURLQkFqcGJkSTdKNTFjNG1OOHpmT2xkelpsMk53?oc=5" target="_blank" rel="noopener">Read <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg></a>
@@ -907,7 +906,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(beacon){
     const heroEl = container.closest('.hero-bg');
     const heroRect = heroEl ? heroEl.getBoundingClientRect() : null;
-    beacon.style.left = TOWER_CENTER_X + '%';
+    beacon.style.left = '67%';
     beacon.style.top  = TOWER_TOP_Y + 'px';
   }
   const SPARKS = 220;
