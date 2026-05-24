@@ -59,7 +59,7 @@ body::before{content:'';display:block;height:3px;
   animation:lamp-glow 3s ease-in-out infinite;pointer-events:none;z-index:3;}
 
 /* Beacon */
-.eiffel-beacon{position:absolute;left:67%;top:2%;width:0;height:0;
+.eiffel-beacon{position:absolute;left:67%;top:4%;width:0;height:0;
   pointer-events:none;z-index:4;animation:beam-pulse 6s ease-in-out infinite;}
 .beacon-beam{position:absolute;top:0;left:0;width:500px;height:500px;
   transform-origin:0 0;
@@ -92,9 +92,8 @@ body::before{content:'';display:block;height:3px;
 .page{max-width:1100px;margin:0 auto;padding:0 2rem;}
 
 /* ── Hero — painting visible ── */
-.hero-bg{position:relative;background-image:url('hero.jpg');background-size:contain;
-  background-position:center top;background-repeat:no-repeat;
-  overflow:hidden;min-height:600px;background-color:#1a1a2e;}
+.hero-bg{position:relative;background-image:url('hero.jpg');background-size:cover;
+  background-position:center 35%;overflow:hidden;min-height:560px;width:100%;}
 .hero-bg::before{content:'';position:absolute;inset:0;z-index:1;
   /* Very subtle overlay — painting must be visible */
   background:linear-gradient(180deg,
@@ -352,12 +351,12 @@ footer a:hover{color:#0369a1;}
     <div class="beacon-beam"></div>
   </div>
   <!-- Street lamp glows — matched to actual lamp positions in painting -->
-  <!-- Left café lamp: warm glow at café entrance -->
-  <div class="street-lamp-glow" style="width:75px;height:75px;left:13%;top:255px;--dur:3.1s;animation-delay:0s"></div>
-  <!-- Center street lamp: cobblestone street -->
-  <div class="street-lamp-glow" style="width:70px;height:70px;left:41%;top:268px;--dur:2.7s;animation-delay:1.1s"></div>
-  <!-- Right building lamp: far right -->
-  <div class="street-lamp-glow" style="width:65px;height:65px;left:86%;top:182px;--dur:3.4s;animation-delay:0.6s"></div>
+  <!-- Left café lamp -->
+  <div class="street-lamp-glow" style="width:70px;height:70px;left:13%;top:300px;--dur:3.1s;animation-delay:0s"></div>
+  <!-- Center street lamp -->
+  <div class="street-lamp-glow" style="width:65px;height:65px;left:40%;top:320px;--dur:2.7s;animation-delay:1.1s"></div>
+  <!-- Right lamp -->
+  <div class="street-lamp-glow" style="width:60px;height:60px;left:86%;top:220px;--dur:3.4s;animation-delay:0.6s"></div>
   <div class="hero-inner">
     <div class="hero-glass">
       <p class="hero-label">⚜ Global International Tax Intelligence</p>
@@ -584,7 +583,7 @@ document.querySelectorAll('.card-title,.archive-title-text').forEach(highlightKe
   if(beacon){
     const heroEl = container.closest('.hero-bg');
     const heroRect = heroEl ? heroEl.getBoundingClientRect() : null;
-    beacon.style.left = TOWER_CENTER_X + '%';
+    beacon.style.left = '67%';
     beacon.style.top  = TOWER_TOP_Y + 'px';
   }
   const SPARKS = 220;
