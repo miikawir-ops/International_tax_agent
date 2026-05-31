@@ -169,6 +169,26 @@ RSS_FEEDS = [
     # ── OECD direct feed ─────────────────────────────────────────────────────
     {"name": "OECD Tax",
      "url": "https://www.oecd.org/tax/rss.xml", "open": True},
+ 
+    # ── International tax authorities & courts ────────────────────────────────
+    {"name": "Google News — HMRC Int Tax",
+     "url": "https://news.google.com/rss/search?q=HMRC+%22international+tax%22+OR+%22pillar+two%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
+    {"name": "Google News — IRS Int Tax",
+     "url": "https://news.google.com/rss/search?q=IRS+%22international+tax%22+OR+%22pillar+two%22+OR+%22GILTI%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
+    {"name": "Google News — UN Tax Convention",
+     "url": "https://news.google.com/rss/search?q=%22UN+tax+convention%22+OR+%22United+Nations%22+%22international+tax%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
+    {"name": "Google News — EU Commission Tax",
+     "url": "https://news.google.com/rss/search?q=%22European+Commission%22+%22tax+directive%22+OR+%22state+aid%22+OR+%22pillar+two%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
+    {"name": "Google News — CJEU Judgment",
+     "url": "https://news.google.com/rss/search?q=CJEU+judgment+tax+%22Court+of+Justice%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
+    {"name": "Google News — Nordic Tax",
+     "url": "https://news.google.com/rss/search?q=%22Nordic%22+OR+%22Finland%22+%22international+tax%22+OR+%22pillar+two%22&hl=en-US&gl=US&ceid=US:en",
+     "open": True},
 ]
  
 # ── Helpers ───────────────────────────────────────────────────────────────────
