@@ -95,16 +95,16 @@ INT_TAX_KEYWORDS = [
  
 # ── Lenses ────────────────────────────────────────────────────────────────────
 LENSES = [
-    "Pillar Two / GloBE",           # global minimum tax — core focus
-    "CJEU & EU Court decisions",    # EU court rulings on tax
-    "EU Tax Directives",            # ATAD, DAC, BEFIT, new EU legislation
-    "Tax treaties & conventions",   # bilateral treaties, UN convention, MLI
-    "Digital economy taxation",     # DSTs, platform taxation, digital nexus
-    "State aid",                    # Commission decisions, CJEU state aid cases
-    "CFC & anti-avoidance",         # CFC rules, hybrid mismatches, GAAR
-    "Country guidance",             # national implementation of international rules
-    "Tax transparency",             # CbCR, DAC6/7/8, FATCA, information exchange
-    "General international tax",    # catch-all
+    "Pillar Two / GloBE",
+    "CJEU & EU Court decisions",
+    "EU Tax Directives",
+    "Tax treaties & conventions",
+    "Digital economy taxation",
+    "State aid",
+    "CFC & anti-avoidance",
+    "Country guidance",
+    "Tax transparency",
+    "General international tax",
 ]
  
 # ── Countries to track ────────────────────────────────────────────────────────
@@ -166,6 +166,9 @@ RSS_FEEDS = [
      "url": "https://www.taxobservatory.eu/feed/", "open": True},
     {"name": "MNE Tax",
      "url": "https://mnetax.com/feed", "open": True},
+    # ── OECD direct feed ─────────────────────────────────────────────────────
+    {"name": "OECD Tax",
+     "url": "https://www.oecd.org/tax/rss.xml", "open": True},
 ]
  
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -234,19 +237,26 @@ def check_url_open(url):
     except: return False
  
 def extract_countries(text):
-    """Find tracked countries mentioned in title/summary."""
     found = []
     lower = text.lower()
     for country in TRACKED_COUNTRIES:
         if country.lower() in lower:
             found.append(country)
-    return found[:3]  # max 3 per item
+    return found[:3]
  
 def detect_treaty(text):
-    """Detect if item is about a new or renegotiated tax treaty."""
     signals = ["new tax treaty", "signs tax treaty", "tax agreement signed",
                 "renegotiated treaty", "new convention", "tax convention signed",
                 "double taxation agreement", "new DTA", "DTA signed"]
+    lower = text.lower()
+    return any(s in lower for s in signals)
+ 
+def detect_finnish_relevance(text):
+    signals = [
+        "finland", "finnish", "suomi", "suomen", "verohallinto",
+        "kho", "finnish tax", "nordic", "scandinav",
+        "helsinki", "finnish authorities", "vero",
+    ]
     lower = text.lower()
     return any(s in lower for s in signals)
  
@@ -480,7 +490,6 @@ def build_sparklines(archive):
     return sparks
  
 def build_country_counts(items):
-    """Count mentions of tracked countries across today's items."""
     counts = defaultdict(int)
     for item in items:
         for c in item.get("countries",[]):
@@ -490,19 +499,7 @@ def build_country_counts(items):
             counts[cf] += 1
     return dict(sorted(counts.items(), key=lambda x:-x[1])[:10])
  
- 
-def detect_finnish_relevance(text):
-    """Flag items with direct Finnish relevance."""
-    signals = [
-        "finland", "finnish", "suomi", "suomen", "verohallinto",
-        "kho", "finnish tax", "nordic", "scandinav",
-        "helsinki", "finnish authorities", "vero",
-    ]
-    lower = text.lower()
-    return any(s in lower for s in signals)
- 
 def get_treaty_alerts(items):
-    """Return items flagged as treaty news."""
     return [it for it in items if it.get("is_treaty")]
  
 def check_accessibility(items):
