@@ -14,7 +14,7 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "The OECD has reportedly acknowledged that revenue generated from Pillar Two's global minimum tax rules is projected to be lower than initially anticipated. This admission indicates a potential recalibration of expected fiscal benefits for implementing jurisdictions and signals challenges in forecasting complex international tax policy outcomes.",
+    "ai_summary": "The OECD has reportedly admitted that projected revenues from Pillar Two are lower than initially anticipated. This development suggests a re-evaluation of the financial impact and effective tax rates multinational enterprises will face under the GloBE rules.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-07-17"
@@ -34,7 +34,7 @@
     "region": "APAC",
     "country_focus": "Philippines",
     "importance": 3,
-    "ai_summary": "The Philippines is assessing the potential for the global minimum tax (Pillar Two) to reduce the effectiveness of its existing tax incentives for multinational corporations. This analysis highlights how the 15% minimum effective tax rate could negate benefits offered by local incentive regimes, prompting discussions on potential policy adjustments.",
+    "ai_summary": "The global minimum tax, under the OECD's Pillar Two framework, is expected to significantly blunt existing tax incentives offered to multinational corporations in the Philippines. This situation may necessitate a re-evaluation of the country's incentive regime to remain competitive while complying with GloBE rules.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-07-17"
@@ -54,8 +54,8 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "This analysis critiques Digital Services Taxes (DSTs), arguing that their cascading nature negatively impacts online commerce. It proposes that destination-based VAT or GST mechanisms offer a superior alternative for taxing digital consumption, providing a more efficient and less distortive tax structure.",
-    "freshness": "22h ago",
+    "ai_summary": "This analysis critiques Digital Services Taxes (DSTs), highlighting their cascading effect through online commerce. It proposes that a destination-based VAT or GST would be a more effective and less distortive instrument for taxing digital consumption by avoiding such inefficiencies.",
+    "freshness": "23h ago",
     "accessible": true,
     "archive_date": "2026-07-17"
   },
@@ -74,8 +74,8 @@
     "region": "EU",
     "country_focus": "Greece",
     "importance": 4,
-    "ai_summary": "The European Commission has approved €41 million in Greek State aid to support agricultural companies affected by increased fertiliser prices. This aid, authorized under the State aid Temporary Crisis and Transition Framework, aims to mitigate economic disruptions within the agricultural sector.",
-    "freshness": "14h ago",
+    "ai_summary": "The European Commission has approved a €41 million Greek State aid scheme to support agricultural companies facing increased fertiliser prices. This aid, approved under the Temporary Crisis and Transition Framework, aims to mitigate economic disruptions caused by market volatility.",
+    "freshness": "15h ago",
     "accessible": true,
     "archive_date": "2026-07-17"
   },
@@ -94,8 +94,8 @@
     "region": "EU",
     "country_focus": "Czech Republic",
     "importance": 4,
-    "ai_summary": "The European Commission has approved a Czech capacity mechanism as State aid under the \"Clean Industrial Deal\" framework, designed to ensure electricity supply security. This approval signifies the Commission's assessment that the measure is proportionate and contributes to EU energy policy goals without unduly distorting competition.",
-    "freshness": "7h ago",
+    "ai_summary": "The European Commission has approved a Czech capacity mechanism, qualifying it as State aid under the Clean Industrial Deal framework. This decision supports the Czech Republic's efforts to ensure electricity supply security and facilitate its energy transition.",
+    "freshness": "8h ago",
     "accessible": true,
     "archive_date": "2026-07-17"
   },
@@ -114,8 +114,8 @@
     "region": "EU",
     "country_focus": "Greece",
     "importance": 4,
-    "ai_summary": "The European Commission has approved €41 million in Greek State aid to support agricultural companies affected by increased fertiliser prices. This aid, authorized under the State aid Temporary Crisis and Transition Framework, aims to mitigate economic disruptions within the agricultural sector.",
-    "freshness": "14h ago",
+    "ai_summary": "The European Commission has approved a €41 million Greek State aid scheme designed to assist agricultural companies impacted by rising fertiliser prices. This approval falls under the Temporary Crisis and Transition Framework, addressing economic disruptions within the sector.",
+    "freshness": "15h ago",
     "accessible": true,
     "archive_date": "2026-07-17"
   },
@@ -134,8 +134,8 @@
     "region": "EU",
     "country_focus": "Ireland",
     "importance": 4,
-    "ai_summary": "The European Commission has approved a €300 million Irish State aid scheme to provide temporary electricity price relief for energy-intensive companies. This measure aims to safeguard the competitiveness of vital industries in Ireland amidst high energy costs, falling under the EU's Temporary Crisis and Transition Framework for State aid.",
-    "freshness": "14h ago",
+    "ai_summary": "The European Commission has approved a €300 million Irish State aid scheme aimed at providing temporary electricity price relief for energy-intensive companies. This measure, approved under the Temporary Crisis and Transition Framework, seeks to support Irish businesses facing high energy costs.",
+    "freshness": "15h ago",
     "accessible": true,
     "archive_date": "2026-07-17"
   },
