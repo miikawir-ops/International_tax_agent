@@ -16,7 +16,7 @@
     "region": "APAC",
     "country_focus": "China",
     "importance": 3,
-    "ai_summary": "China's evolving offshore trust policy is reportedly creating significant risks of double taxation for wealthy Chinese citizens. This development highlights the challenges faced by high-net-worth individuals navigating complex international wealth structures under tightening domestic anti-avoidance measures.",
+    "ai_summary": "China's evolving tax policy regarding offshore trusts is creating significant double taxation risks for its wealthy citizens. This development underscores Beijing's increasing scrutiny of offshore wealth structures and its potential impact on cross-border tax planning.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-08"
@@ -38,7 +38,7 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "A Business Standard analysis questions the continued efficacy of the India-US tax treaty in addressing the unique tax challenges presented by the rapidly growing AI-driven digital economy. The article delves into whether existing treaty provisions are robust enough to allocate taxing rights effectively over profits generated from advanced digital services.",
+    "ai_summary": "An analysis explores whether the existing India-US tax treaty remains adequate to address the complexities of the digital economy and the rise of AI-generated income. The discussion focuses on potential challenges to established nexus and profit attribution rules within the bilateral agreement in a rapidly evolving technological landscape.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-08"
@@ -55,11 +55,11 @@
     "is_treaty": false,
     "is_finnish": false,
     "lens": "Digital economy taxation",
-    "region": "Global",
+    "region": "EU",
     "country_focus": "Global",
-    "importance": 3,
-    "ai_summary": "Online travel platform GetYourGuide is reportedly passing on the costs of Digital Services Tax (DST) to its partner tour operators. This operational decision by GetYourGuide underscores the pass-through effect of DSTs and their broader impact on the economics of the digital service supply chain.",
-    "freshness": "12h ago",
+    "importance": 2,
+    "ai_summary": "GetYourGuide, an online travel platform, plans to pass on the costs of its Digital Services Tax obligations to tour operators utilizing its platform. This business decision illustrates the economic incidence of DSTs and how companies are managing compliance burdens by redistributing costs across their supply chain.",
+    "freshness": "13h ago",
     "accessible": true,
     "archive_date": "2026-08-08"
   },
@@ -78,7 +78,7 @@
     "region": "APAC",
     "country_focus": "Indonesia",
     "importance": 3,
-    "ai_summary": "MUC Consulting reports that Indonesia's PFII (presumably a specific policy or incentive framework) is designed to safeguard national competitiveness amidst evolving international tax standards. This analysis likely focuses on how Indonesia is positioning its tax regime to remain attractive in the context of global tax reforms, particularly Pillar Two.",
+    "ai_summary": "An analysis from MUC Consulting examines how Indonesia's PFII (likely a tax incentive program) aims to safeguard national competitiveness in the context of evolving international tax standards, particularly the OECD's Pillar Two GloBE rules. This assessment focuses on ensuring that domestic incentives remain effective without triggering adverse top-up tax liabilities under the global minimum tax framework.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-08"
@@ -98,7 +98,7 @@
     "region": "EU",
     "country_focus": "Netherlands",
     "importance": 4,
-    "ai_summary": "The European Commission has approved a substantial €780 million Dutch state aid scheme aimed at boosting renewable hydrogen production. This significant decision greenlights the Netherlands' efforts to accelerate its energy transition in line with EU state aid regulations and environmental objectives.",
+    "ai_summary": "The European Commission has approved a €780 million Dutch state aid scheme designed to support the production of renewable hydrogen in the Netherlands. This decision confirms that the aid is compatible with EU state aid rules, aiming to accelerate the development of green technologies and contribute to climate neutrality targets.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-08"
