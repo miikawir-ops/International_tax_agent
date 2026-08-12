@@ -14,8 +14,8 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "A recent Baker McKenzie survey indicates that multinational corporations anticipate an increase in international tax disputes due to heightened regulatory scrutiny and the complexity of new global tax rules, such as Pillar Two. This trend suggests a growing need for robust dispute resolution mechanisms and proactive tax risk management strategies across jurisdictions worldwide.",
-    "freshness": "22h ago",
+    "ai_summary": "A recent Baker McKenzie survey indicates that multinational corporations anticipate an increase in international tax disputes in the coming years. This trend is likely driven by the ongoing implementation of complex global tax reforms such as Pillar Two, enhanced transparency initiatives, and more aggressive tax authority enforcement worldwide.",
+    "freshness": "23h ago",
     "accessible": true,
     "archive_date": "2026-08-12"
   },
@@ -34,7 +34,7 @@
     "region": "EU",
     "country_focus": "Portugal",
     "importance": 4,
-    "ai_summary": "The CJEU's ruling in *Nova Iberomoldes* (C-48/22) addresses the compatibility of Portuguese Real Estate Transfer Tax (RETT) on real estate-rich share transfers with EU law, particularly the Capital Duties Directive (2008/7/EC). This decision has significant implications for how Portugal and potentially other EU Member States tax indirect transfers of real estate, requiring national legislation to respect EU principles on capital movements and company taxation.",
+    "ai_summary": "The CJEU's Nova Iberomoldes ruling (Case C-71/22) directly impacts the application of Portuguese Real Estate Transfer Tax (RETT) on real estate-rich share transfers. This decision clarifies the interpretation of EU law regarding the free movement of capital in relation to national taxes on indirect transfers of real estate, potentially requiring Portugal to adjust its RETT regime.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-12"
@@ -54,8 +54,8 @@
     "region": "APAC",
     "country_focus": "Malaysia",
     "importance": 3,
-    "ai_summary": "Weaknesses in the implementation rules of the UN Model Tax Convention are reportedly threatening Malaysia's revenue sovereignty by potentially limiting its ability to effectively tax cross-border income. This critique highlights challenges faced by developing countries in protecting their tax base under existing international tax norms and emphasizes the need for robust domestic tax policy aligned with UN guidance.",
-    "freshness": "8h ago",
+    "ai_summary": "Analysis suggests that weak implementation rules within the UN tax treaty framework threaten Malaysia's revenue sovereignty, particularly regarding illicit financial flows and profit shifting. This highlights a concern among developing nations that current international tax norms may not adequately protect their tax base.",
+    "freshness": "9h ago",
     "accessible": true,
     "archive_date": "2026-08-12"
   },
@@ -74,7 +74,7 @@
     "region": "Other",
     "country_focus": "DRC",
     "importance": 4,
-    "ai_summary": "The Democratic Republic of Congo (DRC) has maintained its digital services tax decree, signaling its continued commitment to taxing the digital economy. Importantly, the decree now includes exemptions for start-ups, a move likely aimed at fostering domestic innovation while still broadening the tax base from established digital service providers operating in the DRC.",
+    "ai_summary": "The Democratic Republic of Congo (DRC) has maintained its digital tax decree in force, signaling its continued intent to tax digital services within its jurisdiction. Notably, the decree now includes an exemption for start-up companies, aiming to foster local innovation while still generating revenue from established digital players.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-12"
@@ -94,7 +94,7 @@
     "region": "EU",
     "country_focus": "Ukraine",
     "importance": 3,
-    "ai_summary": "As Ukraine progresses towards EU membership, it must strategically prepare for the stringent EU State Aid control regime, which governs government support to businesses to ensure fair competition. This preparation involves aligning national legislation and practices with EU state aid rules and establishing robust monitoring and enforcement mechanisms to avoid potential disputes upon accession.",
+    "ai_summary": "Ukraine is actively preparing for the implementation of EU state aid control mechanisms as part of its ongoing integration process with the European Union. This involves adapting its national legal framework and administrative practices to comply with stringent EU rules governing government support to businesses, ensuring fair competition within the single market.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-12"
@@ -113,8 +113,8 @@
     "lens": "Tax treaties & conventions",
     "region": "EU",
     "country_focus": "Global",
-    "importance": 4,
-    "ai_summary": "The European Union is reportedly continuing efforts to dilute aspects of the proposed UN Tax Convention, despite recent research indicating that a more robust convention could generate billions in new revenue for developing countries. This position highlights ongoing geopolitical tensions in international tax policy, where the EU's traditional preference for OECD-led solutions clashes with calls for a more inclusive UN-led framework.",
+    "importance": 5,
+    "ai_summary": "The European Union is reportedly attempting to dilute aspects of a proposed UN Tax Convention, despite research indicating the convention could generate billions in new revenue, particularly for developing countries. This action underscores a significant policy conflict between the EU's current international tax agenda and global efforts to establish more inclusive tax governance under the United Nations framework.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-08-12"
