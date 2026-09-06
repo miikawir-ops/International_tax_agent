@@ -14,7 +14,29 @@
     "region": "EU",
     "country_focus": "Cyprus",
     "importance": 3,
-    "ai_summary": "Cyprus is reportedly experiencing no significant business exodus following the implementation of the global minimum tax rules. This item discusses the initial impact and business community's reaction to the adoption of the Pillar Two framework in Cyprus.",
+    "ai_summary": "Cyprus's implementation of the global minimum tax (Pillar Two) has reportedly not led to an exodus of businesses, contrary to some initial concerns regarding its impact on the economy. This update provides insights into the early reception and economic adjustments to the new corporate tax regime within the jurisdiction.",
+    "freshness": "1d ago",
+    "accessible": true,
+    "archive_date": "2026-09-06"
+  },
+  {
+    "id": "86bab2413e4c",
+    "title": "Hong Kong And Slovenia Sign Tax Treaty - Law360",
+    "summary": "Hong Kong And Slovenia Sign Tax Treaty Law360",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE04VFZxdUp2RFBkdFllYXYyX2xoQ09ObWtHV2xKc1E4a0M0eHJ4MHA2RkFTTXJySWdyazNFMzlyYVJ6aElFOXR2eFF4OUZ4VWNkSkZwckF30gFWQVVfeXFMTThUVnF1SnZEUGR0WWVhdjJfbGhDT05ta0dXbEpzUThrQzR4cngwcDZGQVNNcnJJZ3JrM0UzOXJhUnpoSUU5dHZ4UXg5RnhVY2RKRnByQXc?oc=5",
+    "source": "Law360",
+    "pub": "Fri, 04 Sep 2026 21:02:00 GMT",
+    "open": true,
+    "countries": [
+      "Hong Kong"
+    ],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Tax treaties & conventions",
+    "region": "Global",
+    "country_focus": "Hong Kong",
+    "importance": 4,
+    "ai_summary": "Hong Kong and Slovenia have officially signed a new double taxation agreement (DTA), marking a significant step in strengthening bilateral economic relations and preventing fiscal evasion. The treaty aims to reduce withholding taxes on various income streams and provide enhanced tax certainty for cross-border investments between these two jurisdictions.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-06"
@@ -34,7 +56,7 @@
     "region": "APAC",
     "country_focus": "Macau",
     "importance": 3,
-    "ai_summary": "Macau's Chief Executive has proposed initiating negotiations for new double taxation agreements with Malaysia. This strategic move aims to foster deeper economic ties and reduce tax barriers for cross-border investments and trade between the two jurisdictions.",
+    "ai_summary": "Macau's Chief Executive has proposed pursuing new free trade and double taxation agreements (DTAs) with Malaysia, signaling a strategic intent to bolster economic ties. These proposed deals would aim to eliminate double taxation and create a more predictable tax environment for businesses and investors operating between Macau and Malaysia.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-06"
@@ -53,9 +75,9 @@
     "lens": "General international tax",
     "region": "Global",
     "country_focus": "Global",
-    "importance": 1,
-    "ai_summary": "GCash has launched a new digital tax refund service that will be available across 16 countries. This commercial offering aims to streamline the process for individuals seeking tax refunds, likely pertaining to Value Added Tax (VAT) or equivalent sales taxes incurred during international travel or purchases.",
-    "freshness": "1h ago",
+    "importance": 2,
+    "ai_summary": "GCash launches digital tax refund service in 16 countries YugaTech",
+    "freshness": "2h ago",
     "accessible": true,
     "archive_date": "2026-09-06"
   },
@@ -161,28 +183,6 @@
     "importance": 3,
     "ai_summary": "The United Arab Emirates' impending 15% minimum tax deadline is prompting Indian multinational corporations (India Inc) operating in the Gulf region to reassess their tax strategies. This development highlights the broad reach of the global minimum tax framework and its impact on MNEs headquartered in non-implementing jurisdictions, necessitating careful planning for affected entities.",
     "freshness": "1d ago",
-    "accessible": true,
-    "archive_date": "2026-09-05"
-  },
-  {
-    "id": "86bab2413e4c",
-    "title": "Hong Kong And Slovenia Sign Tax Treaty - Law360",
-    "summary": "Hong Kong And Slovenia Sign Tax Treaty Law360",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE04VFZxdUp2RFBkdFllYXYyX2xoQ09ObWtHV2xKc1E4a0M0eHJ4MHA2RkFTTXJySWdyazNFMzlyYVJ6aElFOXR2eFF4OUZ4VWNkSkZwckF30gFWQVVfeXFMTThUVnF1SnZEUGR0WWVhdjJfbGhDT05ta0dXbEpzUThrQzR4cngwcDZGQVNNcnJJZ3JrM0UzOXJhUnpoSUU5dHZ4UXg5RnhVY2RKRnByQXc?oc=5",
-    "source": "Law360",
-    "pub": "Fri, 04 Sep 2026 21:02:00 GMT",
-    "open": true,
-    "countries": [
-      "Hong Kong"
-    ],
-    "is_treaty": false,
-    "is_finnish": false,
-    "lens": "Tax treaties & conventions",
-    "region": "Global",
-    "country_focus": "Hong Kong",
-    "importance": 4,
-    "ai_summary": "Hong Kong and Slovenia have signed a new comprehensive double taxation agreement (DTA), aimed at preventing double taxation and fiscal evasion. This treaty will facilitate cross-border trade and investment between the two jurisdictions by providing greater tax certainty for businesses and individuals, enhancing their economic relationship.",
-    "freshness": "13h ago",
     "accessible": true,
     "archive_date": "2026-09-05"
   },
