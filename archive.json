@@ -1,5 +1,25 @@
 [
   {
+    "id": "561888f71393",
+    "title": "Data Collection for Pillar Two Compliance: Closing the Gaps - Forvis Mazars US",
+    "summary": "Data Collection for Pillar Two Compliance: Closing the Gaps Forvis Mazars US",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORU1HT0lXR2JhZVFzYUM5SlVuN003aHdVVTN1RWZxRXhGTU5kTy1JdmpFVkdJQ3N6N1djMjFwcktmZFlNZ2xFN3BlX1FQMHAyUHFFU1VHdmMzcjktTWVLeE8xMENtS2R6NElWVFVKZkVjX045LTY3ay00TDg0VDNlSGI1S1hYbGNpaU92WnpLbUJ3eERQdm9QN0xNczJFcGF4RG8yTTZVVQ?oc=5",
+    "source": "Forvis Mazars US",
+    "pub": "Mon, 21 Sep 2026 12:58:11 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Pillar Two / GloBE",
+    "region": "Global",
+    "country_focus": "Global",
+    "importance": 3,
+    "ai_summary": "This practitioner analysis from Forvis Mazars US highlights the critical data collection challenges multinational enterprises face in complying with Pillar Two GloBE rules. It emphasizes the need for robust systems and processes to gather the extensive financial and tax data required for accurate calculation of the Effective Tax Rate and UTPR obligations across multiple jurisdictions.",
+    "freshness": "just now",
+    "accessible": true,
+    "archive_date": "2026-09-21"
+  },
+  {
     "id": "c696c642b44f",
     "title": "EU holds back on Digital Services Tax as US raises retaliation threat",
     "summary": "EU holds back on Digital Services Tax as US raises retaliation threat vatcalc.com",
@@ -12,10 +32,10 @@
     "is_finnish": false,
     "lens": "Digital economy taxation",
     "region": "EU",
-    "country_focus": "Global",
+    "country_focus": "EU",
     "importance": 4,
-    "ai_summary": "The European Union has reportedly decided to postpone the implementation of a bloc-wide Digital Services Tax (DST), primarily in response to the United States' threats of retaliatory tariffs. This significant policy decision highlights the ongoing international tensions surrounding unilateral digital tax measures and the diplomatic challenges in achieving a multilateral solution under the OECD's Pillar One initiative.",
-    "freshness": "5h ago",
+    "ai_summary": "The European Union has reportedly paused its plans to implement a bloc-wide Digital Services Tax (DST) following threats of retaliatory tariffs from the United States. This strategic delay reflects ongoing international tensions regarding the taxation of the digital economy, particularly as global consensus on Pillar One remains elusive.",
+    "freshness": "7h ago",
     "accessible": true,
     "archive_date": "2026-09-21"
   },
@@ -34,7 +54,7 @@
     "region": "EU",
     "country_focus": "EU",
     "importance": 3,
-    "ai_summary": "Meta Platforms is reportedly passing the costs of Digital Services Tax (DST) imposed by various EU jurisdictions directly onto its advertisers. This operational decision by a major digital platform illustrates how the economic incidence of unilateral DSTs can ultimately shift to businesses utilizing digital advertising services, influencing advertising costs across the European market.",
+    "ai_summary": "Meta Platforms is reportedly passing on the costs of various existing Digital Services Taxes (DSTs) imposed by several European Union member states directly to its advertisers. This move illustrates the economic incidence of unilateral DSTs, effectively shifting the tax burden from the digital service provider to their business customers within the EU.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-21"
