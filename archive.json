@@ -14,8 +14,8 @@
     "region": "Other",
     "country_focus": "Canada",
     "importance": 3,
-    "ai_summary": "This C.D. Howe Institute analysis examines the potential impact of the global minimum tax (Pillar Two) on Canada's economic competitiveness. It highlights concerns about an uneven playing field for Canadian businesses compared to other jurisdictions' implementation approaches, urging a strategic response to preserve domestic investment.",
-    "freshness": "23h ago",
+    "ai_summary": "This C.D. Howe Institute analysis critically examines the potential impact of the Global Minimum Tax (Pillar Two) on Canada's economic competitiveness. It explores how the uneven global implementation of GloBE rules could create challenges and opportunities for Canadian businesses operating internationally.",
+    "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
   },
@@ -32,11 +32,11 @@
     ],
     "is_treaty": false,
     "is_finnish": false,
-    "lens": "General international tax",
+    "lens": "Pillar Two / GloBE",
     "region": "Other",
     "country_focus": "Canada",
     "importance": 3,
-    "ai_summary": "This C.D. Howe Institute paper explores fundamental considerations for reshaping Canada's international tax system in a rapidly evolving global landscape. It critically assesses the implications of a potential \"two-track\" tax world, urging proactive reforms for Canadian businesses to maintain their global standing.",
+    "ai_summary": "The C.D. Howe Institute proposes rethinking Canada’s international tax system in response to a 'two-track tax world,' largely driven by the adoption of Pillar Two and other global tax reforms. This analysis suggests strategies for Canada to adapt its tax policies to remain competitive and address new international standards.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
@@ -56,8 +56,8 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "This IMI Daily article provides a detailed explanation of the standard tie-breaker rules found in double taxation treaties, outlining the specific order in which they are applied to determine residency for tax purposes. It clarifies how these mechanisms resolve conflicts when an individual or entity is deemed resident in both contracting states.",
-    "freshness": "17h ago",
+    "ai_summary": "IMI Daily provides a detailed explanation of the sequential application of tax treaty tie-breaker rules, which are crucial for determining the tax residency of entities or individuals with dual residency claims. The article serves as a practical guide for practitioners navigating complex residency conflicts under bilateral tax conventions.",
+    "freshness": "18h ago",
     "accessible": true,
     "archive_date": "2026-09-25"
   },
@@ -76,7 +76,7 @@
     "region": "EU",
     "country_focus": "Ireland",
     "importance": 3,
-    "ai_summary": "Senator Conor Murphy advocates for a new double taxation convention designed to significantly ease cross-border working arrangements, particularly relevant for individuals moving between Ireland and the UK. The statement emphasizes the need for streamlined tax rules to facilitate economic activity and reduce compliance burdens for cross-border employees.",
+    "ai_summary": "Senator Conor Murphy advocates for a new Double Taxation Convention (DTC) to streamline cross-border working, likely between the Republic of Ireland and the United Kingdom. This call highlights the need for updated treaty provisions to alleviate tax burdens and administrative complexities for individuals and businesses operating across the border.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
@@ -96,7 +96,7 @@
     "region": "US",
     "country_focus": "US",
     "importance": 4,
-    "ai_summary": "A recent Maryland court ruling on its digital advertising tax (DAT) is being analyzed as a crucial precedent for future legal challenges to similar state-level digital taxes in the U.S. This decision provides insights into potential constitutional arguments and legal strategies relevant to the evolving landscape of digital economy taxation.",
+    "ai_summary": "A recent Maryland court ruling regarding its Digital Advertising Services Tax (DAST) serves as a critical roadmap for future legal challenges to similar state-level digital taxation initiatives across the United States. The decision provides key insights into the constitutional and jurisdictional arguments likely to be raised in ongoing and prospective litigation.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
@@ -116,7 +116,7 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "This EY analysis explores how the global landscape of digital taxation is rapidly evolving, impacting multinational enterprises and traditional business models. It discusses various unilateral digital services taxes (DSTs) and the ongoing international efforts, such as Pillar One, to reshape tax rules for the digital economy.",
+    "ai_summary": "EY's analysis explores how digital taxation is fundamentally 'changing the game' in the global tax landscape, reflecting the paradigm shift driven by the digital economy's unique characteristics. The piece likely discusses the proliferation of Digital Services Taxes (DSTs) and the ongoing multilateral efforts under Pillar One to reallocate taxing rights.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
@@ -136,7 +136,7 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "This EY analysis explores how the global landscape of digital taxation is rapidly evolving, impacting multinational enterprises and traditional business models. It discusses various unilateral digital services taxes (DSTs) and the ongoing international efforts, such as Pillar One, to reshape tax rules for the digital economy.",
+    "ai_summary": "EY's analysis explores how digital taxation is fundamentally 'changing the game' in the global tax landscape, reflecting the paradigm shift driven by the digital economy's unique characteristics. The piece likely discusses the proliferation of Digital Services Taxes (DSTs) and the ongoing multilateral efforts under Pillar One to reallocate taxing rights.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-25"
@@ -156,8 +156,8 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 5,
-    "ai_summary": "The United Nations is actively advancing a new Southern Hemisphere Framework Convention on International Tax Cooperation, aiming to reshape global tax law and governance. This initiative represents a significant multilateral effort to establish a more equitable and inclusive international tax architecture, particularly for developing economies.",
-    "freshness": "10h ago",
+    "ai_summary": "The United Nations is actively promoting the development of a Southern Hemisphere Framework Convention on International Tax Cooperation, signaling a significant push to reshape global tax law and enhance collaboration among developing nations. This initiative aims to address specific tax challenges faced by countries in the Southern Hemisphere and foster a more equitable international tax system.",
+    "freshness": "12h ago",
     "accessible": true,
     "archive_date": "2026-09-25"
   },
@@ -176,8 +176,8 @@
     "region": "EU",
     "country_focus": "Romania",
     "importance": 4,
-    "ai_summary": "The European Commission has approved a state aid scheme implemented by Romania to support its pig farming sector, ensuring compliance with EU state aid rules. This approval permits the Romanian government to provide financial assistance to mitigate market disturbances and support the competitiveness of its agricultural producers.",
-    "freshness": "20h ago",
+    "ai_summary": "The European Commission has approved a state aid scheme for Romanian pig farmers, concluding its investigation into the measure under EU state aid rules. This decision allows Romania to provide financial support to its agricultural sector, ensuring the aid package complies with EU competition law and limits market distortion.",
+    "freshness": "21h ago",
     "accessible": true,
     "archive_date": "2026-09-25"
   },
