@@ -1,5 +1,25 @@
 [
   {
+    "id": "fa8297b48e73",
+    "title": "First major filing deadline looms for Pillar Two - EY",
+    "summary": "First major filing deadline looms for Pillar Two EY",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSlUyRmtlWjUtcE5vMDJZVXFtcW12NTRnVzhUOS1vMXN5VnBURFRvNWNoUUhhdDFQMlMtczRfUnVQbEp1a25ZN1U3SXdySlh6a1NQYXRvMEpEQWZrQjZIMElONTZvRndZdVRwcEF1b3JlOENsY0U4Vi1MdUZMVkhEbFFyR1Q2NkFOOFB6QTBxNEIyMlF2d3VsTndwYUFPWWVOeXBHRzhVZkx4dUk0?oc=5",
+    "source": "EY",
+    "pub": "Mon, 28 Sep 2026 01:01:41 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Pillar Two / GloBE",
+    "region": "Global",
+    "country_focus": "Global",
+    "importance": 3,
+    "ai_summary": "EY analysis underscores the imminent first major filing deadlines for Pillar Two (GloBE) rules, impacting multinational enterprises globally. This critical juncture signifies the commencement of formal compliance and reporting under the new global minimum tax framework for jurisdictions that have implemented the rules early.",
+    "freshness": "10h ago",
+    "accessible": true,
+    "archive_date": "2026-09-28"
+  },
+  {
     "id": "1b2bb11de466",
     "title": "Approaching End of September: Recap of Key Global Minimum Tax Rules - DDTCNews",
     "summary": "Approaching End of September: Recap of Key Global Minimum Tax Rules DDTCNews",
@@ -622,25 +642,5 @@
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-09-21"
-  },
-  {
-    "id": "b18916391100",
-    "title": "Brussels rebuffs calls for EU-wide digital services tax - Financial Times",
-    "summary": "Brussels rebuffs calls for EU-wide digital services tax Financial Times",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOFBrNWJxMHFhdmRBN3pXdVFROWNKY19yN21QYy1ETE5rZ1dmZkgwejhsblowT2JfNTJCRklKZmR3WWZEMzQyLUF6NC1PbHBZY0M0VlQtTnQ0N1VOU3lndVdCZW12VGdrdGFlcmdBenpjZHdUNkN5UldZSk1CdHFCZFgyME0?oc=5",
-    "source": "Financial Times",
-    "pub": "Sat, 19 Sep 2026 04:03:23 GMT",
-    "open": true,
-    "countries": [],
-    "is_treaty": false,
-    "is_finnish": false,
-    "lens": "Digital economy taxation",
-    "region": "EU",
-    "country_focus": "EU",
-    "importance": 4,
-    "ai_summary": "The European Commission has reportedly rebuffed recent calls for the introduction of a harmonized EU-wide Digital Services Tax, signaling a preference to await further developments and potential consensus on international digital taxation solutions at the OECD level. This significant policy stance indicates the EU's current strategic direction away from a regional unilateral tax in favor of global agreement for digital economy taxation.",
-    "freshness": "1d ago",
-    "accessible": true,
-    "archive_date": "2026-09-20"
   }
 ]
