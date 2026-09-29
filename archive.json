@@ -14,10 +14,30 @@
     "region": "Global",
     "country_focus": "Global",
     "importance": 4,
-    "ai_summary": "The item highlights the imminent arrival of the initial significant compliance deadlines for the OECD's Pillar Two GloBE rules. This marks a critical phase for multinational enterprises as they face the practical implementation and reporting requirements of the global minimum tax framework.",
-    "freshness": "13h ago",
+    "ai_summary": "The imminent first major filing deadline for the OECD's Pillar Two GloBE rules marks a critical operational milestone for multinational enterprises globally. This period requires affected companies to prepare and submit their initial GloBE Information Returns, signaling the practical activation of the global minimum tax framework and demanding immediate compliance attention.",
+    "freshness": "1d ago",
     "accessible": true,
-    "archive_date": "2026-09-28"
+    "archive_date": "2026-09-29"
+  },
+  {
+    "id": "38e5831b8608",
+    "title": "Trump Threatens 100% Tariff On Countries Imposing Digital Services Tax On American Firms — ‘This Tariff Will Supercede Trade Deals’",
+    "summary": "Trump Threatens 100% Tariff On Countries Imposing Digital Services Tax On American Firms — ‘This Tariff Will Supercede Trade Deals’ stocktwits.com",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZHdhckgwWkFBTkhZVFFtclZZZjhSWm0xdUx1X1l2UjhfT3g3Yjh2ekVZOERwZDNQQkhya1BMM0tkdjB2VVBubU9NeHhwb3RLelpWTkdoQlR0blFXbW5lX1gzbzUwOG9JQlJGbjVKMjU4dUxTQV9GNWZkcm4wOUpoaUN4UVpNOXdwVXFFWFdadUM5R2VQeHhLTXRYVGhvT1FDWTR4Wk1GOTZkbHNDNmI0YWRNdHNNNG5Da2JodmZaU1V1WDk5LVZhQjFB?oc=5",
+    "source": "stocktwits.com",
+    "pub": "Sun, 27 Sep 2026 22:40:32 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Digital economy taxation",
+    "region": "US",
+    "country_focus": "US",
+    "importance": 4,
+    "ai_summary": "Donald Trump has threatened to impose 100% tariffs on countries that implement Digital Services Taxes (DSTs) affecting American firms. This declaration indicates a potential aggressive trade policy stance, aiming to supersede existing trade agreements, should he return to office, and would significantly escalate the ongoing international disputes over digital taxation.",
+    "freshness": "1d ago",
+    "accessible": true,
+    "archive_date": "2026-09-29"
   },
   {
     "id": "1b2bb11de466",
