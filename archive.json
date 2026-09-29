@@ -622,25 +622,5 @@
     "freshness": "13h ago",
     "accessible": true,
     "archive_date": "2026-09-22"
-  },
-  {
-    "id": "30ad3deb50dd",
-    "title": "Meta Passes EU Digital Services Tax To Advertisers",
-    "summary": "Meta Passes EU Digital Services Tax To Advertisers mediapost.com",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWHowVkdQREVuczFjWHkyWEs4dFNUdWgwc0FnYWVZYjZqUjROTEl5azlVVVRkMkV4azMwak9YQWtSVGJ2ek1uTFNYcUJtcm5YMTE3U3pFR3JyMWtESzBFeUlIazhHbGw0aGtHbExVd3pWTVFUaGkzLS1NMjJiNVU4Vk05VWtfRkprX0dCbzVSOU5IYnNacGItSlFXOFRFdTVQT0FvMTJDblRhU3IyLUE?oc=5",
-    "source": "mediapost.com",
-    "pub": "Sun, 20 Sep 2026 00:44:37 GMT",
-    "open": true,
-    "countries": [],
-    "is_treaty": false,
-    "is_finnish": false,
-    "lens": "Digital economy taxation",
-    "region": "EU",
-    "country_focus": "EU",
-    "importance": 3,
-    "ai_summary": "Meta Platforms is reportedly passing on the costs of various existing Digital Services Taxes (DSTs) imposed by several European Union member states directly to its advertisers. This move illustrates the economic incidence of unilateral DSTs, effectively shifting the tax burden from the digital service provider to their business customers within the EU.",
-    "freshness": "1d ago",
-    "accessible": true,
-    "archive_date": "2026-09-21"
   }
 ]
