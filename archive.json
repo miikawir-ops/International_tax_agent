@@ -10,11 +10,11 @@
     "countries": [],
     "is_treaty": false,
     "is_finnish": false,
-    "lens": "Country guidance",
+    "lens": "General international tax",
     "region": "Other",
     "country_focus": "Ethiopia",
     "importance": 3,
-    "ai_summary": "The Central Bank of Ethiopia is planning a significant tax overhaul aimed at eliminating double taxation in the country's interest-free finance sector. This policy initiative seeks to streamline tax treatment for these financial products, potentially impacting their attractiveness and integration into the broader economy.",
+    "ai_summary": "The Central Bank of Ethiopia is planning a comprehensive tax overhaul to eliminate double taxation issues specific to interest-free finance products within the jurisdiction. This policy aims to address the inherent tax inefficiencies and burdens faced by Sharia-compliant financial instruments, which often involve multiple asset transfers that trigger conventional transactional taxes.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-10-11"
