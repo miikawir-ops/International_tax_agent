@@ -1,5 +1,25 @@
 [
   {
+    "id": "ee35fad73246",
+    "title": "Guernsey, Jersey and other havens rake in revenues from global minimum tax - Financial Times",
+    "summary": "Guernsey, Jersey and other havens rake in revenues from global minimum tax Financial Times",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkdmajNTRWpRMlg5dndjQnhrNGd5ZEs2QXRNX2pWWTdGZ0hJQmdDZEd2WlFDSWphVVBYdFMtSF9qMjNYUHgtYVBxdGtqbE1Ud05Bcld4bWwwWnlHbm1qTU9NT3QyZXNjTWlDN25HYmNlUkY4T2J1eDNzanV3aUFPVVpfdWs?oc=5",
+    "source": "Financial Times",
+    "pub": "Mon, 26 Oct 2026 05:00:12 GMT",
+    "open": true,
+    "countries": [],
+    "is_treaty": false,
+    "is_finnish": false,
+    "lens": "Pillar Two / GloBE",
+    "region": "Global",
+    "country_focus": "Global",
+    "importance": 3,
+    "ai_summary": "The Financial Times reported that several low-tax jurisdictions, including Guernsey and Jersey, are experiencing increased revenue generation linked to the global minimum tax (Pillar Two). This occurs as multinational enterprises adjust their structures, leading to a reallocation of taxable profits to these jurisdictions in an effort to comply with the new minimum effective tax rates.",
+    "freshness": "6h ago",
+    "accessible": true,
+    "archive_date": "2026-10-26"
+  },
+  {
     "id": "5374cdc0b50f",
     "title": "India-Mauritius tax treaty: What the new PPT means for grandfathered investments and capital gains - Business Today",
     "summary": "India-Mauritius tax treaty: What the new PPT means for grandfathered investments and capital gains Business Today",
@@ -15,11 +35,33 @@
     "lens": "Tax treaties & conventions",
     "region": "APAC",
     "country_focus": "India",
-    "importance": 4,
-    "ai_summary": "The article discusses the implications of the Principal Purpose Test (PPT) from the Multilateral Instrument (MLI) on the India-Mauritius Double Taxation Avoidance Agreement (DTAA). It specifically analyzes how the new anti-abuse rule affects grandfathered investments and capital gains, potentially altering long-standing tax planning strategies reliant on this treaty.",
-    "freshness": "11h ago",
+    "importance": 3,
+    "ai_summary": "Business Today analyzed the implications of the Principal Purpose Test (PPT) on grandfathered investments and capital gains under the revised India-Mauritius tax treaty. The introduction of the PPT, a key anti-abuse measure, aims to deny treaty benefits where the primary purpose of an arrangement is to obtain such benefits, potentially impacting historical investment structures into India.",
+    "freshness": "1d ago",
     "accessible": true,
-    "archive_date": "2026-10-25"
+    "archive_date": "2026-10-26"
+  },
+  {
+    "id": "324615a87c46",
+    "title": "Finland Tax Rankings | 2026 International Tax Index - Tax Foundation",
+    "summary": "Finland Tax Rankings | 2026 International Tax Index Tax Foundation",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsZFhKdlpKLTRzYTBZS2h3ZUhYSXZVZVdaN0VMdkszVHVpWnRGYU9faWlubWFnSVdYSGJqR0lPOVRlWjV2QlAyMGVyUjBia2QxY3lncEJGMm9mSnJIY014WGFIdzBvREJUNExTbnkySzNiZDNT?oc=5",
+    "source": "Tax Foundation",
+    "pub": "Sat, 24 Oct 2026 23:49:57 GMT",
+    "open": true,
+    "countries": [
+      "Finland"
+    ],
+    "is_treaty": false,
+    "is_finnish": true,
+    "lens": "General international tax",
+    "region": "Nordic",
+    "country_focus": "Finland",
+    "importance": 2,
+    "ai_summary": "The Tax Foundation released its 2026 International Tax Index, providing a detailed ranking and analysis of Finland's tax system within a global context. This index assesses various components of Finland's tax code, offering insights into its international competitiveness and attractiveness for multinational enterprises.",
+    "freshness": "1d ago",
+    "accessible": true,
+    "archive_date": "2026-10-26"
   },
   {
     "id": "a087605b8376",
@@ -38,28 +80,6 @@
     "importance": 3,
     "ai_summary": "Colombia is identified as one of the lowest-ranked OECD countries in terms of how it taxes capital, according to the analysis. This comparative assessment highlights Colombia's relatively low capital tax burden compared to other OECD member states, providing context for national tax policy debates.",
     "freshness": "1d ago",
-    "accessible": true,
-    "archive_date": "2026-10-25"
-  },
-  {
-    "id": "324615a87c46",
-    "title": "Finland Tax Rankings | 2026 International Tax Index - Tax Foundation",
-    "summary": "Finland Tax Rankings | 2026 International Tax Index Tax Foundation",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsZFhKdlpKLTRzYTBZS2h3ZUhYSXZVZVdaN0VMdkszVHVpWnRGYU9faWlubWFnSVdYSGJqR0lPOVRlWjV2QlAyMGVyUjBia2QxY3lncEJGMm9mSnJIY014WGFIdzBvREJUNExTbnkySzNiZDNT?oc=5",
-    "source": "Tax Foundation",
-    "pub": "Sat, 24 Oct 2026 23:49:57 GMT",
-    "open": true,
-    "countries": [
-      "Finland"
-    ],
-    "is_treaty": false,
-    "is_finnish": true,
-    "lens": "Country guidance",
-    "region": "Nordic",
-    "country_focus": "Finland",
-    "importance": 3,
-    "ai_summary": "The Tax Foundation's 2026 International Tax Index provides rankings for Finland, offering a comparative analysis of its tax system against other jurisdictions. This assessment evaluates Finland's tax policies and their international competitiveness, providing insights for policymakers and businesses.",
-    "freshness": "12h ago",
     "accessible": true,
     "archive_date": "2026-10-25"
   },
@@ -733,25 +753,5 @@
     "freshness": "16h ago",
     "accessible": true,
     "archive_date": "2026-10-19"
-  },
-  {
-    "id": "72149a512b1b",
-    "title": "Ghana digital services tax: banks start collecting 20% - TechCity",
-    "summary": "Ghana digital services tax: banks start collecting 20% TechCity",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0yZUwwdUJOaFVsMVliMmd1Nk1vblI0LTZ4d0x4MGF3enBxMkhuU1hZd295Zy12aDVkcHExNVdXX1U4VC1IcHlmWjEzRHR0UVpTQzVYVHZHT05xSnF5elNGc1NwbW96MHJ1Y0x3Ug?oc=5",
-    "source": "TechCity",
-    "pub": "Sat, 17 Oct 2026 14:52:37 GMT",
-    "open": true,
-    "countries": [],
-    "is_treaty": false,
-    "is_finnish": false,
-    "lens": "Digital economy taxation",
-    "region": "Other",
-    "country_focus": "Ghana",
-    "importance": 4,
-    "ai_summary": "Ghana has begun the collection of its Digital Services Tax (DST), with banks initiating the 20% levy on affected transactions. This marks a significant step in Ghana's efforts to tax the digital economy, impacting non-resident providers of digital services within the country.",
-    "freshness": "20h ago",
-    "accessible": true,
-    "archive_date": "2026-10-18"
   }
 ]
