@@ -16,8 +16,8 @@
     "region": "APAC",
     "country_focus": "Indonesia",
     "importance": 3,
-    "ai_summary": "Indonesia is maintaining its existing tax holidays despite the impending 15% global minimum tax under Pillar Two. This poses a challenge for multinational enterprises (MNEs) operating in the country, as the benefits of these domestic incentives may be effectively clawed back by top-up taxes in other jurisdictions under the GloBE rules.",
-    "freshness": "23h ago",
+    "ai_summary": "Indonesia is evaluating how its existing domestic tax holidays will interact with the OECD's 15% global minimum tax, potentially impacting the effective tax rate for multinational enterprises operating within its jurisdiction. The country's approach likely aims to preserve the attractiveness of its investment incentives while navigating the new international tax framework, possibly through a Qualified Domestic Minimum Top-up Tax (QDMTT).",
+    "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-11-07"
   },
@@ -36,7 +36,7 @@
     "region": "Other",
     "country_focus": "Moldova",
     "importance": 3,
-    "ai_summary": "Moldova plans to introduce a formal double taxation dispute procedure by 2027, indicating an enhancement of its mechanisms for resolving international tax conflicts. This initiative will likely establish clearer pathways, such as Mutual Agreement Procedures (MAPs), for taxpayers to address double taxation issues arising from tax treaties.",
+    "ai_summary": "Moldova plans to introduce a formal procedure for resolving double taxation disputes in 2027, signaling an enhancement of its mechanisms for implementing international tax treaties. This initiative aims to provide taxpayers with greater clarity and certainty in addressing instances of international double taxation, aligning with global standards for mutual agreement procedures (MAPs).",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-11-07"
@@ -56,7 +56,7 @@
     "region": "Other",
     "country_focus": "Nigeria",
     "importance": 4,
-    "ai_summary": "South Korea is urging Nigeria to ratify a 20-year-old bilateral tax treaty to facilitate a shift in manufacturing operations to the African nation. The ratification of this long-standing agreement is critical for providing tax certainty and incentivizing Korean direct investment in Nigeria's manufacturing sector.",
+    "ai_summary": "South Korea is urging Nigeria to ratify a bilateral tax treaty, which has been pending for two decades, to facilitate increased manufacturing investments in Nigeria. The ratification of this Double Taxation Agreement is crucial for providing tax certainty to cross-border investors and preventing double taxation, thereby boosting economic ties between the two nations.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-11-07"
@@ -76,8 +76,8 @@
     "region": "EU",
     "country_focus": "Global",
     "importance": 3,
-    "ai_summary": "Tax Foundation Europe has submitted input to the European Commission's public consultations on the EU Tax Omnibus proposal, focusing on enhancing its legal design and political viability. This analysis scrutinizes specific provisions within the proposal that could significantly impact economic growth and competitiveness across the European Union.",
-    "freshness": "21h ago",
+    "ai_summary": "Tax Foundation Europe has submitted input to the European Commission's public consultation regarding the EU Tax Omnibus proposal, suggesting improvements to its legal design and political viability. This feedback aims to influence future EU tax legislation, ensuring that new directives support growth and competitiveness within the European single market and globally.",
+    "freshness": "22h ago",
     "accessible": true,
     "archive_date": "2026-11-07"
   },
@@ -97,8 +97,8 @@
     "lens": "General international tax",
     "region": "Nordic",
     "country_focus": "Finland",
-    "importance": 3,
-    "ai_summary": "The Tax Foundation's 2026 International Tax Index provides a comprehensive ranking of Finland's tax system, comparing its design and competitiveness against other global economies. This analysis considers key features relevant to international investment and cross-border business activities.",
+    "importance": 2,
+    "ai_summary": "The Tax Foundation's 2026 International Tax Index provides a comparative ranking of Finland's tax system, assessing its overall competitiveness and structure in a global context. This analysis offers insights into how Finland's tax policies, including those affecting international businesses and investments, contribute to its position on the global stage.",
     "freshness": "1d ago",
     "accessible": true,
     "archive_date": "2026-11-07"
